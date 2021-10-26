@@ -1,0 +1,23 @@
+:root {
+    --main-bg-color: #FFFEF9;
+    --red: #AB0000;
+    --yellow: #CFBA00;
+    --blue: #05899E;
+    --dark-gray: #272727;
+    --black: #090C02;
+}
+
+html {
+    overflow-x: hidden;   
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: korolev, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}

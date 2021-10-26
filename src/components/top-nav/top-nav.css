@@ -1,0 +1,27 @@
+header {
+    margin-bottom: -3%;
+    margin-top: -2%;
+}
+nav {
+    display: flex;
+    width: 100%;
+    overflow-x: clip;
+    margin-bottom: -5vh;
+    padding-top: 10px;
+    justify-content: center;
+    font-family: korolev, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3em;
+
+}
+
+nav a {
+    margin: 5px 2vw 0 2vw;
+    padding-top: 2vw;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    color: white;
+}
+

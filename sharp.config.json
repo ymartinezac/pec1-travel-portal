@@ -1,0 +1,14 @@
+{
+    "jpeg": {
+      "quality": 75,
+      "chromaSubsampling": "4:4:4",
+      "width": 200,
+      "height": 50
+    },
+    "webp": {
+      "nearLossless": true
+    },
+    "png": {
+      "palette": true
+    }
+  }

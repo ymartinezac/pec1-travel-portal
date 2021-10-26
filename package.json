@@ -1,0 +1,42 @@
+{
+  "name": "pec1-travel-portal",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "parcel:dev": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "clean": "rimraf dist .parcel-cache .cache-loader",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build"
+  },
+  "author": "Yesenia Martínez Acevedo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@parcel/transformer-raw": "^2.0.0",
+    "@types/node": "^16.11.4",
+    "@types/react": "^17.0.32",
+    "@types/react-dom": "^17.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "autoprefixer": "^9.8.8",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0",
+    "postcss": "^8.3.11",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.29.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "preact": "^10.5.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
