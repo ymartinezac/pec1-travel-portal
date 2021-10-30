@@ -1,6 +1,6 @@
 .main-landing {
-    background-image: url(../../assets/pr-playa-bg.jpg);
-    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1570&q=80);
+    height: 70vh;
     overflow: hidden;
     width: 100%;
     padding: 0;
@@ -16,9 +16,7 @@
     color: white;
     width: 100vw;
     height: 100%;
-    background: rgb(255,255,255);
-    background: linear-gradient(177deg, rgba(255, 255, 255, 0.041) 4%, rgba(5, 102, 117, 0.432) 39%, rgba(6, 97, 110, 0.411) 61%, rgba(255,255,255,0.09565833169205185) 96%); 
-
+  
 }
 .main-landing h1 {
     font-family: hwt-artz, sans-serif;
@@ -42,60 +40,162 @@
     width: 76%;
     justify-content: space-between;
     padding: 0 12% 0 12%;
-    margin: 0 0 5vh;
+    margin: 0 0 7vh;
+}
+
+.top-tours-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 5vh;
+}
+
+.ver-mas {
+    font-family: korolev, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--red);
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.img-mask {
+    width: 100%;
+    height: 177.7px;
+    overflow: hidden;
 }
 
 .top-tours img {
     width: 100%;
 }
 
-.home-main h1 {
+.info-general h1 {
     width: 100%;
     text-align: center;
     margin-top: 5vh;
 }
 
+
 .top-tour-card {
     width: 30%;
+    min-width: 300px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
 .top-tour-card h2, .top-tour-card p {
-    margin: 1% 3% 0 3%;
+    margin: 2% 3% 0 3%;
 }
 
+
+
 .top-tour-card .precio {
-    margin: 1% 5% 0 3%;
+    margin: 1% 5% 0 0;
     font-family: hwt-artz, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 20px;
 }
 
-.top-tours .ver-mas{
+.tour-specs {
+    display: flex;
+    align-items: baseline;
+    margin: 1% 5% 0 3%;
+}
+
+
+
+
+.top-tours button{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--red);
-    width: 100%;
-    margin: 3vh 30vw 0 30vw;
-    padding: 1rem;
+    width: 80%;
+    margin: 5% 5px 5px 5px;
+    padding: 0.5rem;
     background-color: var(--main-bg-color);
     color: var(--red);
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    align-self: center;
 }
 
-.top-tours .ver-mas:hover  {
+.top-tours button:hover  {
     background-color: var(--red);
     color: var(--main-bg-color);
     box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+}
+
+
+.info-general ul {
+    list-style: none;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.info-general .icons  {
+    font-size: 40px;
+    margin-right: 0.5em;
+    margin-top: 2%;
+    width: 1em;
+}
+
+.info-general li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7%;
+}
+
+.info-general h2{
+    margin: 0;
+}
+
+.info-general p {
+    
+    margin: 0;
+
+}
+
+
+.snorkel {
+    display: flex;
+    flex-wrap: wrap;
+    height: 38vh;
+    color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1612158560555-34306ad5e77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80);
+}
+
+.snorkel h1 {
+    width: 100%;
+    padding: 0 12vw 0 12vw;
+    text-align: left;
+    
+    font-size: 5rem;
+}
+
+.snorkel span {
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 

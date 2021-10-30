@@ -3,6 +3,7 @@
     --red: #AB0000;
     --yellow: #CFBA00;
     --blue: #05899E;
+    --dark-blue: #00505a;
     --dark-gray: #272727;
     --black: #090C02;
 }
@@ -19,6 +20,12 @@ body {
 h1, h2 {
     font-family: korolev, sans-serif;
     font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 /*# sourceMappingURL=index.af814d91.css.map */

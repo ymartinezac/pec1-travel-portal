@@ -1,27 +1,36 @@
 header {
-    margin-bottom: -3%;
-    margin-top: -2%;
+    display: flex;
+    padding: 0 12% 0 12%;
+    background-color: var(--main-bg-color);
+    color: var(--dark-blue);
+}
+header h1 {
+    width: 16%;
 }
 nav {
+
     display: flex;
-    width: 100%;
+    width: 84%;
     overflow-x: clip;
-    margin-bottom: -5vh;
-    padding-top: 10px;
-    justify-content: center;
+    padding: 1vh 0 1vh 0;
+    justify-content: flex-end;
     font-family: korolev, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1.3em;
+    align-items: center;
 
 }
 
 nav a {
-    margin: 5px 2vw 0 2vw;
-    padding-top: 2vw;
+    margin: 5px 0 0 3vw;
     text-decoration: none;
-    width: 200px;
     text-align: center;
-    color: white;
+    color: var(--dark-blue);
+  
+    font-family: semplicitapro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
 }
 

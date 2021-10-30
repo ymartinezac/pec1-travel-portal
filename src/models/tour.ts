@@ -4,6 +4,7 @@ export default interface Tour {
     img_url: string;
     descripcion: string;
     duracion: number;
+    guia: boolean;
     ratings: {
         puntuación: number; 
         comentario?: string;
