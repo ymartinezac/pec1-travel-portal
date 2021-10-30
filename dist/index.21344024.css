@@ -1,6 +1,9 @@
+
 .main-landing {
     background-image: url(https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1570&q=80);
     height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     width: 100%;
     padding: 0;
@@ -10,6 +13,7 @@
 
 .main-landing div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -34,6 +38,23 @@
     font-size: 5rem;
     margin: -5vh 0 0 0;
 }
+
+@media (min-width: 250px) and (max-width: 992px){
+    .main-landing{
+        height: 55vh;
+    }
+    .main-landing h1{
+        font-size: 12rem;
+        text-align: center;
+
+    }
+    .main-landing h2 {
+        margin: 0;
+        font-size: 7rem;
+    }
+}
+
+/*--------------------------------------------------------------*/
 
 .info-general, .top-tours {
     display: flex;
@@ -74,12 +95,6 @@
 
 .top-tours img {
     width: 100%;
-}
-
-.info-general h1 {
-    width: 100%;
-    text-align: center;
-    margin-top: 5vh;
 }
 
 .top-tour-card {
@@ -136,6 +151,46 @@
     -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
 }
 
+@media (min-width: 250px) and (max-width: 992px){ 
+    .top-tour-card {
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------*/
+
+.snorkel {
+    display: flex;
+    flex-wrap: wrap;
+    height: 38vh;
+    color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1612158560555-34306ad5e77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80);
+}
+
+.snorkel h1 {
+    width: 100%;
+    padding: 0 12vw 0 12vw;
+    text-align: left;
+    
+    font-size: 5rem;
+}
+
+.snorkel span {
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------*/
+
+.info-general h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
 .info-general ul {
     list-style: none;
     width: 45%;
@@ -168,29 +223,9 @@
 
 }
 
-.snorkel {
-    display: flex;
-    flex-wrap: wrap;
-    height: 38vh;
-    color: var(--main-bg-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(https://images.unsplash.com/photo-1612158560555-34306ad5e77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80);
-}
+/*--------------------------------------------------------------*/
 
-.snorkel h1 {
-    width: 100%;
-    padding: 0 12vw 0 12vw;
-    text-align: left;
-    
-    font-size: 5rem;
-}
 
-.snorkel span {
-    font-family: hwt-artz, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-}
 
 
 /*# sourceMappingURL=index.21344024.css.map */
