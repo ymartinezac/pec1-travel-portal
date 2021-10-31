@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+
 import Home from "./components/home/home";
 import TopNav from "./components/top-nav/top-nav";
 import Footer from "./components/footer/footer";
+import SobreNosotros from "./components/sobre-nosotros/sobre-nosotros";
 import Tour from "./models/tour";
 
 function App ()  {
@@ -51,7 +54,12 @@ function App ()  {
     return (
             <div>
                 <TopNav />
-                <Home tours={tours} />
+                <Router>
+                    <Switch>
+                        <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
+                        <Route path="/sobre-nosotros" component={SobreNosotros} />
+                     </Switch>   
+                </Router>
                 <Footer />
             </div>
        

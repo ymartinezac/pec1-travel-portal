@@ -43,6 +43,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section> 
             <section className="snorkel">
                 <h1>Sumérgete en nuestros <span>snorkeling tours</span></h1>
+                <img src="https://www.svgrepo.com/show/286446/diving-mask-snorkel.svg" className="snorkel-svg" alt="snorkeling mask"/>
             </section> 
             <section className="info-general">
                 <h1>Información General</h1>
