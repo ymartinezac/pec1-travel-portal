@@ -17,7 +17,7 @@ body {
     margin: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: korolev, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -27,5 +27,9 @@ p {
     font-family: semplicitapro, sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 /*# sourceMappingURL=index.af814d91.css.map */

@@ -6,7 +6,7 @@ const TopNav = () => {
         <header>
             <h1><a href="#">🇵🇷 ViajaPR</a></h1>
             <nav>
-                <a href="#">Inicio</a>
+                <a href="http://localhost:1234/">Inicio</a>
                 <a href="#">Buscar Tours</a>
                 <a href="http://localhost:1234/sobre-nosotros">Sobre Nosotros</a>
 

@@ -53,14 +53,16 @@ function App ()  {
     ])
     return (
             <div>
-                <TopNav />
-                <Router>
-                    <Switch>
-                        <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
-                        <Route path="/sobre-nosotros" component={SobreNosotros} />
-                     </Switch>   
-                </Router>
-                <Footer />
+                <React.StrictMode>
+                    <TopNav />
+                    <Router>
+                        <Switch>
+                            <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
+                            <Route path="/sobre-nosotros" component={SobreNosotros} />
+                        </Switch>   
+                    </Router>
+                    <Footer />
+                </React.StrictMode>
             </div>
        
     )

@@ -47,6 +47,8 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section> 
             <section className="info-general">
                 <h1>Información General</h1>
+                <img src="https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80" alt="arco de piedras en la playa" />
+            
                 <ul>
                     <li><FontAwesomeIcon className="icons" icon={faViruses} /> 
                         <div>
@@ -67,8 +69,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                         </div>
                     </li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80" alt="arco de piedras en la playa" />
-            </section>
+                </section>
         </main>
 
     )
