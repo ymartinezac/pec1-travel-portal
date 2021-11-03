@@ -1,0 +1,33 @@
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: rgb(58, 66, 81, .9);
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: clamp(3rem, 4vw, 6vw);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: .2s all ease-in-out;
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+  
+}
+
+.mobile-nav a:hover {
+    transition: .2s all ease-in-out;
+    color: orangered;
+}
+

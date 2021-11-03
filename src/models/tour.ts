@@ -13,4 +13,5 @@ export default interface Tour {
     puntoEncuentro: string;
     fechas: Date[];
     precio: number;
+    tag: string;
 } 

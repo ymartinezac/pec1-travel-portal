@@ -4,11 +4,20 @@ import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import Home from "./components/home/home";
 import TopNav from "./components/top-nav/top-nav";
+import Toggle from "./components/toggle/toggle";
+import MobileNav from "./components/mobile-nav/mobile-nav";
 import Footer from "./components/footer/footer";
 import SobreNosotros from "./components/sobre-nosotros/sobre-nosotros";
 import Tour from "./models/tour";
 
 function App ()  {
+    const [navToggle, setNavToggle] = React.useState<boolean>(false);
+   
+    
+    const handleNavToggle = () => {
+        setNavToggle(!navToggle);
+        
+    };
 
     const [tours, setTour] = React.useState<Tour[]>([
         {
@@ -22,7 +31,8 @@ function App ()  {
             ubicacion: 'Vieques, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
-            precio: 79.99
+            precio: 79.99,
+            tag: "bestseller"
         }, 
         {
             id: 2,
@@ -35,7 +45,8 @@ function App ()  {
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
-            precio: 39.99
+            precio: 39.99,
+            tag: "bestseller"
         },
         {
             id: 3,
@@ -48,12 +59,15 @@ function App ()  {
             ubicacion: 'Arecibo, PR',
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
-            precio: 20
+            precio: 20,
+            tag: "bestseller"
         }
     ])
     return (
             <div>
                 <React.StrictMode>
+                    <Toggle handleNavToggle={handleNavToggle}/> 
+                    { navToggle ? <MobileNav handleNavToggle={handleNavToggle}/> : null}
                     <TopNav />
                     <Router>
                         <Switch>

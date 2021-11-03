@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Tour from "../../models/tour";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
-
+import { FiClock, FiStar } from "react-icons/fi";
 
 const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
     const renderTopTours = () => {
@@ -14,12 +14,19 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                     <div className="img-mask">
                         <img src={tour.img_url} />
                     </div>
+                    <div className="tag">
+                        <FiStar className="icons" />
+                        <p>{tour.tag}</p>
+                    </div> 
                     <h2>{tour.nombre}</h2>
                     <div className="tour-specs">
-                        <FontAwesomeIcon className="icons" icon={faClock} /> 
+                        <FiClock className="icons" /> 
                         <p>Duración: {tour.duracion} horas</p>
                     </div>
-                    <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
+                    <div className="tour-price">
+                        <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
+                    </div>
+                    
                     <button>Reserva ahora</button>
                 </div>
             );
