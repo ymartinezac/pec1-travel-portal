@@ -1,3 +1,7 @@
+.mobile-nav h1 {
+    color: white;
+    align-self: center;
+}
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -8,16 +12,19 @@
     z-index: 99;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5vh 6vw 0 6vw;
 }
-
 .mobile-nav a {
     color: #eee;
     text-decoration: none;
     font-size: clamp(3rem, 4vw, 6vw);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     transition: .2s all ease-in-out;
+    margin-top: 20px;
     user-select: none; /* supported by Chrome and Opera */
    -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
@@ -25,7 +32,6 @@
    -ms-user-select: none; /* Internet Explorer/Edge */
   
 }
-
 .mobile-nav a:hover {
     transition: .2s all ease-in-out;
     color: orangered;

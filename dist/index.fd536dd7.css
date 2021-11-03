@@ -2,9 +2,8 @@
     display: none;
 }
 .toggle-wrap {
+    display: none;
 
-    display: flex;
-    justify-content: flex-end;
    
 }
 .bar {
@@ -17,6 +16,12 @@
     background-color: #fff;
 }
 @media (min-width: 250px) and (max-width: 992px){ 
+    .toggle-wrap {
+        display: none;
+        display: flex;
+        justify-content: flex-end;
+       
+    }
 
     .hamburger {
         display: block;

@@ -12,4 +12,14 @@ footer {
     height: 5vh;
     margin-top: 10vh;
 }
+
+@media (min-width: 250px) and (max-width: 992px){ 
+    footer {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    
+
+}
 /*# sourceMappingURL=index.38a7ad68.css.map */

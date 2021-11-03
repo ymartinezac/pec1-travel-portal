@@ -189,8 +189,12 @@
 }
 
 @media (min-width: 250px) and (max-width: 992px){ 
+    .top-tours-header{
+        margin-top: 4vh;
+    }
     .top-tours-header h1 {
         margin-bottom: 1%;
+        margin-top: 0;
     }
     .top-tour-card {
         width: 100%;
@@ -342,6 +346,29 @@
 .info-general p {
     
     margin: 0;
+
+}
+
+@media (min-width: 250px) and (max-width: 992px){  
+    .info-general img {
+        display: none;
+    }
+
+    .info-general ul {
+        width: 100%;
+        padding: 5%;
+
+    }
+
+    .info-general li {
+        text-align: justify;
+        margin-bottom: 3vh;
+    }
+
+    .info-general h1 {
+        margin: 5vh 0 1vh 0;
+    }
+
 
 }
 

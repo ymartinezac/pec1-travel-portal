@@ -54125,39 +54125,56 @@ var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const TopNav = ()=>{
-    return(/*#__PURE__*/ _jsxRuntime.jsxs("nav", {
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("header", {
         __source: {
             fileName: "src/components/top-nav/top-nav.tsx",
-            lineNumber: 7
+            lineNumber: 6
         },
         __self: undefined,
         children: [
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/",
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/top-nav/top-nav.tsx",
+                    lineNumber: 7
+                },
+                __self: undefined,
+                children: "🇵🇷 ViajaPR "
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
                     lineNumber: 8
                 },
                 __self: undefined,
-                children: "Inicio"
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "#",
-                __source: {
-                    fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 9
-                },
-                __self: undefined,
-                children: "Buscar Tours"
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/sobre-nosotros",
-                __source: {
-                    fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 10
-                },
-                __self: undefined,
-                children: "Sobre Nosotros"
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                        href: "http://localhost:1234/",
+                        __source: {
+                            fileName: "src/components/top-nav/top-nav.tsx",
+                            lineNumber: 9
+                        },
+                        __self: undefined,
+                        children: "Inicio"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                        href: "#",
+                        __source: {
+                            fileName: "src/components/top-nav/top-nav.tsx",
+                            lineNumber: 10
+                        },
+                        __self: undefined,
+                        children: "Buscar Tours"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                        href: "http://localhost:1234/sobre-nosotros",
+                        __source: {
+                            fileName: "src/components/top-nav/top-nav.tsx",
+                            lineNumber: 11
+                        },
+                        __self: undefined,
+                        children: "Sobre Nosotros"
+                    })
+                ]
             })
         ]
     }));
@@ -54266,17 +54283,25 @@ const MobileNav = ({ handleNavToggle  })=>{
         className: "mobile-nav",
         __source: {
             fileName: "src/components/mobile-nav/mobile-nav.tsx",
-            lineNumber: 7
+            lineNumber: 8
         },
         __self: undefined,
         children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/mobile-nav/mobile-nav.tsx",
+                    lineNumber: 9
+                },
+                __self: undefined,
+                children: "🇵🇷 ViajaPR "
+            }),
             /*#__PURE__*/ _jsxRuntime.jsx("a", {
                 href: "http://localhost:1234/",
                 className: "animate__animated animate__fadeInRight",
                 onClick: handleNavToggle,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 8
+                    lineNumber: 10
                 },
                 __self: undefined,
                 children: "Inicio"
@@ -54287,7 +54312,7 @@ const MobileNav = ({ handleNavToggle  })=>{
                 onClick: handleNavToggle,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 9
+                    lineNumber: 11
                 },
                 __self: undefined,
                 children: "Buscar Tours"
@@ -54298,7 +54323,7 @@ const MobileNav = ({ handleNavToggle  })=>{
                 onClick: handleNavToggle,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 10
+                    lineNumber: 12
                 },
                 __self: undefined,
                 children: "Sobre Nosotros"
