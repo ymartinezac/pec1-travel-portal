@@ -1,34 +1,46 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Tour from "../../models/tour";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
-import { FiClock, FiStar } from "react-icons/fi";
+import TourCard from "../tour-card/tour-card";
+
+const puntuacionMedia = (tour) => {
+    var sum = 0;
+    tour.ratings.map(rating => { 
+        if(typeof rating.puntuacion == "number"){
+           sum += rating.puntuacion; 
+        }
+    })
+    const length = parseInt(tour.ratings.length);
+    return (sum / length);
+}
+
+function compare( a, b ) {
+   
+    if ( puntuacionMedia(a) > puntuacionMedia(b) ){
+        console.log(puntuacionMedia(a) < puntuacionMedia(b));
+         return -1;
+    }
+    else if ( puntuacionMedia(a) < puntuacionMedia(b) ){
+        return 1;
+    }
+    else {
+        return 0;
+    }
+  }
+
+const compararPuntuaciones = ( tours ) => {
+    return tours.sort( compare );
+}
 
 const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
+
     const renderTopTours = () => {
-        return tours.map((tour) => {
-            
+        const sortedTours = compararPuntuaciones(tours);
+        const top3 = sortedTours.slice(0, 3);
+        return top3.map((tour) => {
             return (
-                <div key={tour.id} className="top-tour-card">
-                    <div className="img-mask">
-                        <img src={tour.img_url} />
-                    </div>
-                    <div className="tag">
-                        <FiStar className="icons" />
-                        <p>{tour.tag}</p>
-                    </div> 
-                    <h2>{tour.nombre}</h2>
-                    <div className="tour-specs">
-                        <FiClock className="icons" /> 
-                        <p>Duración: {tour.duracion} horas</p>
-                    </div>
-                    <div className="tour-price">
-                        <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
-                    </div>
-                    
-                    <button>Reserva ahora</button>
-                </div>
+                <TourCard tour={tour} />
             );
         })
     }
@@ -40,7 +52,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                     <h2>Isla del Encanto</h2>
                 </div>
             </section>
-            <section className="top-tours">
+            <section className="tour-grid">
                 <div className="top-tours-header">
                     <h1>Tours más vendidos</h1>
                     <a className="ver-mas" href="#">Ver más</a>

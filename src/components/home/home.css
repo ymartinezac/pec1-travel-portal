@@ -58,13 +58,14 @@
 
 /*--------------------------------------------------------------*/
 
-.info-general, .top-tours {
+.info-general, .tour-grid {
     display: flex;
     flex-wrap: wrap;
     width: 76%;
     justify-content: space-between;
     padding: 0 12% 0 12%;
     margin: 0 0 7vh;
+    row-gap: 2.5vh;
 }
 
 .top-tours-header {
@@ -97,8 +98,8 @@
     border-top-left-radius: 5px;
 }
 
-.top-tours img {
-    width: 100%;
+.tour-grid img {
+    width: 110%;
     position: relative;
 }
 
@@ -147,7 +148,7 @@
 }
 
 
-.top-tours button{
+.tour-grid button{
     border-style: solid;
     border-radius: 5px;
     border-color: var(--red);
@@ -162,7 +163,7 @@
     align-self: center;
 }
 
-.top-tours button:hover  {
+.tour-grid button:hover  {
     background-color: var(--red);
     color: var(--main-bg-color);
     box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
@@ -185,6 +186,7 @@
     box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.089);
     -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.089);
     -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.089);
+    z-index: 1;
 
 }
 
@@ -200,7 +202,7 @@
         width: 100%;
         margin-bottom: 7%;
     }
-    .info-general, .top-tours {
+    .info-general, .tour-grid {
         padding: 0 3% 0 3%;
         justify-content: center;
         width: 94%;
@@ -232,7 +234,7 @@
         font-size: 2.5rem;
     }
 
-    .top-tours button {
+    .tour-grid button {
         font-size: 2.5rem;
         padding: 3%;
         margin-top: 6% 0;
@@ -244,7 +246,7 @@
         -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     }
 
-    .top-tours button:active {
+    .tour-grid button:active {
         background-color: var(--main-bg-color);
     color: var(--red);
     }

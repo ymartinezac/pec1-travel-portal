@@ -6,7 +6,7 @@ export default interface Tour {
     duracion: number;
     guia: boolean;
     ratings: {
-        puntuación: number; 
+        puntuacion: number; 
         comentario?: string;
     }[];
     ubicacion: string;

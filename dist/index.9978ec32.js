@@ -962,6 +962,8 @@ var _footer = require("./components/footer/footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _sobreNosotros = require("./components/sobre-nosotros/sobre-nosotros");
 var _sobreNosotrosDefault = parcelHelpers.interopDefault(_sobreNosotros);
+var _toursGrid = require("./components/tours-grid/tours-grid");
+var _toursGridDefault = parcelHelpers.interopDefault(_toursGrid);
 var _s = $RefreshSig$();
 function App() {
     _s();
@@ -972,12 +974,22 @@ function App() {
     const [tours, setTour] = _reactDefault.default.useState([
         {
             id: 1,
-            nombre: "Bahía Bioluminiscente",
+            nombre: "Bahía Bioluminiscente TOP",
             img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
             descripcion: "Lorem ipsum",
             duracion: 6,
             guia: true,
-            ratings: [],
+            ratings: [
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                }
+            ],
             ubicacion: 'Vieques, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
@@ -986,12 +998,22 @@ function App() {
         },
         {
             id: 2,
-            nombre: "Bosque Tropical El Yunque",
+            nombre: "Bosque Tropical El Yunque TOP",
             img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
             descripcion: "Lorem ipsum",
             duracion: 7,
             guia: true,
-            ratings: [],
+            ratings: [
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                }
+            ],
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
@@ -1005,7 +1027,161 @@ function App() {
             descripcion: "Lorem ipsum",
             duracion: 2,
             guia: false,
-            ratings: [],
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
+            ubicacion: 'Arecibo, PR',
+            puntoEncuentro: "Cueva Ventana",
+            fechas: [],
+            precio: 20,
+            tag: "bestseller"
+        },
+        {
+            id: 1,
+            nombre: "Bahía Bioluminiscente",
+            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
+            descripcion: "Lorem ipsum",
+            duracion: 6,
+            guia: true,
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
+            ubicacion: 'Vieques, PR',
+            puntoEncuentro: "Terminal de Lanchas de Fajardo",
+            fechas: [],
+            precio: 79.99,
+            tag: "bestseller"
+        },
+        {
+            id: 2,
+            nombre: "Bosque Tropical El Yunque",
+            img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
+            descripcion: "Lorem ipsum",
+            duracion: 7,
+            guia: true,
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
+            ubicacion: 'Rio Grande, PR',
+            puntoEncuentro: "El Yunque National Forest - El Portal",
+            fechas: [],
+            precio: 39.99,
+            tag: "bestseller"
+        },
+        {
+            id: 3,
+            nombre: "Cueva Ventana TOP",
+            img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
+            descripcion: "Lorem ipsum",
+            duracion: 2,
+            guia: false,
+            ratings: [
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                },
+                {
+                    puntuacion: 5
+                }
+            ],
+            ubicacion: 'Arecibo, PR',
+            puntoEncuentro: "Cueva Ventana",
+            fechas: [],
+            precio: 20,
+            tag: "bestseller"
+        },
+        {
+            id: 1,
+            nombre: "Bahía Bioluminiscente",
+            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
+            descripcion: "Lorem ipsum",
+            duracion: 6,
+            guia: true,
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
+            ubicacion: 'Vieques, PR',
+            puntoEncuentro: "Terminal de Lanchas de Fajardo",
+            fechas: [],
+            precio: 79.99,
+            tag: "bestseller"
+        },
+        {
+            id: 2,
+            nombre: "Bosque Tropical El Yunque",
+            img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
+            descripcion: "Lorem ipsum",
+            duracion: 7,
+            guia: true,
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
+            ubicacion: 'Rio Grande, PR',
+            puntoEncuentro: "El Yunque National Forest - El Portal",
+            fechas: [],
+            precio: 39.99,
+            tag: "bestseller"
+        },
+        {
+            id: 3,
+            nombre: "Cueva Ventana",
+            img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
+            descripcion: "Lorem ipsum",
+            duracion: 2,
+            guia: false,
+            ratings: [
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 0
+                },
+                {
+                    puntuacion: 3
+                }
+            ],
             ubicacion: 'Arecibo, PR',
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
@@ -1016,13 +1192,13 @@ function App() {
     return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
         __source: {
             fileName: "src/index.tsx",
-            lineNumber: 67
+            lineNumber: 152
         },
         __self: this,
         children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactDefault.default.StrictMode, {
             __source: {
                 fileName: "src/index.tsx",
-                lineNumber: 68
+                lineNumber: 153
             },
             __self: this,
             children: [
@@ -1030,7 +1206,7 @@ function App() {
                     handleNavToggle: handleNavToggle,
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 69
+                        lineNumber: 154
                     },
                     __self: this
                 }),
@@ -1038,27 +1214,27 @@ function App() {
                     handleNavToggle: handleNavToggle,
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 70
+                        lineNumber: 155
                     },
                     __self: this
                 }) : null,
                 /*#__PURE__*/ _jsxRuntime.jsx(_topNavDefault.default, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 71
+                        lineNumber: 156
                     },
                     __self: this
                 }),
                 /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 72
+                        lineNumber: 157
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Switch, {
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 73
+                            lineNumber: 158
                         },
                         __self: this,
                         children: [
@@ -1072,7 +1248,21 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 74
+                                    lineNumber: 159
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                                exact: true,
+                                path: "/buscar-tours",
+                                render: (props)=>/*#__PURE__*/ _jsxRuntime.jsx(_toursGridDefault.default, {
+                                        tours: tours,
+                                        ...props
+                                    })
+                                ,
+                                __source: {
+                                    fileName: "src/index.tsx",
+                                    lineNumber: 160
                                 },
                                 __self: this
                             }),
@@ -1081,7 +1271,7 @@ function App() {
                                 component: _sobreNosotrosDefault.default,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 75
+                                    lineNumber: 161
                                 },
                                 __self: this
                             })
@@ -1091,7 +1281,7 @@ function App() {
                 /*#__PURE__*/ _jsxRuntime.jsx(_footerDefault.default, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 78
+                        lineNumber: 164
                     },
                     __self: this
                 })
@@ -1099,13 +1289,13 @@ function App() {
         })
     }));
 }
-_s(App, "cIZsHtbIz52v51/7r6sGSxMnOIQ=");
+_s(App, "xp1vZZfAOHe/caX3OnbWRskPNSc=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
     __source: {
         fileName: "src/index.tsx",
-        lineNumber: 86
+        lineNumber: 172
     },
     __self: undefined
 }), mount);
@@ -1117,7 +1307,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-dom":"afyCw","react-router-dom":"etVME","./components/home/home":"iA99h","./components/top-nav/top-nav":"aNybI","./components/toggle/toggle":"4KzLw","./components/mobile-nav/mobile-nav":"ja0pW","./components/footer/footer":"dNiNj","./components/sobre-nosotros/sobre-nosotros":"kIJ7Y","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"6Ds2u":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-dom":"afyCw","react-router-dom":"etVME","./components/home/home":"iA99h","./components/top-nav/top-nav":"aNybI","./components/toggle/toggle":"4KzLw","./components/mobile-nav/mobile-nav":"ja0pW","./components/footer/footer":"dNiNj","./components/sobre-nosotros/sobre-nosotros":"kIJ7Y","./components/tours-grid/tours-grid":"4Jk6O","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"6Ds2u":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-runtime.development.js');
 
@@ -25948,142 +26138,46 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-var _fi = require("react-icons/fi");
+var _tourCard = require("../tour-card/tour-card");
+var _tourCardDefault = parcelHelpers.interopDefault(_tourCard);
+const puntuacionMedia = (tour)=>{
+    var sum = 0;
+    tour.ratings.map((rating)=>{
+        if (typeof rating.puntuacion == "number") sum += rating.puntuacion;
+    });
+    const length = parseInt(tour.ratings.length);
+    return sum / length;
+};
+function compare(a, b) {
+    if (puntuacionMedia(a) > puntuacionMedia(b)) {
+        console.log(puntuacionMedia(a) < puntuacionMedia(b));
+        return -1;
+    } else if (puntuacionMedia(a) < puntuacionMedia(b)) return 1;
+    else return 0;
+}
+const compararPuntuaciones = (tours)=>{
+    return tours.sort(compare);
+};
 const Home = ({ tours  })=>{
     const renderTopTours = ()=>{
-        return tours.map((tour)=>{
-            return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                className: "top-tour-card",
+        const sortedTours = compararPuntuaciones(tours);
+        const top3 = sortedTours.slice(0, 3);
+        return top3.map((tour)=>{
+            return(/*#__PURE__*/ _jsxRuntime.jsx(_tourCardDefault.default, {
+                tour: tour,
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 13
+                    lineNumber: 43
                 },
-                __self: undefined,
-                children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                        className: "img-mask",
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 14
-                        },
-                        __self: undefined,
-                        children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                            src: tour.img_url,
-                            __source: {
-                                fileName: "src/components/home/home.tsx",
-                                lineNumber: 15
-                            },
-                            __self: undefined
-                        })
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                        className: "tag",
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 17
-                        },
-                        __self: undefined,
-                        children: [
-                            /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiStar, {
-                                className: "icons",
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 18
-                                },
-                                __self: undefined
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 19
-                                },
-                                __self: undefined,
-                                children: tour.tag
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("h2", {
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 21
-                        },
-                        __self: undefined,
-                        children: tour.nombre
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                        className: "tour-specs",
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 22
-                        },
-                        __self: undefined,
-                        children: [
-                            /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiClock, {
-                                className: "icons",
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 23
-                                },
-                                __self: undefined
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("p", {
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 24
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Duraci\xf3n: ",
-                                    tour.duracion,
-                                    " horas"
-                                ]
-                            })
-                        ]
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                        className: "tour-price",
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 26
-                        },
-                        __self: undefined,
-                        children: /*#__PURE__*/ _jsxRuntime.jsxs("p", {
-                            __source: {
-                                fileName: "src/components/home/home.tsx",
-                                lineNumber: 27
-                            },
-                            __self: undefined,
-                            children: [
-                                /*#__PURE__*/ _jsxRuntime.jsx("span", {
-                                    className: "precio",
-                                    __source: {
-                                        fileName: "src/components/home/home.tsx",
-                                        lineNumber: 27
-                                    },
-                                    __self: undefined,
-                                    children: '$' + tour.precio
-                                }),
-                                " por persona"
-                            ]
-                        })
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("button", {
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 30
-                        },
-                        __self: undefined,
-                        children: "Reserva ahora"
-                    })
-                ]
-            }, tour.id));
+                __self: undefined
+            }));
         });
     };
     return(/*#__PURE__*/ _jsxRuntime.jsxs("main", {
         className: "home-main",
         __source: {
             fileName: "src/components/home/home.tsx",
-            lineNumber: 36
+            lineNumber: 48
         },
         __self: undefined,
         children: [
@@ -26091,20 +26185,20 @@ const Home = ({ tours  })=>{
                 className: "main-landing",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 37
+                    lineNumber: 49
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                     __source: {
                         fileName: "src/components/home/home.tsx",
-                        lineNumber: 38
+                        lineNumber: 50
                     },
                     __self: undefined,
                     children: [
                         /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                             __source: {
                                 fileName: "src/components/home/home.tsx",
-                                lineNumber: 39
+                                lineNumber: 51
                             },
                             __self: undefined,
                             children: "Puerto Rico"
@@ -26112,7 +26206,7 @@ const Home = ({ tours  })=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                             __source: {
                                 fileName: "src/components/home/home.tsx",
-                                lineNumber: 40
+                                lineNumber: 52
                             },
                             __self: undefined,
                             children: "Isla del Encanto"
@@ -26121,10 +26215,10 @@ const Home = ({ tours  })=>{
                 })
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("section", {
-                className: "top-tours",
+                className: "tour-grid",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 43
+                    lineNumber: 55
                 },
                 __self: undefined,
                 children: [
@@ -26132,14 +26226,14 @@ const Home = ({ tours  })=>{
                         className: "top-tours-header",
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 44
+                            lineNumber: 56
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 45
+                                    lineNumber: 57
                                 },
                                 __self: undefined,
                                 children: "Tours m\xe1s vendidos"
@@ -26149,7 +26243,7 @@ const Home = ({ tours  })=>{
                                 href: "#",
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 46
+                                    lineNumber: 58
                                 },
                                 __self: undefined,
                                 children: "Ver m\xe1s"
@@ -26163,14 +26257,14 @@ const Home = ({ tours  })=>{
                 className: "snorkel",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 51
+                    lineNumber: 63
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsxs("h1", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 52
+                            lineNumber: 64
                         },
                         __self: undefined,
                         children: [
@@ -26178,7 +26272,7 @@ const Home = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsx("span", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 52
+                                    lineNumber: 64
                                 },
                                 __self: undefined,
                                 children: "snorkeling tours"
@@ -26191,7 +26285,7 @@ const Home = ({ tours  })=>{
                         alt: "snorkeling mask",
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 53
+                            lineNumber: 65
                         },
                         __self: undefined
                     })
@@ -26201,14 +26295,14 @@ const Home = ({ tours  })=>{
                 className: "info-general",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 55
+                    lineNumber: 67
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 56
+                            lineNumber: 68
                         },
                         __self: undefined,
                         children: "Informaci\xf3n General"
@@ -26218,103 +26312,17 @@ const Home = ({ tours  })=>{
                         alt: "arco de piedras en la playa",
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 57
+                            lineNumber: 69
                         },
                         __self: undefined
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 59
+                            lineNumber: 71
                         },
                         __self: undefined,
                         children: [
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 60
-                                },
-                                __self: undefined,
-                                children: [
-                                    /*#__PURE__*/ _jsxRuntime.jsx(_reactFontawesome.FontAwesomeIcon, {
-                                        className: "icons",
-                                        icon: _freeSolidSvgIcons.faViruses,
-                                        __source: {
-                                            fileName: "src/components/home/home.tsx",
-                                            lineNumber: 60
-                                        },
-                                        __self: undefined
-                                    }),
-                                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                                        __source: {
-                                            fileName: "src/components/home/home.tsx",
-                                            lineNumber: 61
-                                        },
-                                        __self: undefined,
-                                        children: [
-                                            /*#__PURE__*/ _jsxRuntime.jsx("h2", {
-                                                __source: {
-                                                    fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 62
-                                                },
-                                                __self: undefined,
-                                                children: "Medidas Covid-19"
-                                            }),
-                                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
-                                                __source: {
-                                                    fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 63
-                                                },
-                                                __self: undefined,
-                                                children: "Implementamos procolos de limpieza y seguridad para disminuir posibilidades de contagio."
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/home/home.tsx",
-                                    lineNumber: 66
-                                },
-                                __self: undefined,
-                                children: [
-                                    /*#__PURE__*/ _jsxRuntime.jsx(_reactFontawesome.FontAwesomeIcon, {
-                                        className: "icons",
-                                        icon: _freeSolidSvgIcons.faGlobe,
-                                        __source: {
-                                            fileName: "src/components/home/home.tsx",
-                                            lineNumber: 66
-                                        },
-                                        __self: undefined
-                                    }),
-                                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-                                        __source: {
-                                            fileName: "src/components/home/home.tsx",
-                                            lineNumber: 67
-                                        },
-                                        __self: undefined,
-                                        children: [
-                                            /*#__PURE__*/ _jsxRuntime.jsx("h2", {
-                                                __source: {
-                                                    fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 68
-                                                },
-                                                __self: undefined,
-                                                children: "Gu\xedas Biling\xfces"
-                                            }),
-                                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
-                                                __source: {
-                                                    fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 69
-                                                },
-                                                __self: undefined,
-                                                children: "Todos nuestros gu\xedas tur\xedsticos hablan al menos espa\xf1ol e ingl\xe9s."
-                                            })
-                                        ]
-                                    })
-                                ]
-                            }),
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
@@ -26324,7 +26332,7 @@ const Home = ({ tours  })=>{
                                 children: [
                                     /*#__PURE__*/ _jsxRuntime.jsx(_reactFontawesome.FontAwesomeIcon, {
                                         className: "icons",
-                                        icon: _freeSolidSvgIcons.faCalendarCheck,
+                                        icon: _freeSolidSvgIcons.faViruses,
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
                                             lineNumber: 72
@@ -26344,12 +26352,98 @@ const Home = ({ tours  })=>{
                                                     lineNumber: 74
                                                 },
                                                 __self: undefined,
-                                                children: "Reembolsos por cancelaciones"
+                                                children: "Medidas Covid-19"
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
                                                     lineNumber: 75
+                                                },
+                                                __self: undefined,
+                                                children: "Implementamos procolos de limpieza y seguridad para disminuir posibilidades de contagio."
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/home/home.tsx",
+                                    lineNumber: 78
+                                },
+                                __self: undefined,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx(_reactFontawesome.FontAwesomeIcon, {
+                                        className: "icons",
+                                        icon: _freeSolidSvgIcons.faGlobe,
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 78
+                                        },
+                                        __self: undefined
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 79
+                                        },
+                                        __self: undefined,
+                                        children: [
+                                            /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                                __source: {
+                                                    fileName: "src/components/home/home.tsx",
+                                                    lineNumber: 80
+                                                },
+                                                __self: undefined,
+                                                children: "Gu\xedas Biling\xfces"
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                                                __source: {
+                                                    fileName: "src/components/home/home.tsx",
+                                                    lineNumber: 81
+                                                },
+                                                __self: undefined,
+                                                children: "Todos nuestros gu\xedas tur\xedsticos hablan al menos espa\xf1ol e ingl\xe9s."
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/home/home.tsx",
+                                    lineNumber: 84
+                                },
+                                __self: undefined,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx(_reactFontawesome.FontAwesomeIcon, {
+                                        className: "icons",
+                                        icon: _freeSolidSvgIcons.faCalendarCheck,
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 84
+                                        },
+                                        __self: undefined
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 85
+                                        },
+                                        __self: undefined,
+                                        children: [
+                                            /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                                                __source: {
+                                                    fileName: "src/components/home/home.tsx",
+                                                    lineNumber: 86
+                                                },
+                                                __self: undefined,
+                                                children: "Reembolsos por cancelaciones"
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                                                __source: {
+                                                    fileName: "src/components/home/home.tsx",
+                                                    lineNumber: 87
                                                 },
                                                 __self: undefined,
                                                 children: "Cancelaciones antes de las 24h previas al tour ser\xe1n reembolsadas en su totalidad."
@@ -26375,7 +26469,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@fortawesome/react-fontawesome":"55Qlg","@fortawesome/free-solid-svg-icons":"A45Nk","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"55Qlg":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@fortawesome/react-fontawesome":"55Qlg","@fortawesome/free-solid-svg-icons":"A45Nk","../tour-card/tour-card":"hMiZG","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"55Qlg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FontAwesomeIcon", ()=>FontAwesomeIcon
@@ -42872,7 +42966,157 @@ var _iconsCache = {
     faYinYang: faYinYang
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"00c8t":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"hMiZG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0578 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0578.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _fi = require("react-icons/fi");
+const TourCard = ({ tour  })=>{
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        className: "top-tour-card",
+        __source: {
+            fileName: "src/components/tour-card/tour-card.tsx",
+            lineNumber: 10
+        },
+        __self: undefined,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                className: "img-mask",
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 11
+                },
+                __self: undefined,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                    src: tour.img_url,
+                    __source: {
+                        fileName: "src/components/tour-card/tour-card.tsx",
+                        lineNumber: 12
+                    },
+                    __self: undefined
+                })
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                className: "tag",
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 14
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiStar, {
+                        className: "icons",
+                        __source: {
+                            fileName: "src/components/tour-card/tour-card.tsx",
+                            lineNumber: 15
+                        },
+                        __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                        __source: {
+                            fileName: "src/components/tour-card/tour-card.tsx",
+                            lineNumber: 16
+                        },
+                        __self: undefined,
+                        children: tour.tag
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 18
+                },
+                __self: undefined,
+                children: tour.nombre
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                className: "tour-specs",
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 19
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiClock, {
+                        className: "icons",
+                        __source: {
+                            fileName: "src/components/tour-card/tour-card.tsx",
+                            lineNumber: 20
+                        },
+                        __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("p", {
+                        __source: {
+                            fileName: "src/components/tour-card/tour-card.tsx",
+                            lineNumber: 21
+                        },
+                        __self: undefined,
+                        children: [
+                            "Duraci\xf3n: ",
+                            tour.duracion,
+                            " horas"
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                className: "tour-price",
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 23
+                },
+                __self: undefined,
+                children: /*#__PURE__*/ _jsxRuntime.jsxs("p", {
+                    __source: {
+                        fileName: "src/components/tour-card/tour-card.tsx",
+                        lineNumber: 24
+                    },
+                    __self: undefined,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            className: "precio",
+                            __source: {
+                                fileName: "src/components/tour-card/tour-card.tsx",
+                                lineNumber: 24
+                            },
+                            __self: undefined,
+                            children: '$' + tour.precio
+                        }),
+                        " por persona"
+                    ]
+                })
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                __source: {
+                    fileName: "src/components/tour-card/tour-card.tsx",
+                    lineNumber: 27
+                },
+                __self: undefined,
+                children: "Reserva ahora"
+            })
+        ]
+    }, tour.id));
+};
+_c = TourCard;
+exports.default = TourCard;
+var _c;
+$RefreshReg$(_c, "TourCard");
+
+  $parcel$ReactRefreshHelpers$0578.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"00c8t":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FiActivity", ()=>FiActivity
@@ -54138,7 +54382,15 @@ const TopNav = ()=>{
                     lineNumber: 7
                 },
                 __self: undefined,
-                children: "🇵🇷 ViajaPR "
+                children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                    href: "http://localhost:1234/",
+                    __source: {
+                        fileName: "src/components/top-nav/top-nav.tsx",
+                        lineNumber: 7
+                    },
+                    __self: undefined,
+                    children: "🇵🇷 ViajaPR "
+                })
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
@@ -54157,7 +54409,7 @@ const TopNav = ()=>{
                         children: "Inicio"
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "#",
+                        href: "http://localhost:1234/buscar-tours",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
                             lineNumber: 10
@@ -54307,7 +54559,7 @@ const MobileNav = ({ handleNavToggle  })=>{
                 children: "Inicio"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "#",
+                href: "http://localhost:1234/buscar-tours",
                 className: "animate__animated animate__fadeInRight",
                 onClick: handleNavToggle,
                 __source: {
@@ -54405,6 +54657,53 @@ $RefreshReg$(_c, "SobreNosotros");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4Jk6O":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$819b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$819b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _tourCard = require("../tour-card/tour-card");
+var _tourCardDefault = parcelHelpers.interopDefault(_tourCard);
+const ToursGrid = ({ tours  })=>{
+    const renderAllTours = ()=>{
+        return tours.map((tour)=>{
+            return(/*#__PURE__*/ _jsxRuntime.jsx(_tourCardDefault.default, {
+                tour: tour,
+                __source: {
+                    fileName: "src/components/tours-grid/tours-grid.tsx",
+                    lineNumber: 8
+                },
+                __self: undefined
+            }));
+        });
+    };
+    return(/*#__PURE__*/ _jsxRuntime.jsx("section", {
+        className: "tour-grid",
+        __source: {
+            fileName: "src/components/tours-grid/tours-grid.tsx",
+            lineNumber: 13
+        },
+        __self: undefined,
+        children: renderAllTours()
+    }));
+};
+_c = ToursGrid;
+exports.default = ToursGrid;
+var _c;
+$RefreshReg$(_c, "ToursGrid");
+
+  $parcel$ReactRefreshHelpers$819b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../tour-card/tour-card":"hMiZG","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
 
 //# sourceMappingURL=index.9978ec32.js.map
