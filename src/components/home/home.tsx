@@ -52,7 +52,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                     <h2>Isla del Encanto</h2>
                 </div>
             </section>
-            <section className="tour-grid">
+            <section className="top-tour-grid">
                 <div className="top-tours-header">
                     <h1>Tours más vendidos</h1>
                     <a className="ver-mas" href="#">Ver más</a>

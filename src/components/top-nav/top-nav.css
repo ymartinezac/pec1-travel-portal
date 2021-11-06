@@ -17,6 +17,10 @@ header h1 a {
 
 }
 
+header span {
+    color: var(--blue)
+}
+
 
 nav {
 

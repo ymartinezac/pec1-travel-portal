@@ -10,12 +10,15 @@ const Toggle = ({handleNavToggle}) => {
     };
 
 
+
     return (
         <div className="toggle-wrap">
-            <div className={isActive ? "hamburger active" : "hamburger inactive"}  onClick={() => { handleNavToggle(); ToggleClass();} }>
-                <span className="bar"></span>
-                <span className="bar"></span>
-                <span className="bar"></span>
+            <div className={isActive ? "hamburguer-wrap active" : "hamburguer-wrap inactive"}>
+                <div className={isActive ? "hamburger active" : "hamburger inactive"}  onClick={() => { handleNavToggle(); ToggleClass();} }>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </div>
         </div>
 

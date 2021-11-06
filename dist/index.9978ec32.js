@@ -26215,7 +26215,7 @@ const Home = ({ tours  })=>{
                 })
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("section", {
-                className: "tour-grid",
+                className: "top-tour-grid",
                 __source: {
                     fileName: "src/components/home/home.tsx",
                     lineNumber: 55
@@ -54382,14 +54382,25 @@ const TopNav = ()=>{
                     lineNumber: 7
                 },
                 __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                children: /*#__PURE__*/ _jsxRuntime.jsxs("a", {
                     href: "http://localhost:1234/",
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
                         lineNumber: 7
                     },
                     __self: undefined,
-                    children: "🇵🇷 ViajaPR "
+                    children: [
+                        "🇵🇷 Viaja",
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            __source: {
+                                fileName: "src/components/top-nav/top-nav.tsx",
+                                lineNumber: 7
+                            },
+                            __self: undefined,
+                            children: "PR"
+                        }),
+                        " "
+                    ]
                 })
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
@@ -54464,46 +54475,54 @@ const Toggle = ({ handleNavToggle  })=>{
         className: "toggle-wrap",
         __source: {
             fileName: "src/components/toggle/toggle.tsx",
-            lineNumber: 14
+            lineNumber: 15
         },
         __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
-            className: isActive ? "hamburger active" : "hamburger inactive",
-            onClick: ()=>{
-                handleNavToggle();
-                ToggleClass();
-            },
+        children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+            className: isActive ? "hamburguer-wrap active" : "hamburguer-wrap inactive",
             __source: {
                 fileName: "src/components/toggle/toggle.tsx",
-                lineNumber: 15
+                lineNumber: 16
             },
             __self: undefined,
-            children: [
-                /*#__PURE__*/ _jsxRuntime.jsx("span", {
-                    className: "bar",
-                    __source: {
-                        fileName: "src/components/toggle/toggle.tsx",
-                        lineNumber: 16
-                    },
-                    __self: undefined
-                }),
-                /*#__PURE__*/ _jsxRuntime.jsx("span", {
-                    className: "bar",
-                    __source: {
-                        fileName: "src/components/toggle/toggle.tsx",
-                        lineNumber: 17
-                    },
-                    __self: undefined
-                }),
-                /*#__PURE__*/ _jsxRuntime.jsx("span", {
-                    className: "bar",
-                    __source: {
-                        fileName: "src/components/toggle/toggle.tsx",
-                        lineNumber: 18
-                    },
-                    __self: undefined
-                })
-            ]
+            children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                className: isActive ? "hamburger active" : "hamburger inactive",
+                onClick: ()=>{
+                    handleNavToggle();
+                    ToggleClass();
+                },
+                __source: {
+                    fileName: "src/components/toggle/toggle.tsx",
+                    lineNumber: 17
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                        className: "bar",
+                        __source: {
+                            fileName: "src/components/toggle/toggle.tsx",
+                            lineNumber: 18
+                        },
+                        __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                        className: "bar",
+                        __source: {
+                            fileName: "src/components/toggle/toggle.tsx",
+                            lineNumber: 19
+                        },
+                        __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                        className: "bar",
+                        __source: {
+                            fileName: "src/components/toggle/toggle.tsx",
+                            lineNumber: 20
+                        },
+                        __self: undefined
+                    })
+                ]
+            })
         })
     }));
 };
@@ -54684,14 +54703,25 @@ const ToursGrid = ({ tours  })=>{
             }));
         });
     };
-    return(/*#__PURE__*/ _jsxRuntime.jsx("section", {
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("section", {
         className: "tour-grid",
         __source: {
             fileName: "src/components/tours-grid/tours-grid.tsx",
             lineNumber: 13
         },
         __self: undefined,
-        children: renderAllTours()
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                className: "buscar-tours-header",
+                __source: {
+                    fileName: "src/components/tours-grid/tours-grid.tsx",
+                    lineNumber: 14
+                },
+                __self: undefined,
+                children: "Buscar Tours"
+            }),
+            renderAllTours()
+        ]
     }));
 };
 _c = ToursGrid;
