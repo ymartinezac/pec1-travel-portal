@@ -2,7 +2,6 @@ import React from "react";
 import Tour from "../../models/tour";
 import { FiClock, FiStar } from "react-icons/fi";
 
-
 const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
 
 
@@ -24,7 +23,7 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
             <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
         </div>
         
-        <button>Reserva ahora</button>
+        <button><a href={"/tours/"+tour.id}>Reserva ahora </a></button>
     </div>
  )
 }

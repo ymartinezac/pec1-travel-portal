@@ -10,6 +10,7 @@ import Footer from "./components/footer/footer";
 import SobreNosotros from "./components/sobre-nosotros/sobre-nosotros";
 import ToursGrid from "./components/tours-grid/tours-grid";
 import Tour from "./models/tour";
+import TourDetail from "./components/tour-detail/tour-detail";
 
 function App ()  {
     const [navToggle, setNavToggle] = React.useState<boolean>(false);
@@ -64,7 +65,7 @@ function App ()  {
             tag: "bestseller"
         },
         {
-            id: 1,
+            id: 4,
             nombre: "Bahía Bioluminiscente",
             img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max", 
             descripcion: "Lorem ipsum",
@@ -78,7 +79,7 @@ function App ()  {
             tag: "bestseller"
         }, 
         {
-            id: 2,
+            id: 5,
             nombre: "Bosque Tropical El Yunque",
             img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200", 
             descripcion: "Lorem ipsum",
@@ -92,7 +93,7 @@ function App ()  {
             tag: "bestseller"
         },
         {
-            id: 3,
+            id: 6,
             nombre: "Cueva Ventana TOP",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80", 
             descripcion: "Lorem ipsum",
@@ -106,7 +107,7 @@ function App ()  {
             tag: "bestseller"
         },
         {
-            id: 1,
+            id: 7,
             nombre: "Bahía Bioluminiscente",
             img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max", 
             descripcion: "Lorem ipsum",
@@ -120,7 +121,7 @@ function App ()  {
             tag: "bestseller"
         }, 
         {
-            id: 2,
+            id: 8,
             nombre: "Bosque Tropical El Yunque",
             img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200", 
             descripcion: "Lorem ipsum",
@@ -134,7 +135,7 @@ function App ()  {
             tag: "bestseller"
         },
         {
-            id: 3,
+            id: 9,
             nombre: "Cueva Ventana",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80", 
             descripcion: "Lorem ipsum",
@@ -157,8 +158,9 @@ function App ()  {
                     <Router>
                         <Switch>
                             <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
-                            <Route exact path="/buscar-tours" render={(props) => <ToursGrid tours={tours} {...props} /> }  />
+                            <Route path="/buscar-tours" render={(props) => <ToursGrid tours={tours} {...props} /> }  />
                             <Route path="/sobre-nosotros" component={SobreNosotros} />
+                            <Route path="/tours/:id" render={({ match }) => (<TourDetail tour={tours.find((item) => String(item.id) === String(match.params.id))} />)}/>
                         </Switch>   
                     </Router>
                     <Footer />
