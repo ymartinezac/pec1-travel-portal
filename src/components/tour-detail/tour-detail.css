@@ -1,0 +1,24 @@
+.tour-detail img {
+    width: 100vw;
+    width: 110%;
+    position: relative;
+    top: -20vh;
+    z-index: 0;
+}
+
+.tour-img-mask {
+    overflow: hidden;
+    height: 60vh;
+  
+}
+
+.tour-detail h1 {
+    position: relative;
+    z-index: 100;
+    margin-top: -62px;
+    padding: 13px 12vw;
+    width: 100%;
+    color: var(--main-bg-color);
+    background-color: rgba(0, 0, 0, 0.623);
+}
+

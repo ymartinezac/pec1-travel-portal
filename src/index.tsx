@@ -25,7 +25,7 @@ function App ()  {
         {
             id: 1,
             nombre: "Bahía Bioluminiscente TOP",
-            img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max", 
+            img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max", 
             descripcion: "Lorem ipsum",
             duracion: 6,
             guia: true,

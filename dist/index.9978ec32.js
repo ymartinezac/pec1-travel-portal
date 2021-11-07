@@ -977,7 +977,7 @@ function App() {
         {
             id: 1,
             nombre: "Bahía Bioluminiscente TOP",
-            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
+            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
             descripcion: "Lorem ipsum",
             duracion: 6,
             guia: true,
@@ -1303,7 +1303,7 @@ function App() {
         })
     }));
 }
-_s(App, "xLMmqESlQysrTwO+6udLQRGw0kM=");
+_s(App, "b/ccRvmczRRJmgzBUARu90mdILU=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
@@ -54770,17 +54770,34 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const TourDetail = ({ tour  })=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
+        className: "tour-detail",
         __source: {
             fileName: "src/components/tour-detail/tour-detail.tsx",
             lineNumber: 8
         },
         __self: undefined,
         children: [
-            "Tour details page: ",
-            /*#__PURE__*/ _jsxRuntime.jsx("strong", {
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                className: "tour-img-mask",
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
                     lineNumber: 9
+                },
+                __self: undefined,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                    src: tour.img_url,
+                    alt: tour.nombre,
+                    __source: {
+                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                        lineNumber: 10
+                    },
+                    __self: undefined
+                })
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                    lineNumber: 13
                 },
                 __self: undefined,
                 children: tour.nombre
