@@ -152,9 +152,9 @@ function App ()  {
 
    
     return (
-       
+        <Router>
             <main >
-                 <Router>
+               
                 <React.StrictMode>
                
                     <Toggle handleNavToggle={handleNavToggle}/> 
@@ -162,20 +162,20 @@ function App ()  {
                     <TopNav />
                    
                         <Routes>
-                            <Route path="/" render={(props) => <Home tours={tours} {...props} /> }  />
-                            <Route path="/buscar-tours" render={(props) => <ToursGrid tours={tours} {...props} /> }  />
+                            <Route path="/" element={<Home tours={tours} /> }  />
+                            <Route path="/buscar-tours" element={<ToursGrid tours={tours}/> }  />
                             <Route path="/presentacion" element={<Presentacion/>} />
                             <Route path="/enlaces" element={<Enlaces />} />
-                            <Route path="/tours/:id" render={({ match }) => (<TourDetail tour={tours.find((item) => String(item.id) === String(match.params.id))} />)}/>
+                            <Route path="/tours/:id" element={<TourDetail tours={tours} />}/>
                         </Routes>   
                 
                     <Footer />
                   
                 </React.StrictMode>
-                  </Router>
+               
             </main>
             
-       
+            </Router>
     )
 }
 

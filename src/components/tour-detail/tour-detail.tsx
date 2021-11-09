@@ -1,16 +1,20 @@
 import React from "react";
-
+import { useParams } from 'react-router-dom';
 import { FiClock, FiCompass, FiUserCheck } from "react-icons/fi";
 
 
 
-const TourDetail = ({ tour }) => {
+const TourDetail = ({ tours }) => {
+    const tour = tours.find(t => t.id === useParams());
+    
     const backgroundDiv = {
         backgroundImage: "url(" + tour.img_url+ ")",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center"
     }
+
+    
 
   
     return (
