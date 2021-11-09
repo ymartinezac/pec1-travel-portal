@@ -2,7 +2,7 @@
 import { useHistory } from "react-router-dom";
 
 
-  let history = useHistory();
+let history = useHistory();
 
 export function handleClickHome() {
     history.push("/");
