@@ -14,14 +14,6 @@ import Tour from "./models/tour";
 import TourDetail from "./components/tour-detail/tour-detail";
 
 function App ()  {
-    const [navToggle, setNavToggle] = React.useState<boolean>(false);
-   
-    
-    const handleNavToggle = () => {
-        setNavToggle(!navToggle);
-        
-    };
-
     const [tours, setTour] = React.useState<Tour[]>([
         {
             id: 1,
@@ -150,6 +142,15 @@ function App ()  {
             tag: "bestseller"
         }
     ])
+    const [navToggle, setNavToggle] = React.useState<boolean>(false);
+   
+    
+    const handleNavToggle = () => {
+        setNavToggle(!navToggle);
+        
+    };
+
+   
     return (
         <Router>
             <main >
