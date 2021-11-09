@@ -1,7 +1,7 @@
 import React from "react";
 import CSS from 'csstype';
 import { url } from "inspector";
-import  useHover  from "../../utils/useHover";
+
 import { FiClock, FiStar, FiCompass, FiUserCheck } from "react-icons/fi";
 
 
@@ -14,7 +14,6 @@ const TourDetail = ({ tour }) => {
         backgroundPosition: "center"
     }
 
-    const [tooltip, isTooltipHovered] = useHover();
   
     return (
         <div className="tour-detail" >

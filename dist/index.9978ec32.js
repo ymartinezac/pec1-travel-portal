@@ -54402,25 +54402,26 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _functions = require("../../utils/functions");
 const TopNav = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("header", {
         __source: {
             fileName: "src/components/top-nav/top-nav.tsx",
-            lineNumber: 6
+            lineNumber: 9
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 7
+                    lineNumber: 10
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("a", {
-                    href: "http://localhost:1234/",
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
-                        lineNumber: 7
+                        lineNumber: 10
                     },
                     __self: undefined,
                     children: [
@@ -54428,54 +54429,57 @@ const TopNav = ()=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             __source: {
                                 fileName: "src/components/top-nav/top-nav.tsx",
-                                lineNumber: 7
+                                lineNumber: 10
                             },
                             __self: undefined,
-                            children: "PR"
-                        }),
-                        " "
+                            children: " PR"
+                        })
                     ]
                 })
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 8
+                    lineNumber: 11
                 },
                 __self: undefined,
                 children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "http://localhost:1234/",
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                        to: "/",
+                        onClick: _functions.handleClickHome,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 9
+                            lineNumber: 12
                         },
                         __self: undefined,
                         children: "Inicio"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "http://localhost:1234/buscar-tours",
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                        to: "/buscar-tours",
+                        onClick: _functions.handleClickBuscarTours,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 10
+                            lineNumber: 13
                         },
                         __self: undefined,
                         children: "Buscar Tours"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "http://localhost:1234/presentacion",
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                        to: "/presentacion",
+                        onClick: _functions.handleClickPresentacion,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 11
+                            lineNumber: 14
                         },
                         __self: undefined,
                         children: "Presentaci\xf3n"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "http://localhost:1234/enlaces",
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                        to: "/enlaces",
+                        onClick: _functions.handleClickEnlaces,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 12
+                            lineNumber: 15
                         },
                         __self: undefined,
                         children: "Enlaces"
@@ -54495,7 +54499,73 @@ $RefreshReg$(_c, "TopNav");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4KzLw":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"etVME","../../utils/functions":"1ezJK","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"1ezJK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$42b6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$42b6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "handleClickEnlaces", ()=>handleClickEnlaces
+);
+parcelHelpers.export(exports, "handleClickHome", ()=>handleClickHome
+);
+parcelHelpers.export(exports, "handleClickPresentacion", ()=>handleClickPresentacion
+);
+parcelHelpers.export(exports, "handleClickBuscarTours", ()=>handleClickBuscarTours
+);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+let history = _reactRouterDom.useHistory();
+function handleClickHome() {
+    history.push("/");
+}
+function handleClickBuscarTours() {
+    history.push("/buscar-tours");
+}
+function handleClickPresentacion() {
+    history.push("/presentacion");
+}
+function handleClickEnlaces() {
+    history.push("/enlaces");
+}
+const useHover = ()=>{
+    _s();
+    const [isHovered, setHovered] = _reactDefault.default.useState(false);
+    const ref = _reactDefault.default.useRef(null);
+    const handleMouseover = ()=>setHovered(true)
+    ;
+    const handleMouseout = ()=>setHovered(false)
+    ;
+    _reactDefault.default.useEffect(()=>{
+        if (ref.current) {
+            ref.current.addEventListener("mouseover", handleMouseover);
+            ref.current.addEventListener("mouseout", handleMouseout);
+            return ()=>{
+                ref.current.removeEventListener("mouseover", handleMouseover);
+                ref.current.removeEventListener("mouseout", handleMouseout);
+            };
+        }
+    }, [
+        ref.current
+    ]);
+    return [
+        ref,
+        isHovered
+    ];
+};
+_s(useHover, "l4gmytTp2Nclnk/FzMcyqTEimq8=");
+
+  $parcel$ReactRefreshHelpers$42b6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"4mchR","react-router-dom":"etVME","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4KzLw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b682 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54592,63 +54662,61 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _functions = require("../../utils/functions");
 const MobileNav = ({ handleNavToggle  })=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "mobile-nav",
         __source: {
             fileName: "src/components/mobile-nav/mobile-nav.tsx",
-            lineNumber: 8
+            lineNumber: 11
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 9
+                    lineNumber: 12
                 },
                 __self: undefined,
                 children: "🇵🇷 ViajaPR "
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/",
-                className: "animate__animated animate__fadeInRight",
-                onClick: handleNavToggle,
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                to: "/",
+                onClick: _functions.handleClickHome,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 10
+                    lineNumber: 13
                 },
                 __self: undefined,
                 children: "Inicio"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/buscar-tours",
-                className: "animate__animated animate__fadeInRight",
-                onClick: handleNavToggle,
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                to: "/buscar-tours",
+                onClick: _functions.handleClickBuscarTours,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 11
+                    lineNumber: 14
                 },
                 __self: undefined,
                 children: "Buscar Tours"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/presentacion",
-                className: "animate__animated animate__fadeInRight",
-                onClick: handleNavToggle,
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                to: "/presentacion",
+                onClick: _functions.handleClickPresentacion,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 12
+                    lineNumber: 15
                 },
                 __self: undefined,
                 children: "Presentaci\xf3n"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/enlaces",
-                className: "animate__animated animate__fadeInRight",
-                onClick: handleNavToggle,
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                to: "/enlaces",
+                onClick: _functions.handleClickEnlaces,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 13
+                    lineNumber: 16
                 },
                 __self: undefined,
                 children: "Enlaces"
@@ -54666,7 +54734,7 @@ $RefreshReg$(_c, "MobileNav");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"dNiNj":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"etVME","../../utils/functions":"1ezJK","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"dNiNj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$e9fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54999,24 +55067,19 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _useHover = require("../../utils/useHover");
-var _useHoverDefault = parcelHelpers.interopDefault(_useHover);
 var _fi = require("react-icons/fi");
-var _s = $RefreshSig$();
 const TourDetail = ({ tour  })=>{
-    _s();
     const backgroundDiv = {
         backgroundImage: "url(" + tour.img_url + ")",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center"
     };
-    const [tooltip, isTooltipHovered] = _useHoverDefault.default();
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "tour-detail",
         __source: {
             fileName: "src/components/tour-detail/tour-detail.tsx",
-            lineNumber: 20
+            lineNumber: 19
         },
         __self: undefined,
         children: [
@@ -55025,13 +55088,13 @@ const TourDetail = ({ tour  })=>{
                 style: backgroundDiv,
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 21
+                    lineNumber: 20
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                     __source: {
                         fileName: "src/components/tour-detail/tour-detail.tsx",
-                        lineNumber: 22
+                        lineNumber: 21
                     },
                     __self: undefined,
                     children: tour.nombre
@@ -55041,7 +55104,7 @@ const TourDetail = ({ tour  })=>{
                 className: "body",
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 24
+                    lineNumber: 23
                 },
                 __self: undefined,
                 children: [
@@ -55049,14 +55112,14 @@ const TourDetail = ({ tour  })=>{
                         className: "content",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 25
+                            lineNumber: 24
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsx("h3", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 28
+                                    lineNumber: 27
                                 },
                                 __self: undefined,
                                 children: "Descripci\xf3n"
@@ -55064,7 +55127,7 @@ const TourDetail = ({ tour  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 29
+                                    lineNumber: 28
                                 },
                                 __self: undefined,
                                 children: tour.descripcion
@@ -55073,7 +55136,7 @@ const TourDetail = ({ tour  })=>{
                                 className: "details-group",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 30
+                                    lineNumber: 29
                                 },
                                 __self: undefined,
                                 children: [
@@ -55081,7 +55144,7 @@ const TourDetail = ({ tour  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 31
+                                            lineNumber: 30
                                         },
                                         __self: undefined,
                                         children: [
@@ -55089,14 +55152,14 @@ const TourDetail = ({ tour  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 32
+                                                    lineNumber: 31
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 33
+                                                    lineNumber: 32
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -55111,7 +55174,7 @@ const TourDetail = ({ tour  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 35
+                                            lineNumber: 34
                                         },
                                         __self: undefined,
                                         children: [
@@ -55119,14 +55182,14 @@ const TourDetail = ({ tour  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 36
+                                                    lineNumber: 35
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 37
+                                                    lineNumber: 36
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -55140,7 +55203,7 @@ const TourDetail = ({ tour  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 40
+                                            lineNumber: 39
                                         },
                                         __self: undefined,
                                         children: [
@@ -55148,14 +55211,14 @@ const TourDetail = ({ tour  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 41
+                                                    lineNumber: 40
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 42
+                                                    lineNumber: 41
                                                 },
                                                 __self: undefined,
                                                 children: "Tour con gu\xeda"
@@ -55170,14 +55233,14 @@ const TourDetail = ({ tour  })=>{
                         className: "checkout",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 46
+                            lineNumber: 45
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsxs("h2", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 47
+                                    lineNumber: 46
                                 },
                                 __self: undefined,
                                 children: [
@@ -55190,7 +55253,7 @@ const TourDetail = ({ tour  })=>{
                                 className: "btn-reservar",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 49
+                                    lineNumber: 48
                                 },
                                 __self: undefined,
                                 children: "Reservar"
@@ -55202,9 +55265,6 @@ const TourDetail = ({ tour  })=>{
         ]
     }));
 };
-_s(TourDetail, "Dxri0INYfNm/CoBumxn59u4uZW0=", false, function() {
-    return [_useHoverDefault.default];
-});
 _c = TourDetail;
 exports.default = TourDetail;
 var _c;
@@ -55215,51 +55275,6 @@ $RefreshReg$(_c, "TourDetail");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../../utils/useHover":"arEEo","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"arEEo":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$8d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8d82.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _s = $RefreshSig$();
-const useHover = ()=>{
-    _s();
-    const [isHovered, setHovered] = _reactDefault.default.useState(false);
-    const ref = _reactDefault.default.useRef(null);
-    const handleMouseover = ()=>setHovered(true)
-    ;
-    const handleMouseout = ()=>setHovered(false)
-    ;
-    _reactDefault.default.useEffect(()=>{
-        if (ref.current) {
-            ref.current.addEventListener("mouseover", handleMouseover);
-            ref.current.addEventListener("mouseout", handleMouseout);
-            return ()=>{
-                ref.current.removeEventListener("mouseover", handleMouseover);
-                ref.current.removeEventListener("mouseout", handleMouseout);
-            };
-        }
-    }, [
-        ref.current
-    ]);
-    return [
-        ref,
-        isHovered
-    ];
-};
-_s(useHover, "l4gmytTp2Nclnk/FzMcyqTEimq8=");
-exports.default = useHover;
-
-  $parcel$ReactRefreshHelpers$8d82.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
 
 //# sourceMappingURL=index.9978ec32.js.map
