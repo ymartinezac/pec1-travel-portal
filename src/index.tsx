@@ -151,12 +151,13 @@ function App ()  {
         }
     ])
     return (
+        <Router>
             <main >
                 <React.StrictMode>
                     <Toggle handleNavToggle={handleNavToggle}/> 
                     { navToggle ? <MobileNav handleNavToggle={handleNavToggle}/> : null}
                     <TopNav />
-                    <Router>
+                   
                         <Switch>
                             <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
                             <Route path="/buscar-tours" render={(props) => <ToursGrid tours={tours} {...props} /> }  />
@@ -164,10 +165,11 @@ function App ()  {
                             <Route path="/enlaces" component={Enlaces} />
                             <Route path="/tours/:id" render={({ match }) => (<TourDetail tour={tours.find((item) => String(item.id) === String(match.params.id))} />)}/>
                         </Switch>   
-                    </Router>
+                
                     <Footer />
                 </React.StrictMode>
             </main>
+            </Router>
        
     )
 }

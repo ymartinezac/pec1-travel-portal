@@ -1193,52 +1193,52 @@ function App() {
             tag: "bestseller"
         }
     ]);
-    return(/*#__PURE__*/ _jsxRuntime.jsx("main", {
+    return(/*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "src/index.tsx",
             lineNumber: 154
         },
         __self: this,
-        children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactDefault.default.StrictMode, {
+        children: /*#__PURE__*/ _jsxRuntime.jsx("main", {
             __source: {
                 fileName: "src/index.tsx",
                 lineNumber: 155
             },
             __self: this,
-            children: [
-                /*#__PURE__*/ _jsxRuntime.jsx(_toggleDefault.default, {
-                    handleNavToggle: handleNavToggle,
-                    __source: {
-                        fileName: "src/index.tsx",
-                        lineNumber: 156
-                    },
-                    __self: this
-                }),
-                navToggle ? /*#__PURE__*/ _jsxRuntime.jsx(_mobileNavDefault.default, {
-                    handleNavToggle: handleNavToggle,
-                    __source: {
-                        fileName: "src/index.tsx",
-                        lineNumber: 157
-                    },
-                    __self: this
-                }) : null,
-                /*#__PURE__*/ _jsxRuntime.jsx(_topNavDefault.default, {
-                    __source: {
-                        fileName: "src/index.tsx",
-                        lineNumber: 158
-                    },
-                    __self: this
-                }),
-                /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
-                    __source: {
-                        fileName: "src/index.tsx",
-                        lineNumber: 159
-                    },
-                    __self: this,
-                    children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Switch, {
+            children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactDefault.default.StrictMode, {
+                __source: {
+                    fileName: "src/index.tsx",
+                    lineNumber: 156
+                },
+                __self: this,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx(_toggleDefault.default, {
+                        handleNavToggle: handleNavToggle,
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 160
+                            lineNumber: 157
+                        },
+                        __self: this
+                    }),
+                    navToggle ? /*#__PURE__*/ _jsxRuntime.jsx(_mobileNavDefault.default, {
+                        handleNavToggle: handleNavToggle,
+                        __source: {
+                            fileName: "src/index.tsx",
+                            lineNumber: 158
+                        },
+                        __self: this
+                    }) : null,
+                    /*#__PURE__*/ _jsxRuntime.jsx(_topNavDefault.default, {
+                        __source: {
+                            fileName: "src/index.tsx",
+                            lineNumber: 159
+                        },
+                        __self: this
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Switch, {
+                        __source: {
+                            fileName: "src/index.tsx",
+                            lineNumber: 161
                         },
                         __self: this,
                         children: [
@@ -1252,7 +1252,7 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 161
+                                    lineNumber: 162
                                 },
                                 __self: this
                             }),
@@ -1265,7 +1265,7 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 162
+                                    lineNumber: 163
                                 },
                                 __self: this
                             }),
@@ -1274,7 +1274,7 @@ function App() {
                                 component: _presentacionDefault.default,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 163
+                                    lineNumber: 164
                                 },
                                 __self: this
                             }),
@@ -1283,7 +1283,7 @@ function App() {
                                 component: _enlacesDefault.default,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 164
+                                    lineNumber: 165
                                 },
                                 __self: this
                             }),
@@ -1296,21 +1296,21 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 165
+                                    lineNumber: 166
                                 },
                                 __self: this
                             })
                         ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx(_footerDefault.default, {
+                        __source: {
+                            fileName: "src/index.tsx",
+                            lineNumber: 169
+                        },
+                        __self: this
                     })
-                }),
-                /*#__PURE__*/ _jsxRuntime.jsx(_footerDefault.default, {
-                    __source: {
-                        fileName: "src/index.tsx",
-                        lineNumber: 168
-                    },
-                    __self: this
-                })
-            ]
+                ]
+            })
         })
     }));
 }
@@ -1320,7 +1320,7 @@ const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
     __source: {
         fileName: "src/index.tsx",
-        lineNumber: 176
+        lineNumber: 178
     },
     __self: undefined
 }), mount);
@@ -54404,24 +54404,25 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _functions = require("../../utils/functions");
+var _functionsDefault = parcelHelpers.interopDefault(_functions);
 const TopNav = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("header", {
         __source: {
             fileName: "src/components/top-nav/top-nav.tsx",
-            lineNumber: 9
+            lineNumber: 12
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 10
+                    lineNumber: 13
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("a", {
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
-                        lineNumber: 10
+                        lineNumber: 13
                     },
                     __self: undefined,
                     children: [
@@ -54429,7 +54430,7 @@ const TopNav = ()=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             __source: {
                                 fileName: "src/components/top-nav/top-nav.tsx",
-                                lineNumber: 10
+                                lineNumber: 13
                             },
                             __self: undefined,
                             children: " PR"
@@ -54440,46 +54441,46 @@ const TopNav = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 11
+                    lineNumber: 14
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                         to: "/",
-                        onClick: _functions.handleClickHome,
+                        onClick: _functionsDefault.default,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 12
+                            lineNumber: 15
                         },
                         __self: undefined,
                         children: "Inicio"
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                         to: "/buscar-tours",
-                        onClick: _functions.handleClickBuscarTours,
+                        onClick: _functionsDefault.default,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 13
+                            lineNumber: 16
                         },
                         __self: undefined,
                         children: "Buscar Tours"
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                         to: "/presentacion",
-                        onClick: _functions.handleClickPresentacion,
+                        onClick: _functionsDefault.default,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 14
+                            lineNumber: 17
                         },
                         __self: undefined,
                         children: "Presentaci\xf3n"
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                         to: "/enlaces",
-                        onClick: _functions.handleClickEnlaces,
+                        onClick: _functionsDefault.default,
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 15
+                            lineNumber: 18
                         },
                         __self: undefined,
                         children: "Enlaces"
@@ -54500,26 +54501,9 @@ $RefreshReg$(_c, "TopNav");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"etVME","../../utils/functions":"1ezJK","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"1ezJK":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$42b6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$42b6.prelude(module);
-
-try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "handleClickEnlaces", ()=>handleClickEnlaces
-);
-parcelHelpers.export(exports, "handleClickHome", ()=>handleClickHome
-);
-parcelHelpers.export(exports, "handleClickPresentacion", ()=>handleClickPresentacion
-);
-parcelHelpers.export(exports, "handleClickBuscarTours", ()=>handleClickBuscarTours
-);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
 let history = _reactRouterDom.useHistory();
 function handleClickHome() {
     history.push("/");
@@ -54533,39 +54517,14 @@ function handleClickPresentacion() {
 function handleClickEnlaces() {
     history.push("/enlaces");
 }
-const useHover = ()=>{
-    _s();
-    const [isHovered, setHovered] = _reactDefault.default.useState(false);
-    const ref = _reactDefault.default.useRef(null);
-    const handleMouseover = ()=>setHovered(true)
-    ;
-    const handleMouseout = ()=>setHovered(false)
-    ;
-    _reactDefault.default.useEffect(()=>{
-        if (ref.current) {
-            ref.current.addEventListener("mouseover", handleMouseover);
-            ref.current.addEventListener("mouseout", handleMouseout);
-            return ()=>{
-                ref.current.removeEventListener("mouseover", handleMouseover);
-                ref.current.removeEventListener("mouseout", handleMouseout);
-            };
-        }
-    }, [
-        ref.current
-    ]);
-    return [
-        ref,
-        isHovered
-    ];
+exports.default = {
+    handleClickEnlaces,
+    handleClickHome,
+    handleClickPresentacion,
+    handleClickBuscarTours
 };
-_s(useHover, "l4gmytTp2Nclnk/FzMcyqTEimq8=");
 
-  $parcel$ReactRefreshHelpers$42b6.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"4mchR","react-router-dom":"etVME","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4KzLw":[function(require,module,exports) {
+},{"react-router-dom":"etVME","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"4KzLw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b682 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54664,59 +54623,60 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _functions = require("../../utils/functions");
+var _functionsDefault = parcelHelpers.interopDefault(_functions);
 const MobileNav = ({ handleNavToggle  })=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "mobile-nav",
         __source: {
             fileName: "src/components/mobile-nav/mobile-nav.tsx",
-            lineNumber: 11
+            lineNumber: 14
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 12
+                    lineNumber: 15
                 },
                 __self: undefined,
                 children: "🇵🇷 ViajaPR "
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                 to: "/",
-                onClick: _functions.handleClickHome,
+                onClick: _functionsDefault.default,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 13
+                    lineNumber: 16
                 },
                 __self: undefined,
                 children: "Inicio"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                 to: "/buscar-tours",
-                onClick: _functions.handleClickBuscarTours,
+                onClick: _functionsDefault.default,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 14
+                    lineNumber: 17
                 },
                 __self: undefined,
                 children: "Buscar Tours"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                 to: "/presentacion",
-                onClick: _functions.handleClickPresentacion,
+                onClick: _functionsDefault.default,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 15
+                    lineNumber: 18
                 },
                 __self: undefined,
                 children: "Presentaci\xf3n"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
                 to: "/enlaces",
-                onClick: _functions.handleClickEnlaces,
+                onClick: _functionsDefault.default,
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 16
+                    lineNumber: 19
                 },
                 __self: undefined,
                 children: "Enlaces"

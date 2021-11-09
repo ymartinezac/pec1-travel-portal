@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useHistory } from "react-router-dom";
 
 
@@ -17,33 +17,7 @@ import { useHistory } from "react-router-dom";
     history.push("/enlaces");
   }
 
-
-
-const useHover = () => {
-    const [isHovered, setHovered] = React.useState(false)
-  
-    const ref = React.useRef(null)
-  
-    const handleMouseover = () => setHovered(true)
-    const handleMouseout = () => setHovered(false)
-  
-    React.useEffect(() => {
-      if (ref.current) {
-        ref.current.addEventListener("mouseover", handleMouseover)
-        ref.current.addEventListener("mouseout", handleMouseout)
-  
-        return () => {
-          ref.current.removeEventListener("mouseover", handleMouseover)
-          ref.current.removeEventListener("mouseout", handleMouseout)
-        }
-      }
-    }, [ref.current])
-  
-    return [ref, isHovered]
-  }
-
-
-  export {
+  export default {
     handleClickEnlaces,
     handleClickHome,
     handleClickPresentacion,
