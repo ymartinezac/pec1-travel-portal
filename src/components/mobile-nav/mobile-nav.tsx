@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { handleClickBuscarTours } from '../../utils/functions';
-import { handleClickHome } from '../../utils/functions';
-import { handleClickPresentacion } from '../../utils/functions';
-import { handleClickEnlaces } from '../../utils/functions';
+
 
 
 

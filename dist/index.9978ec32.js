@@ -53685,20 +53685,20 @@ const TopNav = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("header", {
         __source: {
             fileName: "src/components/top-nav/top-nav.tsx",
-            lineNumber: 12
+            lineNumber: 9
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 13
+                    lineNumber: 10
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("a", {
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
-                        lineNumber: 13
+                        lineNumber: 10
                     },
                     __self: undefined,
                     children: [
@@ -53706,7 +53706,7 @@ const TopNav = ()=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             __source: {
                                 fileName: "src/components/top-nav/top-nav.tsx",
-                                lineNumber: 13
+                                lineNumber: 10
                             },
                             __self: undefined,
                             children: " PR"
@@ -53717,7 +53717,7 @@ const TopNav = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 14
+                    lineNumber: 11
                 },
                 __self: undefined,
                 children: [
@@ -53725,7 +53725,7 @@ const TopNav = ()=>{
                         to: "/",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 16
+                            lineNumber: 13
                         },
                         __self: undefined,
                         children: "Inicio"
@@ -53734,7 +53734,7 @@ const TopNav = ()=>{
                         to: "/buscar-tours",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 17
+                            lineNumber: 14
                         },
                         __self: undefined,
                         children: "Buscar Tours"
@@ -53743,7 +53743,7 @@ const TopNav = ()=>{
                         to: "/presentacion",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 18
+                            lineNumber: 15
                         },
                         __self: undefined,
                         children: "Presentaci\xf3n"
@@ -53752,7 +53752,7 @@ const TopNav = ()=>{
                         to: "/enlaces",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 19
+                            lineNumber: 16
                         },
                         __self: undefined,
                         children: "Enlaces"
@@ -53875,14 +53875,14 @@ const MobileNav = ()=>{
         className: "mobile-nav",
         __source: {
             fileName: "src/components/mobile-nav/mobile-nav.tsx",
-            lineNumber: 15
+            lineNumber: 12
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 16
+                    lineNumber: 13
                 },
                 __self: undefined,
                 children: "🇵🇷 ViajaPR "
@@ -53891,7 +53891,7 @@ const MobileNav = ()=>{
                 to: "/",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 17
+                    lineNumber: 14
                 },
                 __self: undefined,
                 children: "Inicio"
@@ -53900,7 +53900,7 @@ const MobileNav = ()=>{
                 to: "/buscar-tours",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 18
+                    lineNumber: 15
                 },
                 __self: undefined,
                 children: "Buscar Tours"
@@ -53909,7 +53909,7 @@ const MobileNav = ()=>{
                 to: "/presentacion",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 19
+                    lineNumber: 16
                 },
                 __self: undefined,
                 children: "Presentaci\xf3n"
@@ -53918,7 +53918,7 @@ const MobileNav = ()=>{
                 to: "/enlaces",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 20
+                    lineNumber: 17
                 },
                 __self: undefined,
                 children: "Enlaces"
