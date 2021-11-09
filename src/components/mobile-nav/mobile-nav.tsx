@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { handleClickBuscarTours, handleClickHome, handleClickPresentacion, handleClickEnlaces } from '../../utils/functions';
+
+
 
 
 const MobileNav = ({handleNavToggle}) => {
@@ -7,10 +10,10 @@ const MobileNav = ({handleNavToggle}) => {
         
         <div className="mobile-nav">
             <h1>🇵🇷 ViajaPR </h1>
-            <a href="http://localhost:1234/" className="animate__animated animate__fadeInRight" onClick={handleNavToggle} >Inicio</a>
-            <a href="http://localhost:1234/buscar-tours" className="animate__animated animate__fadeInRight" onClick={handleNavToggle}>Buscar Tours</a>
-            <a href="http://localhost:1234/presentacion" className="animate__animated animate__fadeInRight" onClick={handleNavToggle}>Presentación</a>      
-            <a href="http://localhost:1234/enlaces" className="animate__animated animate__fadeInRight" onClick={handleNavToggle}>Enlaces</a>      
+            <Link to="/" onClick={handleClickHome}>Inicio</Link> 
+                <Link to="/buscar-tours" onClick={handleClickBuscarTours}>Buscar Tours</Link>
+                <Link to="/presentacion"  onClick={handleClickPresentacion}>Presentación</Link> 
+                <Link to="/enlaces" onClick={handleClickEnlaces}>Enlaces</Link>     
         </div>
     )
 }

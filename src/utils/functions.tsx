@@ -1,4 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+
+
+  let history = useHistory();
+
+  function handleClickHome() {
+    history.push("/");
+  }
+  function handleClickBuscarTours() {
+    history.push("/buscar-tours");
+  }
+  function handleClickPresentacion() {
+    history.push("/presentacion");
+  }
+  function handleClickEnlaces() {
+    history.push("/enlaces");
+  }
+
+
 
 const useHover = () => {
     const [isHovered, setHovered] = React.useState(false)
@@ -22,5 +41,13 @@ const useHover = () => {
   
     return [ref, isHovered]
   }
+
+
+  export {
+    handleClickEnlaces,
+    handleClickHome,
+    handleClickPresentacion,
+    handleClickBuscarTours
+  }
   
-  export default useHover;
+  

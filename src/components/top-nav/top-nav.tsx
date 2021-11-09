@@ -1,21 +1,21 @@
 import React from "react";
-import Link from "react-router-dom";
+import { BrowserRouter as Router, Link, Switch } from 'react-router-dom';
+import { handleClickBuscarTours, handleClickHome, handleClickPresentacion, handleClickEnlaces } from '../../utils/functions';
 
 const TopNav = () => {
+    
     return (
+       
         <header>
-            <h1><a href="http://localhost:1234/" >🇵🇷 Viaja<span>PR</span> </a></h1>
+            <h1><a>🇵🇷 Viaja<span>  PR</span></a></h1>
             <nav>
-                <a href="http://localhost:1234/" >Inicio</a>
-                <a href="http://localhost:1234/buscar-tours">Buscar Tours</a>
-                <a href="http://localhost:1234/presentacion">Presentación</a>
-                <a href="http://localhost:1234/enlaces">Enlaces</a>
-
-               
+                <Link to="/" onClick={handleClickHome}>Inicio</Link> 
+                <Link to="/buscar-tours" onClick={handleClickBuscarTours}>Buscar Tours</Link>
+                <Link to="/presentacion"  onClick={handleClickPresentacion}>Presentación</Link> 
+                <Link to="/enlaces" onClick={handleClickEnlaces}>Enlaces</Link> 
             </nav>
         </header>    
-        
-
+       
     )
   
     
