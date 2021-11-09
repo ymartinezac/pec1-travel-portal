@@ -154,9 +154,9 @@ function App ()  {
     return (
        
             <main >
-                
+                 <Router>
                 <React.StrictMode>
-                <Router>
+               
                     <Toggle handleNavToggle={handleNavToggle}/> 
                     { navToggle ? <MobileNav /> : null}
                     <TopNav />
@@ -170,9 +170,9 @@ function App ()  {
                         </Switch>   
                 
                     <Footer />
-                    </Router>
+                  
                 </React.StrictMode>
-                
+                </Router>
             </main>
             
        
