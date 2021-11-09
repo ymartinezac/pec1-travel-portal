@@ -4,24 +4,19 @@ import { useHistory } from "react-router-dom";
 
   let history = useHistory();
 
-  function handleClickHome() {
+export function handleClickHome() {
     history.push("/");
   }
-  function handleClickBuscarTours() {
+export function handleClickBuscarTours() {
     history.push("/buscar-tours");
   }
-  function handleClickPresentacion() {
+  
+export function handleClickPresentacion() {
     history.push("/presentacion");
   }
-  function handleClickEnlaces() {
+export function handleClickEnlaces() {
     history.push("/enlaces");
   }
 
-  export default {
-    handleClickEnlaces,
-    handleClickHome,
-    handleClickPresentacion,
-    handleClickBuscarTours
-  }
-  
+
   
