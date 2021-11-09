@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch } from 'react-router-dom';
-import handleClickBuscarTours from '../../utils/functions';
-import handleClickHome from '../../utils/functions';
-import handleClickPresentacion from '../../utils/functions';
-import handleClickEnlaces from '../../utils/functions';
+import {Link} from 'react-router-dom';
+import { handleClickBuscarTours } from '../../utils/functions';
+import { handleClickHome } from '../../utils/functions';
+import { handleClickPresentacion } from '../../utils/functions';
+import { handleClickEnlaces } from '../../utils/functions';
 
 const TopNav = () => {
     
@@ -12,7 +12,8 @@ const TopNav = () => {
         <header>
             <h1><a>🇵🇷 Viaja<span>  PR</span></a></h1>
             <nav>
-                <Link to="/" onClick={handleClickHome}>Inicio</Link> 
+                
+                <Link handleClick={handleClickHome}>Inicio</Link> 
                 <Link to="/buscar-tours" onClick={handleClickBuscarTours}>Buscar Tours</Link>
                 <Link to="/presentacion"  onClick={handleClickPresentacion}>Presentación</Link> 
                 <Link to="/enlaces" onClick={handleClickEnlaces}>Enlaces</Link> 
