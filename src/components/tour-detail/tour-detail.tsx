@@ -1,8 +1,6 @@
 import React from "react";
-import CSS from 'csstype';
-import { url } from "inspector";
 
-import { FiClock, FiStar, FiCompass, FiUserCheck } from "react-icons/fi";
+import { FiClock, FiCompass, FiUserCheck } from "react-icons/fi";
 
 
 
