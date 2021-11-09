@@ -3,6 +3,7 @@ import Tour from "../../models/tour";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
 import TourCard from "../tour-card/tour-card";
+import { NavLink } from "react-router-dom";
 
 const puntuacionMedia = (tour) => {
     var sum = 0;
@@ -55,9 +56,11 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             <section className="top-tour-grid">
                 <div className="top-tours-header">
                     <h1>Tours más vendidos</h1>
-                    <a className="ver-mas" href="#">Ver más</a>
+                    <NavLink to="/buscar-tours" className="ver-mas">Ver más</NavLink>
                 </div>
-                {renderTopTours()} 
+             
+                    {renderTopTours()} 
+               
                 
             </section> 
             <section className="snorkel">
@@ -66,8 +69,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section> 
             <section className="info-general">
                 <h1>Información General</h1>
-                <img src="https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80" alt="arco de piedras en la playa" />
-            
+                
                 <ul>
                     <li><FontAwesomeIcon className="icons" icon={faViruses} /> 
                         <div>
@@ -88,6 +90,8 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                         </div>
                     </li>
                 </ul>
+                <img src="https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80" alt="arco de piedras en la playa" />
+            
                 </section>
         </main>
 

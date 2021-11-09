@@ -1,7 +1,7 @@
 import React from "react";
 import Tour from "../../models/tour";
 import { FiClock, FiStar } from "react-icons/fi";
-
+import { NavLink } from "react-router-dom";
 const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
 
 
@@ -23,7 +23,7 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
             <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
         </div>
         
-        <button className="btn-reservar"><a href={"/tours/"+tour.id}>Reserva ahora </a></button>
+        <button className="btn-reservar"><NavLink className="nav-btn" to={"/tours/" + tour.id }>Reserva ahora </NavLink></button>
     </div>
  )
 }

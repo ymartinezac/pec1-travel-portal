@@ -24764,6 +24764,7 @@ var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 var _tourCard = require("../tour-card/tour-card");
 var _tourCardDefault = parcelHelpers.interopDefault(_tourCard);
+var _reactRouterDom = require("react-router-dom");
 const puntuacionMedia = (tour)=>{
     var sum = 0;
     tour.ratings.map((rating)=>{
@@ -24791,7 +24792,7 @@ const Home = ({ tours  })=>{
                 tour: tour,
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 43
+                    lineNumber: 44
                 },
                 __self: undefined
             }));
@@ -24801,7 +24802,7 @@ const Home = ({ tours  })=>{
         className: "home-main",
         __source: {
             fileName: "src/components/home/home.tsx",
-            lineNumber: 48
+            lineNumber: 49
         },
         __self: undefined,
         children: [
@@ -24809,20 +24810,20 @@ const Home = ({ tours  })=>{
                 className: "main-landing",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 49
+                    lineNumber: 50
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                     __source: {
                         fileName: "src/components/home/home.tsx",
-                        lineNumber: 50
+                        lineNumber: 51
                     },
                     __self: undefined,
                     children: [
                         /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                             __source: {
                                 fileName: "src/components/home/home.tsx",
-                                lineNumber: 51
+                                lineNumber: 52
                             },
                             __self: undefined,
                             children: "Puerto Rico"
@@ -24830,7 +24831,7 @@ const Home = ({ tours  })=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                             __source: {
                                 fileName: "src/components/home/home.tsx",
-                                lineNumber: 52
+                                lineNumber: 53
                             },
                             __self: undefined,
                             children: "Isla del Encanto"
@@ -24842,7 +24843,7 @@ const Home = ({ tours  })=>{
                 className: "top-tour-grid",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 55
+                    lineNumber: 56
                 },
                 __self: undefined,
                 children: [
@@ -24850,24 +24851,24 @@ const Home = ({ tours  })=>{
                         className: "top-tours-header",
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 56
+                            lineNumber: 57
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 57
+                                    lineNumber: 58
                                 },
                                 __self: undefined,
                                 children: "Tours m\xe1s vendidos"
                             }),
-                            /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                                to: "/buscar-tours",
                                 className: "ver-mas",
-                                href: "#",
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 58
+                                    lineNumber: 59
                                 },
                                 __self: undefined,
                                 children: "Ver m\xe1s"
@@ -24881,14 +24882,14 @@ const Home = ({ tours  })=>{
                 className: "snorkel",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 63
+                    lineNumber: 66
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsxs("h1", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 64
+                            lineNumber: 67
                         },
                         __self: undefined,
                         children: [
@@ -24896,7 +24897,7 @@ const Home = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsx("span", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 64
+                                    lineNumber: 67
                                 },
                                 __self: undefined,
                                 children: "snorkeling tours"
@@ -24909,7 +24910,7 @@ const Home = ({ tours  })=>{
                         alt: "snorkeling mask",
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 65
+                            lineNumber: 68
                         },
                         __self: undefined
                     })
@@ -24919,38 +24920,29 @@ const Home = ({ tours  })=>{
                 className: "info-general",
                 __source: {
                     fileName: "src/components/home/home.tsx",
-                    lineNumber: 67
+                    lineNumber: 70
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 68
+                            lineNumber: 71
                         },
                         __self: undefined,
                         children: "Informaci\xf3n General"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                        src: "https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80",
-                        alt: "arco de piedras en la playa",
-                        __source: {
-                            fileName: "src/components/home/home.tsx",
-                            lineNumber: 69
-                        },
-                        __self: undefined
-                    }),
                     /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                         __source: {
                             fileName: "src/components/home/home.tsx",
-                            lineNumber: 71
+                            lineNumber: 73
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 72
+                                    lineNumber: 74
                                 },
                                 __self: undefined,
                                 children: [
@@ -24959,21 +24951,21 @@ const Home = ({ tours  })=>{
                                         icon: _freeSolidSvgIcons.faViruses,
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 72
+                                            lineNumber: 74
                                         },
                                         __self: undefined
                                     }),
                                     /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 73
+                                            lineNumber: 75
                                         },
                                         __self: undefined,
                                         children: [
                                             /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 74
+                                                    lineNumber: 76
                                                 },
                                                 __self: undefined,
                                                 children: "Medidas Covid-19"
@@ -24981,7 +24973,7 @@ const Home = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 75
+                                                    lineNumber: 77
                                                 },
                                                 __self: undefined,
                                                 children: "Implementamos procolos de limpieza y seguridad para disminuir posibilidades de contagio."
@@ -24993,7 +24985,7 @@ const Home = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 78
+                                    lineNumber: 80
                                 },
                                 __self: undefined,
                                 children: [
@@ -25002,21 +24994,21 @@ const Home = ({ tours  })=>{
                                         icon: _freeSolidSvgIcons.faGlobe,
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 78
+                                            lineNumber: 80
                                         },
                                         __self: undefined
                                     }),
                                     /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 79
+                                            lineNumber: 81
                                         },
                                         __self: undefined,
                                         children: [
                                             /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 80
+                                                    lineNumber: 82
                                                 },
                                                 __self: undefined,
                                                 children: "Gu\xedas Biling\xfces"
@@ -25024,7 +25016,7 @@ const Home = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 81
+                                                    lineNumber: 83
                                                 },
                                                 __self: undefined,
                                                 children: "Todos nuestros gu\xedas tur\xedsticos hablan al menos espa\xf1ol e ingl\xe9s."
@@ -25036,7 +25028,7 @@ const Home = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/home/home.tsx",
-                                    lineNumber: 84
+                                    lineNumber: 86
                                 },
                                 __self: undefined,
                                 children: [
@@ -25045,21 +25037,21 @@ const Home = ({ tours  })=>{
                                         icon: _freeSolidSvgIcons.faCalendarCheck,
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 84
+                                            lineNumber: 86
                                         },
                                         __self: undefined
                                     }),
                                     /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                                         __source: {
                                             fileName: "src/components/home/home.tsx",
-                                            lineNumber: 85
+                                            lineNumber: 87
                                         },
                                         __self: undefined,
                                         children: [
                                             /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 86
+                                                    lineNumber: 88
                                                 },
                                                 __self: undefined,
                                                 children: "Reembolsos por cancelaciones"
@@ -25067,7 +25059,7 @@ const Home = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/home/home.tsx",
-                                                    lineNumber: 87
+                                                    lineNumber: 89
                                                 },
                                                 __self: undefined,
                                                 children: "Cancelaciones antes de las 24h previas al tour ser\xe1n reembolsadas en su totalidad."
@@ -25077,6 +25069,15 @@ const Home = ({ tours  })=>{
                                 ]
                             })
                         ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                        src: "https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80",
+                        alt: "arco de piedras en la playa",
+                        __source: {
+                            fileName: "src/components/home/home.tsx",
+                            lineNumber: 93
+                        },
+                        __self: undefined
                     })
                 ]
             })
@@ -25093,7 +25094,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@fortawesome/react-fontawesome":"55Qlg","@fortawesome/free-solid-svg-icons":"A45Nk","../tour-card/tour-card":"hMiZG","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"55Qlg":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@fortawesome/react-fontawesome":"55Qlg","@fortawesome/free-solid-svg-icons":"A45Nk","../tour-card/tour-card":"hMiZG","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","react-router-dom":"16kZP"}],"55Qlg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FontAwesomeIcon", ()=>FontAwesomeIcon
@@ -42282,6 +42283,7 @@ var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _fi = require("react-icons/fi");
+var _reactRouterDom = require("react-router-dom");
 const TourCard = ({ tour  })=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "top-tour-card",
@@ -42405,8 +42407,9 @@ const TourCard = ({ tour  })=>{
                     lineNumber: 26
                 },
                 __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                    href: "/tours/" + tour.id,
+                children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                    className: "nav-btn",
+                    to: "/tours/" + tour.id,
                     __source: {
                         fileName: "src/components/tour-card/tour-card.tsx",
                         lineNumber: 26
@@ -42428,7 +42431,7 @@ $RefreshReg$(_c, "TourCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"00c8t":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","react-router-dom":"16kZP"}],"00c8t":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FiActivity", ()=>FiActivity
@@ -53695,7 +53698,8 @@ const TopNav = ()=>{
                     lineNumber: 10
                 },
                 __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsxs("a", {
+                children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.NavLink, {
+                    to: "/",
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
                         lineNumber: 10
@@ -53709,7 +53713,7 @@ const TopNav = ()=>{
                                 lineNumber: 10
                             },
                             __self: undefined,
-                            children: " PR"
+                            children: "PR"
                         })
                     ]
                 })
@@ -53721,7 +53725,7 @@ const TopNav = ()=>{
                 },
                 __self: undefined,
                 children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                         to: "/",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
@@ -53730,7 +53734,7 @@ const TopNav = ()=>{
                         __self: undefined,
                         children: "Inicio"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                         to: "/buscar-tours",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
@@ -53739,7 +53743,7 @@ const TopNav = ()=>{
                         __self: undefined,
                         children: "Buscar Tours"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                         to: "/presentacion",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
@@ -53748,7 +53752,7 @@ const TopNav = ()=>{
                         __self: undefined,
                         children: "Presentaci\xf3n"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                    /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                         to: "/enlaces",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
@@ -53885,9 +53889,27 @@ const MobileNav = ()=>{
                     lineNumber: 13
                 },
                 __self: undefined,
-                children: "🇵🇷 ViajaPR "
+                children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.NavLink, {
+                    to: "/",
+                    __source: {
+                        fileName: "src/components/mobile-nav/mobile-nav.tsx",
+                        lineNumber: 13
+                    },
+                    __self: undefined,
+                    children: [
+                        "🇵🇷 Viaja",
+                        /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                            __source: {
+                                fileName: "src/components/mobile-nav/mobile-nav.tsx",
+                                lineNumber: 13
+                            },
+                            __self: undefined,
+                            children: "PR"
+                        })
+                    ]
+                })
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
@@ -53896,7 +53918,7 @@ const MobileNav = ()=>{
                 __self: undefined,
                 children: "Inicio"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/buscar-tours",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
@@ -53905,7 +53927,7 @@ const MobileNav = ()=>{
                 __self: undefined,
                 children: "Buscar Tours"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/presentacion",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
@@ -53914,7 +53936,7 @@ const MobileNav = ()=>{
                 __self: undefined,
                 children: "Presentaci\xf3n"
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/enlaces",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
@@ -54272,8 +54294,9 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _fi = require("react-icons/fi");
 const TourDetail = ({ tours  })=>{
-    const tour = tours.find((t)=>t.id === _reactRouterDom.useParams()
+    const tour = tours.find((t)=>t.id === parseInt(_reactRouterDom.useParams().id)
     );
+    console.log(_reactRouterDom.useParams().id);
     const backgroundDiv = {
         backgroundImage: "url(" + tour.img_url + ")",
         backgroundRepeat: "no-repeat",

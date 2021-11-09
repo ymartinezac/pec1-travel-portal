@@ -5,8 +5,8 @@ import { FiClock, FiCompass, FiUserCheck } from "react-icons/fi";
 
 
 const TourDetail = ({ tours }) => {
-    const tour = tours.find(t => t.id === useParams());
-    
+    const tour = tours.find(t => t.id === parseInt(useParams().id));
+    console.log(useParams().id);
     const backgroundDiv = {
         backgroundImage: "url(" + tour.img_url+ ")",
         backgroundRepeat: "no-repeat",

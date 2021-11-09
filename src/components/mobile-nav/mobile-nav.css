@@ -39,3 +39,12 @@
     color: orangered;
 }
 
+@media (min-width: 250px) and (max-width: 1080px){ 
+    .mobile-nav h1 {
+        font-size: 2.5rem;
+    }  
+    .mobile-nav a {
+        font-size: 1.8rem;
+    }
+}
+

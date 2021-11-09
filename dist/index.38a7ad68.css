@@ -10,7 +10,7 @@ footer {
     font-style: normal;
 
     height: 5vh;
-    margin-top: 10vh;
+    margin-top: 2vh;
  
     width: 100%;
 
@@ -24,7 +24,7 @@ footer {
 @media (min-width: 250px) and (max-width: 992px){ 
     footer {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     
