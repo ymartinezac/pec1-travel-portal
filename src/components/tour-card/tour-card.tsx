@@ -23,7 +23,7 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
             <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
         </div>
         
-        <button><a href={"/tours/"+tour.id}>Reserva ahora </a></button>
+        <button className="btn-reservar"><a href={"/tours/"+tour.id}>Reserva ahora </a></button>
     </div>
  )
 }

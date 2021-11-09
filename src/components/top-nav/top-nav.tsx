@@ -8,7 +8,8 @@ const TopNav = () => {
             <nav>
                 <a href="http://localhost:1234/" >Inicio</a>
                 <a href="http://localhost:1234/buscar-tours">Buscar Tours</a>
-                <a href="http://localhost:1234/sobre-nosotros">Sobre Nosotros</a>
+                <a href="http://localhost:1234/presentacion">Presentación</a>
+                <a href="http://localhost:1234/enlaces">Enlaces</a>
 
                
             </nav>

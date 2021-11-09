@@ -73,7 +73,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-top: 5vh;
+    margin: 25px 0 5px 0;
+}
+.top-tours-header h1 {
+    margin: 0;
 }
 
 .ver-mas {
@@ -90,7 +93,12 @@
     color: var(--blue);
 }
 
+@media (min-width: 250px) and (max-width: 992px){ 
+    .top-tour-grid {
+        column-gap: 15px;
+    }
 
+}
 
 @media (min-width: 250px) and (max-width: 992px){ 
     .top-tours-header{

@@ -9,7 +9,7 @@
     height: 100vh;
     width: 60%;
     background-color: rgb(58, 66, 81, .9);
-    z-index: 99;
+    z-index: 99999999;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

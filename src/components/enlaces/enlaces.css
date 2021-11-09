@@ -1,0 +1,39 @@
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30vw 0 30vw;
+    height: 90%;
+    align-content: flex-start;
+}
+
+
+.enlaces h1 {
+    color: var(--red);
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.enlaces article {
+    width: 100%;
+}
+
+@media (min-width: 250px) and (max-width: 992px){ 
+    .enlaces h1 {
+        font-size: 6rem;
+        height: 5vh;
+    }
+
+    .enlaces h2 {
+        font-size: 4.5rem;
+    }
+
+    .enlaces{
+        padding: 0 5vw 0 5vw;
+        height: 85vh;
+    }
+
+    .enlaces li {
+        font-size: 3rem;
+    }
+}

@@ -960,8 +960,10 @@ var _mobileNav = require("./components/mobile-nav/mobile-nav");
 var _mobileNavDefault = parcelHelpers.interopDefault(_mobileNav);
 var _footer = require("./components/footer/footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _sobreNosotros = require("./components/sobre-nosotros/sobre-nosotros");
-var _sobreNosotrosDefault = parcelHelpers.interopDefault(_sobreNosotros);
+var _presentacion = require("./components/presentacion/presentacion");
+var _presentacionDefault = parcelHelpers.interopDefault(_presentacion);
+var _enlaces = require("./components/enlaces/enlaces");
+var _enlacesDefault = parcelHelpers.interopDefault(_enlaces);
 var _toursGrid = require("./components/tours-grid/tours-grid");
 var _toursGridDefault = parcelHelpers.interopDefault(_toursGrid);
 var _tourDetail = require("./components/tour-detail/tour-detail");
@@ -1026,7 +1028,7 @@ function App() {
             id: 3,
             nombre: "Cueva Ventana",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
-            descripcion: "Lorem ipsum",
+            descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo. ",
             duracion: 2,
             guia: false,
             ratings: [
@@ -1049,7 +1051,7 @@ function App() {
         {
             id: 4,
             nombre: "Bahía Bioluminiscente",
-            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
+            img_url: "https://media.metrolatam.com/2019/12/29/screenshot201911-a7ebad14a8f3af69c3ff392966701c3c-1200x800.jpg",
             descripcion: "Lorem ipsum",
             duracion: 6,
             guia: true,
@@ -1098,9 +1100,9 @@ function App() {
             id: 6,
             nombre: "Cueva Ventana TOP",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
-            descripcion: "Lorem ipsum",
+            descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo.",
             duracion: 2,
-            guia: false,
+            guia: true,
             ratings: [
                 {
                     puntuacion: 5
@@ -1191,16 +1193,16 @@ function App() {
             tag: "bestseller"
         }
     ]);
-    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+    return(/*#__PURE__*/ _jsxRuntime.jsx("main", {
         __source: {
             fileName: "src/index.tsx",
-            lineNumber: 153
+            lineNumber: 154
         },
         __self: this,
         children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactDefault.default.StrictMode, {
             __source: {
                 fileName: "src/index.tsx",
-                lineNumber: 154
+                lineNumber: 155
             },
             __self: this,
             children: [
@@ -1208,7 +1210,7 @@ function App() {
                     handleNavToggle: handleNavToggle,
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 155
+                        lineNumber: 156
                     },
                     __self: this
                 }),
@@ -1216,27 +1218,27 @@ function App() {
                     handleNavToggle: handleNavToggle,
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 156
+                        lineNumber: 157
                     },
                     __self: this
                 }) : null,
                 /*#__PURE__*/ _jsxRuntime.jsx(_topNavDefault.default, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 157
+                        lineNumber: 158
                     },
                     __self: this
                 }),
                 /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 158
+                        lineNumber: 159
                     },
                     __self: this,
                     children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Switch, {
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 159
+                            lineNumber: 160
                         },
                         __self: this,
                         children: [
@@ -1250,7 +1252,7 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 160
+                                    lineNumber: 161
                                 },
                                 __self: this
                             }),
@@ -1263,16 +1265,25 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 161
+                                    lineNumber: 162
                                 },
                                 __self: this
                             }),
                             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
-                                path: "/sobre-nosotros",
-                                component: _sobreNosotrosDefault.default,
+                                path: "/presentacion",
+                                component: _presentacionDefault.default,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 162
+                                    lineNumber: 163
+                                },
+                                __self: this
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Route, {
+                                path: "/enlaces",
+                                component: _enlacesDefault.default,
+                                __source: {
+                                    fileName: "src/index.tsx",
+                                    lineNumber: 164
                                 },
                                 __self: this
                             }),
@@ -1285,7 +1296,7 @@ function App() {
                                 ,
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 163
+                                    lineNumber: 165
                                 },
                                 __self: this
                             })
@@ -1295,7 +1306,7 @@ function App() {
                 /*#__PURE__*/ _jsxRuntime.jsx(_footerDefault.default, {
                     __source: {
                         fileName: "src/index.tsx",
-                        lineNumber: 166
+                        lineNumber: 168
                     },
                     __self: this
                 })
@@ -1303,13 +1314,13 @@ function App() {
         })
     }));
 }
-_s(App, "b/ccRvmczRRJmgzBUARu90mdILU=");
+_s(App, "LdoH/fnZt18k/klU+PJQguo9s2M=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
     __source: {
         fileName: "src/index.tsx",
-        lineNumber: 174
+        lineNumber: 176
     },
     __self: undefined
 }), mount);
@@ -1321,7 +1332,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-dom":"afyCw","react-router-dom":"etVME","./components/home/home":"iA99h","./components/top-nav/top-nav":"aNybI","./components/toggle/toggle":"4KzLw","./components/mobile-nav/mobile-nav":"ja0pW","./components/footer/footer":"dNiNj","./components/sobre-nosotros/sobre-nosotros":"kIJ7Y","./components/tours-grid/tours-grid":"4Jk6O","./components/tour-detail/tour-detail":"1StKm","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"6Ds2u":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-dom":"afyCw","react-router-dom":"etVME","./components/home/home":"iA99h","./components/top-nav/top-nav":"aNybI","./components/toggle/toggle":"4KzLw","./components/mobile-nav/mobile-nav":"ja0pW","./components/footer/footer":"dNiNj","./components/presentacion/presentacion":"fqsxW","./components/enlaces/enlaces":"f4KVZ","./components/tours-grid/tours-grid":"4Jk6O","./components/tour-detail/tour-detail":"1StKm","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"6Ds2u":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react-jsx-runtime.development.js');
 
@@ -43110,6 +43121,7 @@ const TourCard = ({ tour  })=>{
                 })
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                className: "btn-reservar",
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
                     lineNumber: 26
@@ -54451,13 +54463,22 @@ const TopNav = ()=>{
                         children: "Buscar Tours"
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                        href: "http://localhost:1234/sobre-nosotros",
+                        href: "http://localhost:1234/presentacion",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
                             lineNumber: 11
                         },
                         __self: undefined,
-                        children: "Sobre Nosotros"
+                        children: "Presentaci\xf3n"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                        href: "http://localhost:1234/enlaces",
+                        __source: {
+                            fileName: "src/components/top-nav/top-nav.tsx",
+                            lineNumber: 12
+                        },
+                        __self: undefined,
+                        children: "Enlaces"
                     })
                 ]
             })
@@ -54611,7 +54632,7 @@ const MobileNav = ({ handleNavToggle  })=>{
                 children: "Buscar Tours"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                href: "http://localhost:1234/sobre-nosotros",
+                href: "http://localhost:1234/presentacion",
                 className: "animate__animated animate__fadeInRight",
                 onClick: handleNavToggle,
                 __source: {
@@ -54619,7 +54640,18 @@ const MobileNav = ({ handleNavToggle  })=>{
                     lineNumber: 12
                 },
                 __self: undefined,
-                children: "Sobre Nosotros"
+                children: "Presentaci\xf3n"
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                href: "http://localhost:1234/enlaces",
+                className: "animate__animated animate__fadeInRight",
+                onClick: handleNavToggle,
+                __source: {
+                    fileName: "src/components/mobile-nav/mobile-nav.tsx",
+                    lineNumber: 13
+                },
+                __self: undefined,
+                children: "Enlaces"
             })
         ]
     }));
@@ -54666,11 +54698,11 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"kIJ7Y":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1f7b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"fqsxW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$58c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1f7b.prelude(module);
+$parcel$ReactRefreshHelpers$58c3.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -54678,22 +54710,221 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const SobreNosotros = ()=>{
-    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
+const Presentacion = ()=>{
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("article", {
         __source: {
-            fileName: "src/components/sobre-nosotros/sobre-nosotros.tsx",
+            fileName: "src/components/presentacion/presentacion.tsx",
             lineNumber: 6
         },
         __self: undefined,
-        children: "\xa9 Yesenia Mart\xednez Acevedo"
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 7
+                },
+                __self: undefined,
+                children: "Presentaci\xf3n ViajaPR"
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 8
+                },
+                __self: undefined,
+                children: "ViajaPR es un portal de viajes que ofrece lo que se conoce en Puerto Rico como \"tours\" alrededor de la Isla."
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 11
+                },
+                __self: undefined
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 12
+                },
+                __self: undefined
+            })
+        ]
     }));
 };
-_c = SobreNosotros;
-exports.default = SobreNosotros;
+_c = Presentacion;
+exports.default = Presentacion;
 var _c;
-$RefreshReg$(_c, "SobreNosotros");
+$RefreshReg$(_c, "Presentacion");
 
-  $parcel$ReactRefreshHelpers$1f7b.postlude(module);
+  $parcel$ReactRefreshHelpers$58c3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"f4KVZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$826f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$826f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxRuntime = require("react/jsx-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Enlaces = ()=>{
+    return(/*#__PURE__*/ _jsxRuntime.jsxs("article", {
+        className: "enlaces",
+        __source: {
+            fileName: "src/components/enlaces/enlaces.tsx",
+            lineNumber: 6
+        },
+        __self: undefined,
+        children: [
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/enlaces/enlaces.tsx",
+                    lineNumber: 7
+                },
+                __self: undefined,
+                children: "Enlaces"
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("article", {
+                __source: {
+                    fileName: "src/components/enlaces/enlaces.tsx",
+                    lineNumber: 8
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                        __source: {
+                            fileName: "src/components/enlaces/enlaces.tsx",
+                            lineNumber: 9
+                        },
+                        __self: undefined,
+                        children: "Multimedia"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
+                        __source: {
+                            fileName: "src/components/enlaces/enlaces.tsx",
+                            lineNumber: 10
+                        },
+                        __self: undefined,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 11
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Fotos de localidades: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://unsplash.com/",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 11
+                                        },
+                                        __self: undefined,
+                                        children: "Unsplash"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 12
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Foto Bah\xeda Bioluminiscente: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 12
+                                        },
+                                        __self: undefined,
+                                        children: "Metro PR"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 13
+                                },
+                                __self: undefined,
+                                children: [
+                                    "\xcdconos: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://feathericons.com/",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 13
+                                        },
+                                        __self: undefined,
+                                        children: "Feather Icons"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("article", {
+                __source: {
+                    fileName: "src/components/enlaces/enlaces.tsx",
+                    lineNumber: 16
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("h2", {
+                        __source: {
+                            fileName: "src/components/enlaces/enlaces.tsx",
+                            lineNumber: 17
+                        },
+                        __self: undefined,
+                        children: "Texto"
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("ul", {
+                        __source: {
+                            fileName: "src/components/enlaces/enlaces.tsx",
+                            lineNumber: 18
+                        },
+                        __self: undefined,
+                        children: /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                            __source: {
+                                fileName: "src/components/enlaces/enlaces.tsx",
+                                lineNumber: 19
+                            },
+                            __self: undefined,
+                            children: [
+                                "Descripci\xf3n Cueva Ventana: ",
+                                /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                    href: "https://www.facebook.com/aventuracuevaventana/",
+                                    __source: {
+                                        fileName: "src/components/enlaces/enlaces.tsx",
+                                        lineNumber: 19
+                                    },
+                                    __self: undefined,
+                                    children: "https://www.facebook.com/aventuracuevaventana/ "
+                                })
+                            ]
+                        })
+                    })
+                ]
+            })
+        ]
+    }));
+};
+_c = Enlaces;
+exports.default = Enlaces;
+var _c;
+$RefreshReg$(_c, "Enlaces");
+
+  $parcel$ReactRefreshHelpers$826f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -54768,43 +54999,212 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _useHover = require("../../utils/useHover");
+var _useHoverDefault = parcelHelpers.interopDefault(_useHover);
+var _fi = require("react-icons/fi");
+var _s = $RefreshSig$();
 const TourDetail = ({ tour  })=>{
+    _s();
+    const backgroundDiv = {
+        backgroundImage: "url(" + tour.img_url + ")",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center"
+    };
+    const [tooltip, isTooltipHovered] = _useHoverDefault.default();
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "tour-detail",
         __source: {
             fileName: "src/components/tour-detail/tour-detail.tsx",
-            lineNumber: 8
+            lineNumber: 20
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                className: "tour-img-mask",
+                className: "tour-header",
+                style: backgroundDiv,
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 9
+                    lineNumber: 21
                 },
                 __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                    src: tour.img_url,
-                    alt: tour.nombre,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                     __source: {
                         fileName: "src/components/tour-detail/tour-detail.tsx",
-                        lineNumber: 10
+                        lineNumber: 22
                     },
-                    __self: undefined
+                    __self: undefined,
+                    children: tour.nombre
                 })
             }),
-            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                className: "body",
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 13
+                    lineNumber: 24
                 },
                 __self: undefined,
-                children: tour.nombre
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        className: "content",
+                        __source: {
+                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                            lineNumber: 25
+                        },
+                        __self: undefined,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("h3", {
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 28
+                                },
+                                __self: undefined,
+                                children: "Descripci\xf3n"
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 29
+                                },
+                                __self: undefined,
+                                children: tour.descripcion
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                className: "details-group",
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 30
+                                },
+                                __self: undefined,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                        className: "detalles",
+                                        __source: {
+                                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                                            lineNumber: 31
+                                        },
+                                        __self: undefined,
+                                        children: [
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiClock, {
+                                                className: "icons",
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 32
+                                                },
+                                                __self: undefined
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsxs("p", {
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 33
+                                                },
+                                                __self: undefined,
+                                                children: [
+                                                    " ",
+                                                    tour.duracion,
+                                                    " horas"
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                        className: "detalles",
+                                        __source: {
+                                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                                            lineNumber: 35
+                                        },
+                                        __self: undefined,
+                                        children: [
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiCompass, {
+                                                className: "icons",
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 36
+                                                },
+                                                __self: undefined
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsxs("p", {
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 37
+                                                },
+                                                __self: undefined,
+                                                children: [
+                                                    tour.ubicacion,
+                                                    " "
+                                                ]
+                                            })
+                                        ]
+                                    }),
+                                    tour.guia ? /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                        className: "detalles",
+                                        __source: {
+                                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                                            lineNumber: 40
+                                        },
+                                        __self: undefined,
+                                        children: [
+                                            /*#__PURE__*/ _jsxRuntime.jsx(_fi.FiUserCheck, {
+                                                className: "icons",
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 41
+                                                },
+                                                __self: undefined
+                                            }),
+                                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                                                __source: {
+                                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                                    lineNumber: 42
+                                                },
+                                                __self: undefined,
+                                                children: "Tour con gu\xeda"
+                                            })
+                                        ]
+                                    }) : ""
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        className: "checkout",
+                        __source: {
+                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                            lineNumber: 46
+                        },
+                        __self: undefined,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsxs("h2", {
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 47
+                                },
+                                __self: undefined,
+                                children: [
+                                    "$ ",
+                                    tour.precio,
+                                    " por persona"
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsx("button", {
+                                className: "btn-reservar",
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 49
+                                },
+                                __self: undefined,
+                                children: "Reservar"
+                            })
+                        ]
+                    })
+                ]
             })
         ]
     }));
 };
+_s(TourDetail, "Dxri0INYfNm/CoBumxn59u4uZW0=", false, function() {
+    return [_useHoverDefault.default];
+});
 _c = TourDetail;
 exports.default = TourDetail;
 var _c;
@@ -54815,6 +55215,51 @@ $RefreshReg$(_c, "TourDetail");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../../utils/useHover":"arEEo","react-icons/fi":"00c8t","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"arEEo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8d82.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const useHover = ()=>{
+    _s();
+    const [isHovered, setHovered] = _reactDefault.default.useState(false);
+    const ref = _reactDefault.default.useRef(null);
+    const handleMouseover = ()=>setHovered(true)
+    ;
+    const handleMouseout = ()=>setHovered(false)
+    ;
+    _reactDefault.default.useEffect(()=>{
+        if (ref.current) {
+            ref.current.addEventListener("mouseover", handleMouseover);
+            ref.current.addEventListener("mouseout", handleMouseout);
+            return ()=>{
+                ref.current.removeEventListener("mouseover", handleMouseover);
+                ref.current.removeEventListener("mouseout", handleMouseout);
+            };
+        }
+    }, [
+        ref.current
+    ]);
+    return [
+        ref,
+        isHovered
+    ];
+};
+_s(useHover, "l4gmytTp2Nclnk/FzMcyqTEimq8=");
+exports.default = useHover;
+
+  $parcel$ReactRefreshHelpers$8d82.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}]},["emU3S","gT4u9","ipvmp"], "ipvmp", "parcelRequirea0fe")
 
 //# sourceMappingURL=index.9978ec32.js.map

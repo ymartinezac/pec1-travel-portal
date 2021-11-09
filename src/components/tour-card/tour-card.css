@@ -11,7 +11,19 @@
     position: relative;
 }
 
+.top-tour-card .btn-reservar{
+    margin-top: 3%;
+}
 
+.top-tour-card .btn-reservar a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.top-tour-card .btn-reservar a:hover {
+    color: var(--red);
+    text-decoration: none;
+}
 
 .top-tour-card {
     width: 30%;
@@ -53,31 +65,6 @@
 
 .tour-price {
     margin: 1% 5% 0 3%;
-}
-
-
-.top-tour-card button{
-    border-style: solid;
-    border-radius: 5px;
-    border-color: var(--red);
-    width: 80%;
-    margin: 5% 5px 5px 5px;
-    padding: 0.5rem;
-    background-color: var(--main-bg-color);
-    color: var(--red);
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    align-self: center;
-    cursor: pointer;
-}
-
-.top-tour-card button:hover  {
-    background-color: var(--red);
-    color: var(--main-bg-color);
-    box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
-    -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
 }
 
 

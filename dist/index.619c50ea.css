@@ -2,8 +2,12 @@ header {
     display: flex;
     align-items: center;
     padding: 0 12% 0 12%;
-    background-color: var(--main-bg-color);
+    background-color: var(--dark-blue);
     color: var(--dark-blue);
+    height: 7vh;
+    box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
 }
 header h1 {
     width: 16%;
@@ -12,11 +16,11 @@ header h1 {
 }
 header h1 a {
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--main-bg-color);
 
 }
 header span {
-    color: var(--blue)
+    color: var(--red)
 }
 nav {
 
@@ -25,9 +29,6 @@ nav {
     overflow-x: clip;
     padding: 1vh 0 1vh 0;
     justify-content: flex-end;
-    font-family: korolev, sans-serif;
-    font-weight: 700;
-    font-style: normal;
     font-size: 1.3em;
     align-items: center;
 
@@ -36,12 +37,16 @@ nav a {
     margin: 5px 0 0 3vw;
     text-decoration: none;
     text-align: center;
-    color: var(--dark-blue);
+    color: var(--main-bg-color);
   
-    font-family: semplicitapro, sans-serif;
-    font-weight: 700;
+    font-family: korolev, sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 18px;
+}
+nav a:hover {
+    color: var(--red);
+    font-weight: 700;
 }
 @media (min-width: 250px) and (max-width: 992px){ 
     nav {
