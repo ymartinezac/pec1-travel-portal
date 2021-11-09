@@ -10,7 +10,7 @@ const TopNav = () => {
     return (
        
         <header>
-            <h1><a>🇵🇷 Viaja<span>  PR</span></a></h1>
+            <h1><a>🇵🇷 Viaja<span>  PR</span></a></h1>  
             <nav>
                 
                 <Link handleClick={handleClickHome}>Inicio</Link> 

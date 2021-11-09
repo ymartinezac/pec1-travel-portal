@@ -13,7 +13,7 @@ const MobileNav = () => {
     return (
         
         <div className="mobile-nav">
-            <h1>🇵🇷 ViajaPR </h1>
+            <h1>🇵🇷 ViajaPR </h1>  
             <Link to="/" onClick={handleClickHome}>Inicio</Link> 
                 <Link to="/buscar-tours" onClick={handleClickBuscarTours}>Buscar Tours</Link>
                 <Link to="/presentacion"  onClick={handleClickPresentacion}>Presentación</Link> 
