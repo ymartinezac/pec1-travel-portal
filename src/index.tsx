@@ -155,7 +155,7 @@ function App ()  {
             <main >
                 <React.StrictMode>
                     <Toggle handleNavToggle={handleNavToggle}/> 
-                    { navToggle ? <MobileNav handleNavToggle={handleNavToggle}/> : null}
+                    { navToggle ? <MobileNav /> : null}
                     <TopNav />
                    
                         <Switch>
