@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Home from "./components/home/home";
 import TopNav from "./components/top-nav/top-nav";
@@ -161,18 +161,18 @@ function App ()  {
                     { navToggle ? <MobileNav /> : null}
                     <TopNav />
                    
-                        <Switch>
-                            <Route exact path="/" render={(props) => <Home tours={tours} {...props} /> }  />
+                        <Routes>
+                            <Route path="/" render={(props) => <Home tours={tours} {...props} /> }  />
                             <Route path="/buscar-tours" render={(props) => <ToursGrid tours={tours} {...props} /> }  />
-                            <Route path="/presentacion" component={Presentacion} />
-                            <Route path="/enlaces" component={Enlaces} />
+                            <Route path="/presentacion" element={<Presentacion/>} />
+                            <Route path="/enlaces" element={<Enlaces />} />
                             <Route path="/tours/:id" render={({ match }) => (<TourDetail tour={tours.find((item) => String(item.id) === String(match.params.id))} />)}/>
-                        </Switch>   
+                        </Routes>   
                 
                     <Footer />
                   
                 </React.StrictMode>
-                </Router>
+                  </Router>
             </main>
             
        
