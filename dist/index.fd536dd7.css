@@ -15,7 +15,7 @@
     transition: all 0.3s ease-in-out;
     background-color: #fff;
 }
-@media (min-width: 600px) and (max-width: 1080px){ 
+@media (min-width: 450px) and (max-width: 1080px){ 
     .toggle-wrap {
         display: none;
         display: flex;
@@ -71,7 +71,7 @@
 
 
 }
-@media only screen and (min-width: 250px){ 
+@media only screen and (max-width: 450px){ 
     .hamburguer-wrap{
         width: 4vh;
         height: 4vh;
