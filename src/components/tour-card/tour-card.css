@@ -146,3 +146,31 @@
     }
 
 }
+
+@media only screen and (min-width: 250px){ 
+    .img-mask {
+        height: 20vh;
+    }
+    .top-tour-card{
+        width: 100%;
+    }
+
+    .top-tour-card h2 {
+        font-size: 3.5rem;
+    }
+
+    .top-tour-card p {
+        font-size: 2.5rem;
+    }
+
+    .top-tour-card .icons {
+      
+        font-size: 2.5rem;
+    }
+
+    .top-tour-card .precio {
+        font-size: 3rem;
+    }
+
+
+}

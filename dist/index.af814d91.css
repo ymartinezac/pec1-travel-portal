@@ -74,11 +74,13 @@ main {
 }
 
 @media (min-width: 250px) and (max-width: 992px){
-    
+    .btn-reservar{
+        font-size: 2.5rem;
+    }
 
 }
 
-@media (min-width: 250px) and (max-width: 500px){
+@media only screen and (min-width: 250px){ 
 
     h1{
         font-size: 3.6rem;
@@ -95,5 +97,7 @@ main {
 
 
 }
+
+
 
 /*# sourceMappingURL=index.af814d91.css.map */

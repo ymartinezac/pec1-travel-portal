@@ -130,14 +130,16 @@
 
 }
 
-@media (min-width: 250px) and (max-width: 500px){ 
+
+@media only screen and (min-width: 250px){ 
+
     .top-tours-header{
         margin-top: 4vh;
     }
     .top-tours-header h1 {
         margin-bottom: 1%;
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     .info-general, .top-tour-grid {
@@ -145,6 +147,10 @@
         justify-content: center;
         width: 94%;
         margin: 0;
+    }
+
+    .ver-mas {
+        font-size: 3rem;
     }
     
 }
