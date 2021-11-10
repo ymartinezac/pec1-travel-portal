@@ -15,7 +15,7 @@
     transition: all 0.3s ease-in-out;
     background-color: #fff;
 }
-@media (min-width: 450px) and (max-width: 1080px){ 
+@media (min-width: 500px) and (max-width: 1080px){ 
     .toggle-wrap {
         display: none;
         display: flex;
@@ -23,6 +23,7 @@
         width: 100vw;
         margin-top: -10px;
         z-index: 1;
+        padding-top: 10px;
        
     }
 
@@ -71,11 +72,11 @@
 
 
 }
-@media only screen and (max-width: 450px){ 
+@media only screen and (min-width: 250px){ 
     .hamburguer-wrap{
         width: 4vh;
         height: 4vh;
-        margin: 2vh 5vw 0 0;
+        margin: 20px 5vw 0 0;
     }
 
     .hamburger.active .bar:nth-child(1) {
@@ -96,6 +97,10 @@
         width: 60px;
         height: 5.5px;
         margin: 17px auto;
+    }
+
+    .toggle-wrap {
+        height: 0vh;
     }
    
 }
