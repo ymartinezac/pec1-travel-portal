@@ -57,6 +57,12 @@
     }
 }
 
+@media only screen and (max-width: 450px){ 
+    .main-landing {
+        margin-top: -3vh;
+    }
+}
+
 /*--------------------------------------------------------------*/
 
 .info-general, .top-tour-grid {
