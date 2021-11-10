@@ -113,8 +113,9 @@
         -moz-column-gap: 15px;
              column-gap: 15px;
         margin-bottom: 2vh;
-        row-gap: 15px;
-        padding: 0 8vw 0 8vw;
+        row-gap: 3vh;
+        padding-right: 6vh;
+     
     }
 
     .top-tours-header{
@@ -146,9 +147,9 @@
     }
 
     .info-general, .top-tour-grid {
-        padding: 0 3% 0 3%;
+        padding: 0 8% 0 8%;
         justify-content: center;
-        width: 94%;
+        width: 84%;
         margin: 0;
     }
 
