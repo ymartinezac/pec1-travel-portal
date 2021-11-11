@@ -37,3 +37,36 @@
     height: 100%;
    
 }
+
+@media (min-width: 250px) and (max-width: 992px){ 
+    .presentacion h1 {
+        font-size: 6rem;
+        height: 5vh;
+
+    }
+
+    .presentacion h2 {
+        font-size: 4.5rem;
+    }
+
+    .presentacion{
+        padding: 0 5vw 0 5vw;
+        height: auto;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentacion ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion p {
+        font-size: 3rem;
+        max-width: 70vw;
+    }
+
+   
+}
