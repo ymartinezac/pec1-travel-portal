@@ -54164,15 +54164,15 @@ const Enlaces = ()=>{
                                 },
                                 __self: undefined,
                                 children: [
-                                    "Foto Bah\xeda Bioluminiscente: ",
+                                    "Foto de Playa Flamenco: ",
                                     /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
+                                        href: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
                                             lineNumber: 12
                                         },
                                         __self: undefined,
-                                        children: "Metro PR"
+                                        children: "adventuresoflilnicki.com"
                                     })
                                 ]
                             }),
@@ -54183,12 +54183,69 @@ const Enlaces = ()=>{
                                 },
                                 __self: undefined,
                                 children: [
+                                    "Foto de Toro Verde: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 13
+                                        },
+                                        __self: undefined,
+                                        children: "Zipline4less.com"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 14
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Foto de Viejo San Juan: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 14
+                                        },
+                                        __self: undefined,
+                                        children: "Uber Blog"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 16
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Foto Bah\xeda Bioluminiscente: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 16
+                                        },
+                                        __self: undefined,
+                                        children: "Metro PR"
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 17
+                                },
+                                __self: undefined,
+                                children: [
                                     "\xcdconos: ",
                                     /*#__PURE__*/ _jsxRuntime.jsx("a", {
                                         href: "https://feathericons.com/",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 13
+                                            lineNumber: 17
                                         },
                                         __self: undefined,
                                         children: "Feather Icons"
@@ -54202,14 +54259,14 @@ const Enlaces = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsxs("article", {
                 __source: {
                     fileName: "src/components/enlaces/enlaces.tsx",
-                    lineNumber: 16
+                    lineNumber: 20
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                         __source: {
                             fileName: "src/components/enlaces/enlaces.tsx",
-                            lineNumber: 17
+                            lineNumber: 21
                         },
                         __self: undefined,
                         children: "Texto"
@@ -54217,14 +54274,14 @@ const Enlaces = ()=>{
                     /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                         __source: {
                             fileName: "src/components/enlaces/enlaces.tsx",
-                            lineNumber: 18
+                            lineNumber: 22
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 19
+                                    lineNumber: 23
                                 },
                                 __self: undefined,
                                 children: [
@@ -54233,7 +54290,7 @@ const Enlaces = ()=>{
                                         href: "https://www.facebook.com/aventuracuevaventana/",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 19
+                                            lineNumber: 23
                                         },
                                         __self: undefined,
                                         children: "Aventura Cueva Ventana "
@@ -54243,7 +54300,7 @@ const Enlaces = ()=>{
                             /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                 __source: {
                                     fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 20
+                                    lineNumber: 24
                                 },
                                 __self: undefined,
                                 children: [
@@ -54252,7 +54309,7 @@ const Enlaces = ()=>{
                                         href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 20
+                                            lineNumber: 24
                                         },
                                         __self: undefined,
                                         children: "Metro PR"
