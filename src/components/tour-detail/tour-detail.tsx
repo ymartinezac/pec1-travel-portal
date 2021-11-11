@@ -28,21 +28,21 @@ const TourDetail = ({ tours }) => {
                 
                     <h3>Descripción</h3>
                     <p>{tour.descripcion}</p>
-                    <div className="details-group">
-                        <span className="detalles">
+                    <ul className="details-group">
+                        <li className="detalles">
                             <FiClock className="icons" /> 
                            <p> {tour.duracion} horas</p>
-                        </span>
-                        <span className="detalles">
+                        </li>
+                        <li className="detalles">
                             <FiCompass className="icons" /> 
                             <p>{tour.ubicacion} </p>
-                        </span>
+                        </li>
                         {tour.guia ? 
-                            <span className="detalles">
+                            <li className="detalles">
                             <FiUserCheck className="icons" /> 
                             <p>Tour con guía</p>
-                        </span> :  ""}
-                    </div> 
+                        </li> :  ""}
+                    </ul> 
                 </div>
                 <div className="checkout">
                     <h2>$ {tour.precio} por persona</h2> 

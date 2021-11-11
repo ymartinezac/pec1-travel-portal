@@ -12,6 +12,7 @@
 .enlaces ul {
     text-align: center;
     padding-left: 0;
+  
 }
 
 .enlaces h1 {
@@ -45,8 +46,15 @@
         align-items: center;
     }
 
+    .enlaces ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .enlaces li {
         font-size: 3rem;
+        max-width: 70vw;
     }
 
    

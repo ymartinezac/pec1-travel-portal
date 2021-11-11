@@ -91,6 +91,8 @@
     -moz-column-gap: 5%;
          column-gap: 5%;
     width: 100%;
+    list-style: none;
+    padding-left: 0;
 }
 
 @media (min-width: 250px) and (max-width: 992px){ 
@@ -106,7 +108,7 @@
         font-size: 5.5rem;
     }
     .tour-header{
-        margin-top: -8vh;
+        margin-top: -15vh;
         height: 60vh;
 
     }
@@ -139,6 +141,10 @@
         height: 100%;
         width: 5vw;
         margin-right: 5px;
+    }
+
+    .content p {
+        font-size: 2rem;
     }
 
     .detalles p{

@@ -54394,7 +54394,7 @@ const TourDetail = ({ tours  })=>{
                                 __self: undefined,
                                 children: tour.descripcion
                             }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                            /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                                 className: "details-group",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
@@ -54402,7 +54402,7 @@ const TourDetail = ({ tours  })=>{
                                 },
                                 __self: undefined,
                                 children: [
-                                    /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
@@ -54432,7 +54432,7 @@ const TourDetail = ({ tours  })=>{
                                             })
                                         ]
                                     }),
-                                    /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                    /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
@@ -54461,7 +54461,7 @@ const TourDetail = ({ tours  })=>{
                                             })
                                         ]
                                     }),
-                                    tour.guia ? /*#__PURE__*/ _jsxRuntime.jsxs("span", {
+                                    tour.guia ? /*#__PURE__*/ _jsxRuntime.jsxs("li", {
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
