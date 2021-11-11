@@ -105,6 +105,10 @@
         margin: 0;
         font-size: 5.5rem;
     }
+
+    .tour-detail h3 {
+        font-size: 3rem;
+    }
     .tour-header{
         margin-top: -15vh;
         height: 60vh;
@@ -157,6 +161,10 @@
 
     .tour-detail .btn-reservar {
         font-size: 2.5rem;
+    }
+
+    .checkout h2 {
+        font-size: 3.5rem;
     }
 
 
