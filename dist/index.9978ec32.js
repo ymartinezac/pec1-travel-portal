@@ -976,7 +976,7 @@ function App() {
             id: 1,
             nombre: "Bahía Bioluminiscente",
             img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
-            descripcion: "Lorem ipsum",
+            descripcion: "La Bahía Mosquito, de la isla-municipio de Vieques fue nombrada como una de las maravillas del mundo para ver en el 2020. Así lo afirmó el sitio especializado Condé Nest Traveler, que compiló los mejores lugares para visitar en el año entrante. La bahía es conocida por su bioluminisciencia, un fenómeno que solo puede ser observado en varias partes del mundo y que en Puerto Rico puede ser observado en tres localizaciones: la mencionada bahía; Laguna Grande, en Fajardo; y La Parguera, en Lajas.",
             duracion: 6,
             guia: true,
             ratings: [
@@ -1303,7 +1303,7 @@ function App() {
         })
     }));
 }
-_s(App, "dcDu2QWOHIGLjoq9iVVfzCrBU3M=");
+_s(App, "79TFXV9bx+9F/EWUfueFsgmweag=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
@@ -54214,31 +54214,52 @@ const Enlaces = ()=>{
                         __self: undefined,
                         children: "Texto"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsx("ul", {
+                    /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                         __source: {
                             fileName: "src/components/enlaces/enlaces.tsx",
                             lineNumber: 18
                         },
                         __self: undefined,
-                        children: /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                            __source: {
-                                fileName: "src/components/enlaces/enlaces.tsx",
-                                lineNumber: 19
-                            },
-                            __self: undefined,
-                            children: [
-                                "Descripci\xf3n Cueva Ventana: ",
-                                /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                    href: "https://www.facebook.com/aventuracuevaventana/",
-                                    __source: {
-                                        fileName: "src/components/enlaces/enlaces.tsx",
-                                        lineNumber: 19
-                                    },
-                                    __self: undefined,
-                                    children: "Aventura Cueva Ventana "
-                                })
-                            ]
-                        })
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 19
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Descripci\xf3n Cueva Ventana: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://www.facebook.com/aventuracuevaventana/",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 19
+                                        },
+                                        __self: undefined,
+                                        children: "Aventura Cueva Ventana "
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                                __source: {
+                                    fileName: "src/components/enlaces/enlaces.tsx",
+                                    lineNumber: 20
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Descripci\xf3n Bah\xeda Bioluminiscente: ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 20
+                                        },
+                                        __self: undefined,
+                                        children: "Metro PR"
+                                    })
+                                ]
+                            })
+                        ]
                     })
                 ]
             })

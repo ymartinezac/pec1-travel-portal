@@ -17,6 +17,7 @@ const Enlaces = () => {
                 <h2>Texto</h2>
                 <ul>
                     <li>Descripción Cueva Ventana: <a href="https://www.facebook.com/aventuracuevaventana/">Aventura Cueva Ventana </a></li>
+                    <li>Descripción Bahía Bioluminiscente: <a href="https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html">Metro PR</a></li>
                 </ul>
             </article>
             

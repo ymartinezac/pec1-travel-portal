@@ -19,7 +19,7 @@ function App ()  {
             id: 1,
             nombre: "Bahía Bioluminiscente",
             img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max", 
-            descripcion: "Lorem ipsum",
+            descripcion: "La Bahía Mosquito, de la isla-municipio de Vieques fue nombrada como una de las maravillas del mundo para ver en el 2020. Así lo afirmó el sitio especializado Condé Nest Traveler, que compiló los mejores lugares para visitar en el año entrante. La bahía es conocida por su bioluminisciencia, un fenómeno que solo puede ser observado en varias partes del mundo y que en Puerto Rico puede ser observado en tres localizaciones: la mencionada bahía; Laguna Grande, en Fajardo; y La Parguera, en Lajas.",
             duracion: 6,
             guia: true,
             ratings: [ {puntuacion: 5}, {puntuacion: 5}, {puntuacion: 5}],
