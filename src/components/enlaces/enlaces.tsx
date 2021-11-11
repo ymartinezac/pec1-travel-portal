@@ -14,7 +14,7 @@ const Enlaces = () => {
                     <li>Foto de Viejo San Juan: <a href="https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png">Uber Blog</a></li>
                     
                     <li>Foto Bahía Bioluminiscente: <a href="https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html">Metro PR</a></li>
-                    <li>Íconos: <a href="https://feathericons.com/">Feather Icons</a></li>
+                    <li>Íconos: <a href="https://feathericons.com/">Feather Icons</a> y <a href="https://fontawesome.com/">Font Awesome</a></li>
                 </ul>
             </article>
             <article>

@@ -54249,6 +54249,16 @@ const Enlaces = ()=>{
                                         },
                                         __self: undefined,
                                         children: "Feather Icons"
+                                    }),
+                                    " y ",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                        href: "https://fontawesome.com/",
+                                        __source: {
+                                            fileName: "src/components/enlaces/enlaces.tsx",
+                                            lineNumber: 17
+                                        },
+                                        __self: undefined,
+                                        children: "Font Awesome"
                                     })
                                 ]
                             })
