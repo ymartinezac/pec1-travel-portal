@@ -27,7 +27,8 @@ const TourDetail = ({ tours }) => {
                     
                 
                     <h3>Descripción</h3>
-                    <p>{tour.descripcion}</p>
+                    <div dangerouslySetInnerHTML={{ __html: tour.descripcion }} ></div>
+                 
                     <ul className="details-group">
                         <li className="detalles">
                             <FiClock className="icons" /> 

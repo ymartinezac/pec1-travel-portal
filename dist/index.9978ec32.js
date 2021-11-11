@@ -976,7 +976,7 @@ function App() {
             id: 1,
             nombre: "Bahía Bioluminiscente",
             img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
-            descripcion: "La Bahía Mosquito, de la isla-municipio de Vieques fue nombrada como una de las maravillas del mundo para ver en el 2020. Así lo afirmó el sitio especializado Condé Nest Traveler, que compiló los mejores lugares para visitar en el año entrante. La bahía es conocida por su bioluminisciencia, un fenómeno que solo puede ser observado en varias partes del mundo y que en Puerto Rico puede ser observado en tres localizaciones: la mencionada bahía; Laguna Grande, en Fajardo; y La Parguera, en Lajas.",
+            descripcion: "<p>La Bahía Mosquito, de la isla-municipio de Vieques fue nombrada como una de las maravillas del mundo para ver en el 2020. Así lo afirmó el sitio especializado Condé Nest Traveler, que compiló los mejores lugares para visitar en el año entrante.</p><p>La bahía es conocida por su bioluminisciencia, un fenómeno que solo puede ser observado en varias partes del mundo y que en Puerto Rico puede ser observado en tres localizaciones: la mencionada bahía; Laguna Grande, en Fajardo; y La Parguera, en Lajas.</p> <p>'Bahía Mosquito es el mejor lugar en el mundo para ver uno de los fenómenos más fascinantes de la naturaleza: la bioluminiscencia. Localizada en la isla de Vieques, cerca de la costa este de la isla principal, esta entrada protegida es hogar para un tipo especial de planktons, llamados dinoflagelados, que emiten una luz color azul verdoso cuando son agitados', lee parte de la descripción publicada por la página.</p><p>'Por sí solos, son muy poco perceptibles. Pero en la bahía, hay lo suficiente como para mantener el Récord Mundial Guinness para la bioluminiscencia más brillante en ser grabada. Eso es increíblemente raro', continuó el texto.</p>",
             duracion: 6,
             guia: true,
             ratings: [
@@ -1022,8 +1022,8 @@ function App() {
         },
         {
             id: 3,
-            nombre: "Cueva Ventana",
-            img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
+            nombre: "Viejo San Juan",
+            img_url: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
             descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo. ",
             duracion: 2,
             guia: false,
@@ -1045,8 +1045,8 @@ function App() {
         },
         {
             id: 4,
-            nombre: "Bahía Bioluminiscente",
-            img_url: "https://media.metrolatam.com/2019/12/29/screenshot201911-a7ebad14a8f3af69c3ff392966701c3c-1200x800.jpg",
+            nombre: "Playa Flamenco",
+            img_url: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
             descripcion: "Lorem ipsum",
             duracion: 6,
             guia: true,
@@ -1061,15 +1061,15 @@ function App() {
                     puntuacion: 3
                 }
             ],
-            ubicacion: 'Vieques, PR',
+            ubicacion: 'Culebra, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
             precio: 79.99
         },
         {
             id: 5,
-            nombre: "Bosque Tropical El Yunque",
-            img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
+            nombre: "Toro Verde Zipline",
+            img_url: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
             descripcion: "Lorem ipsum",
             duracion: 7,
             guia: true,
@@ -1303,7 +1303,7 @@ function App() {
         })
     }));
 }
-_s(App, "79TFXV9bx+9F/EWUfueFsgmweag=");
+_s(App, "ayHASHgfFotqQgsuNMWVLBkoXn8=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
@@ -54407,19 +54407,21 @@ const TourDetail = ({ tours  })=>{
                                 __self: undefined,
                                 children: "Descripci\xf3n"
                             }),
-                            /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                                dangerouslySetInnerHTML: {
+                                    __html: tour.descripcion
+                                },
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
                                     lineNumber: 30
                                 },
-                                __self: undefined,
-                                children: tour.descripcion
+                                __self: undefined
                             }),
                             /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
                                 className: "details-group",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 31
+                                    lineNumber: 32
                                 },
                                 __self: undefined,
                                 children: [
@@ -54427,7 +54429,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 32
+                                            lineNumber: 33
                                         },
                                         __self: undefined,
                                         children: [
@@ -54435,14 +54437,14 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 33
+                                                    lineNumber: 34
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 34
+                                                    lineNumber: 35
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -54457,7 +54459,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 36
+                                            lineNumber: 37
                                         },
                                         __self: undefined,
                                         children: [
@@ -54465,14 +54467,14 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 37
+                                                    lineNumber: 38
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 38
+                                                    lineNumber: 39
                                                 },
                                                 __self: undefined,
                                                 children: [
@@ -54486,7 +54488,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 41
+                                            lineNumber: 42
                                         },
                                         __self: undefined,
                                         children: [
@@ -54494,14 +54496,14 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 42
+                                                    lineNumber: 43
                                                 },
                                                 __self: undefined
                                             }),
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 43
+                                                    lineNumber: 44
                                                 },
                                                 __self: undefined,
                                                 children: "Tour con gu\xeda"
@@ -54516,14 +54518,14 @@ const TourDetail = ({ tours  })=>{
                         className: "checkout",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 47
+                            lineNumber: 48
                         },
                         __self: undefined,
                         children: [
                             /*#__PURE__*/ _jsxRuntime.jsxs("h2", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 48
+                                    lineNumber: 49
                                 },
                                 __self: undefined,
                                 children: [
@@ -54536,7 +54538,7 @@ const TourDetail = ({ tours  })=>{
                                 className: "btn-reservar",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 50
+                                    lineNumber: 51
                                 },
                                 __self: undefined,
                                 children: "Reservar"
