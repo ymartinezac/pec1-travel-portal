@@ -1,6 +1,15 @@
 .mobile-nav h1 {
     color: white;
     align-self: center;
+    font-family: korolev, sans-serif;
+font-weight: 700;
+font-style: normal
+}
+
+.mobile-nav h1 a {
+    font-family: korolev, sans-serif;
+font-weight: 700;
+font-style: normal
 }
 .mobile-nav {
     position: fixed;

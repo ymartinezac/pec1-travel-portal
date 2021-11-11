@@ -974,7 +974,7 @@ function App() {
     const [tours, setTour] = _reactDefault.default.useState([
         {
             id: 1,
-            nombre: "Bahía Bioluminiscente TOP",
+            nombre: "Bahía Bioluminiscente",
             img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
             descripcion: "Lorem ipsum",
             duracion: 6,
@@ -998,7 +998,7 @@ function App() {
         },
         {
             id: 2,
-            nombre: "Bosque Tropical El Yunque TOP",
+            nombre: "Bosque Tropical El Yunque",
             img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
             descripcion: "Lorem ipsum",
             duracion: 7,
@@ -1041,8 +1041,7 @@ function App() {
             ubicacion: 'Arecibo, PR',
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
-            precio: 20,
-            tag: "bestseller"
+            precio: 20
         },
         {
             id: 4,
@@ -1065,8 +1064,7 @@ function App() {
             ubicacion: 'Vieques, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
-            precio: 79.99,
-            tag: "bestseller"
+            precio: 79.99
         },
         {
             id: 5,
@@ -1089,12 +1087,11 @@ function App() {
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
-            precio: 39.99,
-            tag: "bestseller"
+            precio: 39.99
         },
         {
             id: 6,
-            nombre: "Cueva Ventana TOP",
+            nombre: "Cueva Ventana",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
             descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo.",
             duracion: 2,
@@ -1137,8 +1134,7 @@ function App() {
             ubicacion: 'Vieques, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
-            precio: 79.99,
-            tag: "bestseller"
+            precio: 79.99
         },
         {
             id: 8,
@@ -1161,8 +1157,7 @@ function App() {
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
-            precio: 39.99,
-            tag: "bestseller"
+            precio: 39.99
         },
         {
             id: 9,
@@ -1185,8 +1180,7 @@ function App() {
             ubicacion: 'Arecibo, PR',
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
-            precio: 20,
-            tag: "bestseller"
+            precio: 20
         }
     ]);
     const [navToggle, setNavToggle] = _reactDefault.default.useState(false);
@@ -1221,6 +1215,7 @@ function App() {
                         __self: this
                     }),
                     navToggle ? /*#__PURE__*/ _jsxRuntime.jsx(_mobileNavDefault.default, {
+                        handleNavToggle: handleNavToggle,
                         __source: {
                             fileName: "src/index.tsx",
                             lineNumber: 161
@@ -1308,7 +1303,7 @@ function App() {
         })
     }));
 }
-_s(App, "bw3e+ZSWkjD1GS8IiVs9vf6RL/Y=");
+_s(App, "dcDu2QWOHIGLjoq9iVVfzCrBU3M=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
@@ -42309,11 +42304,11 @@ const TourCard = ({ tour  })=>{
                     __self: undefined
                 })
             }),
-            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            tour.tag ? /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                 className: "tag",
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
-                    lineNumber: 13
+                    lineNumber: 15
                 },
                 __self: undefined,
                 children: [
@@ -42321,24 +42316,24 @@ const TourCard = ({ tour  })=>{
                         className: "icons",
                         __source: {
                             fileName: "src/components/tour-card/tour-card.tsx",
-                            lineNumber: 14
+                            lineNumber: 16
                         },
                         __self: undefined
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx("p", {
                         __source: {
                             fileName: "src/components/tour-card/tour-card.tsx",
-                            lineNumber: 15
+                            lineNumber: 17
                         },
                         __self: undefined,
                         children: tour.tag
                     })
                 ]
-            }),
+            }) : null,
             /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
-                    lineNumber: 17
+                    lineNumber: 21
                 },
                 __self: undefined,
                 children: tour.nombre
@@ -42347,7 +42342,7 @@ const TourCard = ({ tour  })=>{
                 className: "tour-specs",
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
-                    lineNumber: 18
+                    lineNumber: 22
                 },
                 __self: undefined,
                 children: [
@@ -42355,14 +42350,14 @@ const TourCard = ({ tour  })=>{
                         className: "icons",
                         __source: {
                             fileName: "src/components/tour-card/tour-card.tsx",
-                            lineNumber: 19
+                            lineNumber: 23
                         },
                         __self: undefined
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                         __source: {
                             fileName: "src/components/tour-card/tour-card.tsx",
-                            lineNumber: 20
+                            lineNumber: 24
                         },
                         __self: undefined,
                         children: [
@@ -42377,13 +42372,13 @@ const TourCard = ({ tour  })=>{
                 className: "tour-price",
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
-                    lineNumber: 22
+                    lineNumber: 26
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                     __source: {
                         fileName: "src/components/tour-card/tour-card.tsx",
-                        lineNumber: 23
+                        lineNumber: 27
                     },
                     __self: undefined,
                     children: [
@@ -42391,7 +42386,7 @@ const TourCard = ({ tour  })=>{
                             className: "precio",
                             __source: {
                                 fileName: "src/components/tour-card/tour-card.tsx",
-                                lineNumber: 23
+                                lineNumber: 27
                             },
                             __self: undefined,
                             children: '$' + tour.precio
@@ -42404,7 +42399,7 @@ const TourCard = ({ tour  })=>{
                 className: "btn-reservar",
                 __source: {
                     fileName: "src/components/tour-card/tour-card.tsx",
-                    lineNumber: 26
+                    lineNumber: 30
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
@@ -42412,7 +42407,7 @@ const TourCard = ({ tour  })=>{
                     to: "/tours/" + tour.id,
                     __source: {
                         fileName: "src/components/tour-card/tour-card.tsx",
-                        lineNumber: 26
+                        lineNumber: 30
                     },
                     __self: undefined,
                     children: "Reserva ahora "
@@ -53874,26 +53869,26 @@ var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-const MobileNav = ()=>{
+const MobileNav = ({ handleNavToggle  })=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "mobile-nav",
         __source: {
             fileName: "src/components/mobile-nav/mobile-nav.tsx",
-            lineNumber: 12
+            lineNumber: 13
         },
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 13
+                    lineNumber: 14
                 },
                 __self: undefined,
                 children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.NavLink, {
                     to: "/",
                     __source: {
                         fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                        lineNumber: 13
+                        lineNumber: 14
                     },
                     __self: undefined,
                     children: [
@@ -53901,7 +53896,7 @@ const MobileNav = ()=>{
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             __source: {
                                 fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                                lineNumber: 13
+                                lineNumber: 14
                             },
                             __self: undefined,
                             children: "PR"
@@ -53913,34 +53908,43 @@ const MobileNav = ()=>{
                 to: "/",
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 14
+                    lineNumber: 15
                 },
                 __self: undefined,
                 children: "Inicio"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/buscar-tours",
+                onClick: ()=>{
+                    handleNavToggle();
+                },
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 15
+                    lineNumber: 16
                 },
                 __self: undefined,
                 children: "Buscar Tours"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/presentacion",
+                onClick: ()=>{
+                    handleNavToggle();
+                },
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 16
+                    lineNumber: 17
                 },
                 __self: undefined,
                 children: "Presentaci\xf3n"
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
                 to: "/enlaces",
+                onClick: ()=>{
+                    handleNavToggle();
+                },
                 __source: {
                     fileName: "src/components/mobile-nav/mobile-nav.tsx",
-                    lineNumber: 17
+                    lineNumber: 18
                 },
                 __self: undefined,
                 children: "Enlaces"
@@ -54004,16 +54008,34 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Presentacion = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("article", {
+        className: "presentacion",
         __source: {
             fileName: "src/components/presentacion/presentacion.tsx",
             lineNumber: 6
         },
         __self: undefined,
         children: [
-            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                className: "presentacion-img-mask",
                 __source: {
                     fileName: "src/components/presentacion/presentacion.tsx",
                     lineNumber: 7
+                },
+                __self: undefined,
+                children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                    src: "https://www.puertoricodaytrips.com/wp-images-post/columpio-de-ceiba-1a.jpg",
+                    alt: "columpio sobre playa",
+                    __source: {
+                        fileName: "src/components/presentacion/presentacion.tsx",
+                        lineNumber: 8
+                    },
+                    __self: undefined
+                })
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 10
                 },
                 __self: undefined,
                 children: "Presentaci\xf3n ViajaPR"
@@ -54021,24 +54043,36 @@ const Presentacion = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                 __source: {
                     fileName: "src/components/presentacion/presentacion.tsx",
-                    lineNumber: 8
-                },
-                __self: undefined,
-                children: "ViajaPR es un portal de viajes que ofrece lo que se conoce en Puerto Rico como \"tours\" alrededor de la Isla."
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsx("p", {
-                __source: {
-                    fileName: "src/components/presentacion/presentacion.tsx",
                     lineNumber: 11
                 },
-                __self: undefined
+                __self: undefined,
+                children: "Puerto Rico es un archipi\xe9lago en el Caribe que ofrece variedad de experiencias para todos los gustos. En este portal nos especializamos en los atractivos naturales. Los tours son guiados y biling\xfces. Adem\xe1s, ofrecemos tours en toda la isla, incluyendo las islas Vieques y Culebra. "
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                 __source: {
                     fileName: "src/components/presentacion/presentacion.tsx",
                     lineNumber: 12
                 },
-                __self: undefined
+                __self: undefined,
+                children: "ViajaPR es un portal de viajes que ofrece tours biling\xfces. Contamos con una pol\xedtica de cancelaci\xf3n flexible: reembolso en su totalidad si se cancela con al menos 24 horas de anticipaci\xf3n. "
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsxs("p", {
+                __source: {
+                    fileName: "src/components/presentacion/presentacion.tsx",
+                    lineNumber: 13
+                },
+                __self: undefined,
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("strong", {
+                        __source: {
+                            fileName: "src/components/presentacion/presentacion.tsx",
+                            lineNumber: 13
+                        },
+                        __self: undefined,
+                        children: "Covid-19:"
+                    }),
+                    " Por la actual pandemia, los tours se efectuan bajo estrictas medidas de sanitizaci\xf3n. El uso de mascarillas es compulsorio, y se estar\xe1 requiriendo el lavado de manos frecuentemente."
+                ]
             })
         ]
     }));

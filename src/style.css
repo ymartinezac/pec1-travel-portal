@@ -79,7 +79,7 @@ main {
 
 }
 
-@media only screen and (min-width: 250px){ 
+@media only screen and (max-width: 450px){ 
 
     h1{
         font-size: 3.6rem;

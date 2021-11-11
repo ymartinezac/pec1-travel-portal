@@ -83,15 +83,7 @@
 
 }
 
-@media (min-width: 501px) and (max-width: 1233px){ 
-    .top-tour-card {
-        width: 45%;
-
-    }
-
-}
-
-@media (min-width: 250px) and (max-width: 500px){ 
+@media (min-width: 250px) and (max-width: 992px){ 
     .top-tour-card {
         width: 100%;
         margin-bottom: 7%;
@@ -142,12 +134,12 @@
 
 }
 
-@media only screen and (min-width: 250px){ 
+@media (min-width: 250px) and (max-width: 992px){ 
     .img-mask {
         height: 20vh;
     }
     .top-tour-card{
-        width: 100%;
+        width: 100%!important;
     }
 
     .top-tour-card h2 {

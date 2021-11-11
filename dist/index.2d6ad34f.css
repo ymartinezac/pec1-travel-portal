@@ -3,27 +3,35 @@
     flex-wrap: wrap;
     padding: 0 30vw 0 30vw;
     height: 90%;
-    align-content: flex-start;
+    margin-top: -8vh;
 }
 
+.enlaces h2 {
+    text-align: center;
+}
+
+.enlaces ul {
+    text-align: center;
+    padding-left: 0;
+}
 
 .enlaces h1 {
     color: var(--red);
     font-size: 3rem;
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
+    text-align: center;
 }
-
 
 .enlaces article {
     width: 100%;
 }
 
-
 @media (min-width: 250px) and (max-width: 992px){ 
     .enlaces h1 {
         font-size: 6rem;
         height: 5vh;
+
     }
 
     .enlaces h2 {
@@ -32,11 +40,16 @@
 
     .enlaces{
         padding: 0 5vw 0 5vw;
-        height: 85vh;
+        height: auto;
+        margin-top: -5vh;
+        justify-content: center;
+        align-items: center;
     }
 
     .enlaces li {
         font-size: 3rem;
     }
+
+   
 }
 /*# sourceMappingURL=index.2d6ad34f.css.map */

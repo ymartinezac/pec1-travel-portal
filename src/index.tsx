@@ -17,7 +17,7 @@ function App ()  {
     const [tours, setTour] = React.useState<Tour[]>([
         {
             id: 1,
-            nombre: "Bahía Bioluminiscente TOP",
+            nombre: "Bahía Bioluminiscente",
             img_url:  "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max", 
             descripcion: "Lorem ipsum",
             duracion: 6,
@@ -31,7 +31,7 @@ function App ()  {
         }, 
         {
             id: 2,
-            nombre: "Bosque Tropical El Yunque TOP",
+            nombre: "Bosque Tropical El Yunque",
             img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200", 
             descripcion: "Lorem ipsum",
             duracion: 7,
@@ -54,8 +54,8 @@ function App ()  {
             ubicacion: 'Arecibo, PR',
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
-            precio: 20,
-            tag: "bestseller"
+            precio: 20
+            
         },
         {
             id: 4,
@@ -69,7 +69,7 @@ function App ()  {
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
             precio: 79.99,
-            tag: "bestseller"
+          
         }, 
         {
             id: 5,
@@ -82,12 +82,12 @@ function App ()  {
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
-            precio: 39.99,
-            tag: "bestseller"
+            precio: 39.99
+           
         },
         {
             id: 6,
-            nombre: "Cueva Ventana TOP",
+            nombre: "Cueva Ventana",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80", 
             descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo.",
             duracion: 2,
@@ -110,8 +110,8 @@ function App ()  {
             ubicacion: 'Vieques, PR',
             puntoEncuentro: "Terminal de Lanchas de Fajardo",
             fechas: [],
-            precio: 79.99,
-            tag: "bestseller"
+            precio: 79.99
+        
         }, 
         {
             id: 8,
@@ -124,8 +124,8 @@ function App ()  {
             ubicacion: 'Rio Grande, PR',
             puntoEncuentro: "El Yunque National Forest - El Portal",
             fechas: [],
-            precio: 39.99,
-            tag: "bestseller"
+            precio: 39.99
+         
         },
         {
             id: 9,
@@ -139,7 +139,7 @@ function App ()  {
             puntoEncuentro: "Cueva Ventana",
             fechas: [],
             precio: 20,
-            tag: "bestseller"
+          
         }
     ])
     const [navToggle, setNavToggle] = React.useState<boolean>(false);
@@ -158,7 +158,7 @@ function App ()  {
                 <React.StrictMode>
                
                     <Toggle handleNavToggle={handleNavToggle}/> 
-                    { navToggle ? <MobileNav /> : null}
+                    { navToggle ? <MobileNav  handleNavToggle={handleNavToggle} /> : null}
                     <TopNav />
                    
                         <Routes>

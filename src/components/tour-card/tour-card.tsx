@@ -10,10 +10,14 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
         <div className="img-mask">
             <img src={tour.img_url} />
         </div>
-        <div className="tag">
-            <FiStar className="icons" />
-            <p>{tour.tag}</p>
-        </div> 
+
+        { tour.tag ?
+            <div className="tag">
+                <FiStar className="icons" />
+                <p>{tour.tag}</p>
+            </div>   
+        : null}
+       
         <h2>{tour.nombre}</h2>
         <div className="tour-specs">
             <FiClock className="icons" /> 

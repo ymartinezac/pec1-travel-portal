@@ -5,16 +5,17 @@ import { NavLink } from 'react-router-dom';
 
 
 
-const MobileNav = () => {
-    
+const MobileNav = ({handleNavToggle}) => {
+
+
     return (
         
         <div className="mobile-nav">
             <h1><NavLink to="/">🇵🇷 Viaja<span>PR</span></NavLink></h1>
-            <NavLink to="/">Inicio</NavLink> 
-                <NavLink to="/buscar-tours">Buscar Tours</NavLink>
-                <NavLink to="/presentacion">Presentación</NavLink> 
-                <NavLink to="/enlaces">Enlaces</NavLink>     
+            <NavLink to="/"  >Inicio</NavLink> 
+                <NavLink to="/buscar-tours" onClick={() => { handleNavToggle();} }>Buscar Tours</NavLink>
+                <NavLink to="/presentacion" onClick={() => { handleNavToggle(); } }>Presentación</NavLink> 
+                <NavLink to="/enlaces" onClick={() => { handleNavToggle(); } }>Enlaces</NavLink>     
         </div>
     )
 }

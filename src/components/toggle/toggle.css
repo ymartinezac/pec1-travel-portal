@@ -1,9 +1,10 @@
 .hamburguer {
     display: none;
+    z-index:999999999999999999999999;
 }
 .toggle-wrap {
     display: none;
-
+    z-index:999999999999999999999999;
    
 }
 
@@ -43,6 +44,7 @@
         margin: 30px 40px 0 0;
         width: 2vh;
         height: 2vh;
+        z-index:999999999999999999999999;
 
     }
 

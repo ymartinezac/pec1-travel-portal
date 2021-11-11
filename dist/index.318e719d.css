@@ -1,2 +1,41 @@
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 30vw 0 30vw;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    
 
+}
+
+.presentacion h1 {
+    color: var(--red);
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.presentacion p{
+    text-align: justify;
+}
+
+.presentacion-img-mask {
+    width: 30vh;
+    height: 30vh;
+ 
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.presentacion-img-mask img {
+    height: 100%;
+   
+}
 /*# sourceMappingURL=index.318e719d.css.map */
