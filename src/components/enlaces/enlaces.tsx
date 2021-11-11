@@ -16,7 +16,7 @@ const Enlaces = () => {
             <article>
                 <h2>Texto</h2>
                 <ul>
-                    <li>Descripción Cueva Ventana: <a href="https://www.facebook.com/aventuracuevaventana/">https://www.facebook.com/aventuracuevaventana/ </a></li>
+                    <li>Descripción Cueva Ventana: <a href="https://www.facebook.com/aventuracuevaventana/">Aventura Cueva Ventana </a></li>
                 </ul>
             </article>
             

@@ -54235,7 +54235,7 @@ const Enlaces = ()=>{
                                         lineNumber: 19
                                     },
                                     __self: undefined,
-                                    children: "https://www.facebook.com/aventuracuevaventana/ "
+                                    children: "Aventura Cueva Ventana "
                                 })
                             ]
                         })
