@@ -1,0 +1,332 @@
+
+.main-landing {
+    background-image: url(https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1570&q=80);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+
+.main-landing div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 100vw;
+    height: 100%;
+  
+}
+
+.main-landing h1 {
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10rem;
+    margin: 0;
+}
+
+.main-landing h2 {
+    font-family: relation-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5rem;
+    margin: -5vh 0 0 0;
+}
+
+@media (min-width: 250px) and (max-width: 992px){
+    .main-landing{
+        height: 55vh;
+        margin-top: -130px;
+        width: 100vw;
+    }
+    .main-landing h1{
+        font-size: 8.5em;
+        text-align: center;
+
+
+    }
+    .main-landing h2 {
+        margin: 0;
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 450px){ 
+    .main-landing {
+        margin-top: 5vh;
+        padding-top: 0px;
+    }
+}
+
+/*--------------------------------------------------------------*/
+
+.info-general, .top-tour-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    justify-content: space-between;
+    padding: 0 12% 0 12%;
+    margin: 0;
+    margin-bottom: 2vh;
+    row-gap: 1vh;
+}
+
+.top-tour-grid {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 20px;
+}
+
+.top-tours-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 25px 0 -1.5vh 0;
+}
+
+.top-tours-header h1 {
+    margin: 0;
+}
+
+.ver-mas {
+    font-family: korolev, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--red);
+}
+
+.ver-mas:hover {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+@media (min-width: 501px) and (max-width: 1233px){ 
+    .top-tour-grid {
+        -moz-column-gap: 15px;
+             column-gap: 15px;
+        margin-bottom: 2vh;
+        row-gap: 3vh;
+        padding-right: 6vh;
+     
+    }
+
+    .top-tours-header{
+        margin-bottom: -2.5vh;
+    }
+
+    .top-tours-header h1 {
+        font-size: 3rem;
+       
+    }
+
+    .ver-mas {
+        font-size: 1.6rem;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 550px){ 
+
+    .top-tours-header{
+        margin-top: 4vh;
+    }
+    .top-tours-header h1 {
+        margin-bottom: 1%;
+        margin-top: 0;
+        font-size: 4.5rem;
+    }
+
+    .info-general, .top-tour-grid {
+        padding: 0 8% 0 8%;
+        justify-content: center;
+        width: 84%;
+        margin: 0;
+    }
+
+    .ver-mas {
+        font-size: 3rem;
+    }
+    
+}
+
+/*--------------------------------------------------------------*/
+
+.snorkel {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    color: var(--main-bg-color);
+    padding: 0 12vw 0 12vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1612158560555-34306ad5e77c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1335&q=80);
+}
+
+.snorkel h1 {
+    margin: 8% 0 8% 0;
+    width: 75%;
+    text-align: left;
+    font-size: 5rem;
+}
+
+.snorkel span {
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.snorkel-svg {
+    width: 25%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg) brightness(102%) contrast(101%);
+    transform: rotate(6deg);
+}
+
+@media (min-width: 250px) and (max-width: 1233px){ 
+    .snorkel {
+        flex-direction: column-reverse;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh 5vw;
+        height: 50vh;
+    }
+    .snorkel h1 {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 1vh;
+        font-size: 5rem;
+    }
+    .snorkel-svg {
+        width: 70%;
+    }
+    .snorkel span {
+        color: var(--red);
+    }
+}
+
+@media only screen and (max-width: 450px) { 
+    .snorkel {
+        height: 50vh;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 3vh;
+       
+    }
+    .snorkel h1 {
+        margin: 2% 0;
+        width: 95%;
+        text-align: center;
+        font-size: 5rem;
+    }
+    .snorkel span {
+        color: var(--dark-blue);
+        font-size: 9rem;
+    }
+    .snorkel-svg {
+        width: 60%;
+    }
+}
+
+/*--------------------------------------------------------------*/
+
+.info-general h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.info-general ul {
+    list-style: none;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.info-general .icons  {
+    font-size: 40px;
+    margin-right: 0.5em;
+    margin-top: 2%;
+    width: 1em;
+}
+
+.info-general li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7%;
+}
+
+.info-general h2{
+    margin: 0;
+}
+
+.info-general p {
+    
+    margin: 0;
+
+}
+
+.info-general img {
+    box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    border-radius: 3px;
+}
+
+@media (min-width: 250px) and (max-width: 1080px){  
+    .info-general {
+        justify-content: center;
+    }
+    .info-general img {
+        display: none;
+    }
+
+    .info-general ul {
+        width: 100%;
+        padding: 0 3vw 0 3vw;
+
+    }
+
+    .info-general ul h2 {
+        font-size: 2.6rem;
+    }
+    .info-general ul p {
+        font-size: 2.3rem;
+    }
+    .info-general li {
+        text-align: justify;
+        margin-bottom: 3vh;
+    }
+
+    .info-general h1 {
+        margin: 5vh 0 1vh 0;
+        font-size: 4rem;
+    }
+
+    .info-general .icons{
+        font-size: 5rem;
+    }
+
+
+}
+
+/*--------------------------------------------------------------*/
+
+
+
+
+/*# sourceMappingURL=index.21344024.css.map */
