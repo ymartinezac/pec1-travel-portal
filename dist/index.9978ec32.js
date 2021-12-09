@@ -24793,6 +24793,7 @@ const compararPuntuaciones = (tours)=>{
     return tours.sort(compare);
 };
 const Home = ({ tours  })=>{
+    const img_url = window.location.href + "images/caborojo_small.jpg";
     const renderTopTours = ()=>{
         const sortedTours = compararPuntuaciones(tours);
         const top3 = sortedTours.slice(0, 3);
@@ -25112,14 +25113,66 @@ const Home = ({ tours  })=>{
                         ]
                     }),
                     /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                        src: "https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80",
+                        src: img_url,
                         alt: "arco de piedras en la playa",
+                        className: "clip-svg",
                         __source: {
                             fileName: "src/components/home/home.tsx",
                             lineNumber: 94,
                             columnNumber: 17
                         },
                         __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsx("svg", {
+                        width: "0",
+                        height: "0",
+                        __source: {
+                            fileName: "src/components/home/home.tsx",
+                            lineNumber: 95,
+                            columnNumber: 17
+                        },
+                        __self: undefined,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx("defs", {
+                            __source: {
+                                fileName: "src/components/home/home.tsx",
+                                lineNumber: 96,
+                                columnNumber: 3
+                            },
+                            __self: undefined,
+                            children: /*#__PURE__*/ _jsxRuntime.jsxs("clipPath", {
+                                id: "myClip",
+                                __source: {
+                                    fileName: "src/components/home/home.tsx",
+                                    lineNumber: 97,
+                                    columnNumber: 5
+                                },
+                                __self: undefined,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx("circle", {
+                                        cx: "180",
+                                        cy: "200",
+                                        r: "140",
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 98,
+                                            columnNumber: 7
+                                        },
+                                        __self: undefined
+                                    }),
+                                    /*#__PURE__*/ _jsxRuntime.jsx("circle", {
+                                        cx: "330",
+                                        cy: "140",
+                                        r: "140",
+                                        __source: {
+                                            fileName: "src/components/home/home.tsx",
+                                            lineNumber: 99,
+                                            columnNumber: 7
+                                        },
+                                        __self: undefined
+                                    })
+                                ]
+                            })
+                        })
                     })
                 ]
             })
@@ -53741,6 +53794,8 @@ var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
+var _viajaPRLogoSvg = require("../../assets/ViajaPR-logo.svg");
+var _viajaPRLogoSvgDefault = parcelHelpers.interopDefault(_viajaPRLogoSvg);
 const TopNav = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("header", {
         __source: {
@@ -53751,6 +53806,7 @@ const TopNav = ()=>{
         __self: undefined,
         children: [
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                className: "titulo",
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
                     lineNumber: 10,
@@ -53761,17 +53817,28 @@ const TopNav = ()=>{
                     to: "/",
                     __source: {
                         fileName: "src/components/top-nav/top-nav.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 17
                     },
                     __self: undefined,
                     children: [
-                        "🇵🇷 Viaja",
+                        /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                            className: "logo",
+                            src: _viajaPRLogoSvgDefault.default,
+                            alt: "logo de ViajaPR",
+                            __source: {
+                                fileName: "src/components/top-nav/top-nav.tsx",
+                                lineNumber: 12,
+                                columnNumber: 21
+                            },
+                            __self: undefined
+                        }),
+                        "Viaja",
                         /*#__PURE__*/ _jsxRuntime.jsx("span", {
                             __source: {
                                 fileName: "src/components/top-nav/top-nav.tsx",
-                                lineNumber: 10,
-                                columnNumber: 41
+                                lineNumber: 13,
+                                columnNumber: 26
                             },
                             __self: undefined,
                             children: "PR"
@@ -53782,7 +53849,7 @@ const TopNav = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
                 __source: {
                     fileName: "src/components/top-nav/top-nav.tsx",
-                    lineNumber: 11,
+                    lineNumber: 16,
                     columnNumber: 13
                 },
                 __self: undefined,
@@ -53791,7 +53858,7 @@ const TopNav = ()=>{
                         to: "/",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 13,
+                            lineNumber: 18,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -53801,7 +53868,7 @@ const TopNav = ()=>{
                         to: "/buscar-tours",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 14,
+                            lineNumber: 19,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -53811,7 +53878,7 @@ const TopNav = ()=>{
                         to: "/presentacion",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 15,
+                            lineNumber: 20,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -53821,7 +53888,7 @@ const TopNav = ()=>{
                         to: "/enlaces",
                         __source: {
                             fileName: "src/components/top-nav/top-nav.tsx",
-                            lineNumber: 16,
+                            lineNumber: 21,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -53842,7 +53909,45 @@ $RefreshReg$(_c, "TopNav");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"16kZP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4KzLw":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"16kZP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../assets/ViajaPR-logo.svg":"4QXYA"}],"4QXYA":[function(require,module,exports) {
+module.exports = require('./helpers/bundle-url').getBundleURL('k0Tzb') + "ViajaPR-logo.d6a83315.svg" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
+"use strict";
+var bundleURL = {
+};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"4KzLw":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b682 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

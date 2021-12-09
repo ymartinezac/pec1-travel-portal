@@ -35,7 +35,7 @@ const compararPuntuaciones = ( tours ) => {
 }
 
 const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
-
+    const img_url = window.location.href + "images/caborojo_small.jpg";
     const renderTopTours = () => {
         const sortedTours = compararPuntuaciones(tours);
         const top3 = sortedTours.slice(0, 3);
@@ -91,7 +91,15 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                         </div>
                     </li>
                 </ul>
-                <img src="https://images.unsplash.com/photo-1599582871426-a44765cedca0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=520&q=80" alt="arco de piedras en la playa" />
+                <img src={img_url} alt="arco de piedras en la playa" className="clip-svg" />
+                <svg width="0" height="0">
+  <defs>
+    <clipPath id="myClip">
+      <circle cx="180" cy="200" r="140"/>
+      <circle cx="330" cy="140" r="140"/>
+    </clipPath>
+  </defs>
+</svg>
             
                 </section>
         </main>
