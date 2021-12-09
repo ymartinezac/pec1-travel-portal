@@ -8,8 +8,9 @@
     "parcel:dev": "parcel src/index.html",
     "parcel:build": "parcel build src/index.html",
     "clean": "rimraf dist .parcel-cache .cache-loader",
-    "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build"
+    "dev": "npm-run-all clean copy parcel:dev",
+    "build": "npm-run-all clean copy parcel:build",
+    "copy": "cp -R public dist"
   },
   "author": "Yesenia Martínez Acevedo",
   "license": "ISC",
@@ -37,4 +38,5 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.1"
   }
+
 }

@@ -1,0 +1,103 @@
+:root {
+    --main-bg-color: #FFFEF9;
+    --red: #c91c28;
+    --yellow: #CFBA00;
+    --blue: #05899E;
+    --dark-blue: #00505a;
+    --dark-gray: #272727;
+    --black: #090C02;
+}
+
+html {
+    overflow-x: hidden; 
+    height: 100vh;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    margin: 0;
+    min-height: 95%;
+}
+
+h1, h2, h3 {
+    font-family: korolev, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p, li, .btn-reservar {
+    font-family: semplicitapro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.btn-reservar {
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--red);
+    width: 80%;
+    margin: 5px;
+    padding: 0.5rem;
+    background-color: var(--red);
+    color: var(--main-bg-color);
+    
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.btn-reservar:hover  {
+    background-color: var(--main-bg-color);
+    color: var(--red);
+    box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+}
+
+div#app {
+    min-height: 100vh;
+}
+
+main {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 250px) and (max-width: 992px){
+    .btn-reservar{
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 450px){ 
+
+    h1{
+        font-size: 3.6rem;
+    }
+    h2{
+        font-size: 3.5rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+
+/*# sourceMappingURL=index.af814d91.css.map */
