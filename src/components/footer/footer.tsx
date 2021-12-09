@@ -1,11 +1,28 @@
 import React from "react";
-
+import logo from '../../assets/ViajaPR-logo.svg';
+import {NavLink} from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer>
-           © Yesenia Martínez Acevedo
-            
+            <div className="footer-wrap">
+            <h1 className="titulo">
+                <NavLink to="/">
+                    <img className="logo" src={logo} alt="logo de ViajaPR" />
+                    <div>Viaja<span>PR</span></div>
+                </NavLink>
+            </h1>  
+            <p className="credits">
+           © Yesenia Martínez Acevedo</p>
+            <nav>
+                
+                <NavLink to="/">Inicio</NavLink> 
+                <NavLink to="/buscar-tours">Buscar Tours</NavLink>
+                <NavLink to="/presentacion">Presentación</NavLink> 
+                <NavLink to="/enlaces">Enlaces</NavLink> 
+            </nav>
+           
+            </div>
         </footer>
 
     )

@@ -54164,15 +54164,139 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _viajaPRLogoSvg = require("../../assets/ViajaPR-logo.svg");
+var _viajaPRLogoSvgDefault = parcelHelpers.interopDefault(_viajaPRLogoSvg);
+var _reactRouterDom = require("react-router-dom");
 const Footer = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsx("footer", {
         __source: {
             fileName: "src/components/footer/footer.tsx",
-            lineNumber: 6,
+            lineNumber: 7,
             columnNumber: 9
         },
         __self: undefined,
-        children: "\xa9 Yesenia Mart\xednez Acevedo"
+        children: /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+            className: "footer-wrap",
+            __source: {
+                fileName: "src/components/footer/footer.tsx",
+                lineNumber: 8,
+                columnNumber: 13
+            },
+            __self: undefined,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                    className: "titulo",
+                    __source: {
+                        fileName: "src/components/footer/footer.tsx",
+                        lineNumber: 9,
+                        columnNumber: 13
+                    },
+                    __self: undefined,
+                    children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.NavLink, {
+                        to: "/",
+                        __source: {
+                            fileName: "src/components/footer/footer.tsx",
+                            lineNumber: 10,
+                            columnNumber: 17
+                        },
+                        __self: undefined,
+                        children: [
+                            /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                                className: "logo",
+                                src: _viajaPRLogoSvgDefault.default,
+                                alt: "logo de ViajaPR",
+                                __source: {
+                                    fileName: "src/components/footer/footer.tsx",
+                                    lineNumber: 11,
+                                    columnNumber: 21
+                                },
+                                __self: undefined
+                            }),
+                            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                                __source: {
+                                    fileName: "src/components/footer/footer.tsx",
+                                    lineNumber: 12,
+                                    columnNumber: 21
+                                },
+                                __self: undefined,
+                                children: [
+                                    "Viaja",
+                                    /*#__PURE__*/ _jsxRuntime.jsx("span", {
+                                        __source: {
+                                            fileName: "src/components/footer/footer.tsx",
+                                            lineNumber: 12,
+                                            columnNumber: 31
+                                        },
+                                        __self: undefined,
+                                        children: "PR"
+                                    })
+                                ]
+                            })
+                        ]
+                    })
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx("p", {
+                    className: "credits",
+                    __source: {
+                        fileName: "src/components/footer/footer.tsx",
+                        lineNumber: 15,
+                        columnNumber: 13
+                    },
+                    __self: undefined,
+                    children: "\xa9 Yesenia Mart\xednez Acevedo"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs("nav", {
+                    __source: {
+                        fileName: "src/components/footer/footer.tsx",
+                        lineNumber: 17,
+                        columnNumber: 13
+                    },
+                    __self: undefined,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                            to: "/",
+                            __source: {
+                                fileName: "src/components/footer/footer.tsx",
+                                lineNumber: 19,
+                                columnNumber: 17
+                            },
+                            __self: undefined,
+                            children: "Inicio"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                            to: "/buscar-tours",
+                            __source: {
+                                fileName: "src/components/footer/footer.tsx",
+                                lineNumber: 20,
+                                columnNumber: 17
+                            },
+                            __self: undefined,
+                            children: "Buscar Tours"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                            to: "/presentacion",
+                            __source: {
+                                fileName: "src/components/footer/footer.tsx",
+                                lineNumber: 21,
+                                columnNumber: 17
+                            },
+                            __self: undefined,
+                            children: "Presentaci\xf3n"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.NavLink, {
+                            to: "/enlaces",
+                            __source: {
+                                fileName: "src/components/footer/footer.tsx",
+                                lineNumber: 22,
+                                columnNumber: 17
+                            },
+                            __self: undefined,
+                            children: "Enlaces"
+                        })
+                    ]
+                })
+            ]
+        })
     }));
 };
 _c = Footer;
@@ -54185,7 +54309,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"fqsxW":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../assets/ViajaPR-logo.svg":"4QXYA","react-router-dom":"16kZP"}],"fqsxW":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$58c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
