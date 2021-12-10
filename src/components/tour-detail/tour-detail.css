@@ -3,7 +3,7 @@
     height: 65vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 50% 50%;
     grid-template-areas: 
     "dest img2"
