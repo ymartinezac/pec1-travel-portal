@@ -1,11 +1,42 @@
 .tour-header {
     overflow: hidden;
-    height: 55vh;
+    height: 65vh;
     width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "dest img2"
+    "dest img3";
     padding: 0;
+}
+.destacada{
+    grid-area: dest;
+    max-width: 100%;
+
+  object-fit: cover;
+}
+.img2container{
+    margin:0;
+    grid-area: img2;
+}
+.img3container{
+    margin:0;
+    grid-area: img3;
+}
+.img2 {
+    width: 140%;
+  height: auto;
+  aspect-ratio: 18 / 9;
+  object-fit: cover;
+ 
+}
+
+.img3 {
+    width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .tour-detail h1 {

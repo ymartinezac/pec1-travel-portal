@@ -7,21 +7,21 @@ import { FiClock, FiCompass, FiUserCheck } from "react-icons/fi";
 const TourDetail = ({ tours }) => {
     const tour = tours.find(t => t.id === parseInt(useParams().id));
     console.log(useParams().id);
-    const backgroundDiv = {
-        backgroundImage: "url(" + tour.img_url+ ")",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-    }
+   
 
     
 
   
     return (
         <div className="tour-detail" >
-            <div className="tour-header" style={backgroundDiv}>
-                <h1>{tour.nombre}</h1>
+            <div className="tour-header" >
+               <img className="destacada" src={tour.img_url} />
+        
+               <div className="img2container"> <img className="img2" src={tour.img2} /></div>
+               <div className="img3container"> <img className="img3" src={tour.img3} /></div>
+              
             </div>
+            <h1>{tour.nombre}</h1>
             <div className="body">
                 <div className="content">
                     

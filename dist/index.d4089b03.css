@@ -1,13 +1,46 @@
 .tour-header {
     overflow: hidden;
-    height: 55vh;
+    height: 65vh;
     width: 100vw;
-    display: flex;
-    align-items: flex-end;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "dest img2"
+    "dest img3";
     padding: 0;
 }
+.destacada{
+    grid-area: dest;
+    max-width: 100%;
 
+  -o-object-fit: cover;
+
+     object-fit: cover;
+}
+.img2container{
+    margin:0;
+    grid-area: img2;
+}
+.img3container{
+    margin:0;
+    grid-area: img3;
+}
+.img2 {
+    width: 140%;
+  height: auto;
+  aspect-ratio: 18 / 9;
+  -o-object-fit: cover;
+     object-fit: cover;
+ 
+}
+.img3 {
+    width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .tour-detail h1 {
     width: 100%;
     padding: 13px 12vw;
@@ -17,7 +50,6 @@
     margin: 0;
     font-size: 3.5rem;
 }
-
 .tour-detail .body {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +63,6 @@
     margin-top: 2vh;
 
 }
-
 .detalles {
     display: flex;
     align-items: center;
@@ -39,33 +70,27 @@
     font-weight: 400;
     font-style: normal;
 }
-
 .detalles .icons {
     height: 100%;
     width: 23px;
     margin-right: 5px;
 }
-
 .tour-detail .content {
     width: 65%;
     
 }
-
 .content h3 {
     margin: 0;
     width: 100%;
 }
-
 .content p {
     margin-top: 5px;
 }
-
 .checkout h2 {
     text-align: center;
     margin: 10px 0 0 0; 
 
 }
-
 .tour-detail .checkout {
     display: flex;
     max-height: 120px;
@@ -84,7 +109,6 @@
     border-top-color: var(--red);
     margin-top: 20px;
 }
-
 .details-group {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +118,6 @@
     list-style: none;
     padding-left: 0;
 }
-
 @media (min-width: 250px) and (max-width: 992px){ 
  
     

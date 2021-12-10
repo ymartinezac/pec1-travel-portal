@@ -5,14 +5,14 @@ import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-
 import TourCard from "../tour-card/tour-card";
 import { NavLink } from "react-router-dom";
 
-const puntuacionMedia = (tour) => {
+const puntuacionMedia = (tour: Tour) => {
     var sum = 0;
     tour.ratings.map(rating => { 
         if(typeof rating.puntuacion == "number"){
            sum += rating.puntuacion; 
         }
     })
-    const length = parseInt(tour.ratings.length);
+    const length = tour.ratings.length;
     return (sum / length);
 }
 
@@ -30,7 +30,7 @@ function compare( a, b ) {
     }
   }
 
-const compararPuntuaciones = ( tours ) => {
+const compararPuntuaciones = ( tours: Array<Tour> ) => {
     return tours.sort( compare );
 }
 
@@ -39,7 +39,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
     const renderTopTours = () => {
         const sortedTours = compararPuntuaciones(tours);
         const top3 = sortedTours.slice(0, 3);
-        return top3.map((tour) => {
+        return top3.map((tour: Tour) => {
             return (
                 <TourCard tour={tour} />
             );

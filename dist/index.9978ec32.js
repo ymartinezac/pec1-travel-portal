@@ -969,6 +969,7 @@ var _toursGridDefault = parcelHelpers.interopDefault(_toursGrid);
 var _tourDetail = require("./components/tour-detail/tour-detail");
 var _tourDetailDefault = parcelHelpers.interopDefault(_tourDetail);
 var _s = $RefreshSig$();
+const url = "http://localhost:1234/images/";
 function App() {
     _s();
     const [tours, setTour] = _reactDefault.default.useState([
@@ -976,6 +977,8 @@ function App() {
             id: 1,
             nombre: "Bahía Bioluminiscente",
             img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
+            img2: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
+            img3: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=100&w=2000&fit=max",
             descripcion: "<p>La Bahía Mosquito, de la isla-municipio de Vieques fue nombrada como una de las maravillas del mundo para ver en el 2020. Así lo afirmó el sitio especializado Condé Nest Traveler, que compiló los mejores lugares para visitar en el año entrante.</p><p>La bahía es conocida por su bioluminisciencia, un fenómeno que solo puede ser observado en varias partes del mundo y que en Puerto Rico puede ser observado en tres localizaciones: la mencionada bahía; Laguna Grande, en Fajardo; y La Parguera, en Lajas.</p> <p>'Bahía Mosquito es el mejor lugar en el mundo para ver uno de los fenómenos más fascinantes de la naturaleza: la bioluminiscencia. Localizada en la isla de Vieques, cerca de la costa este de la isla principal, esta entrada protegida es hogar para un tipo especial de planktons, llamados dinoflagelados, que emiten una luz color azul verdoso cuando son agitados', lee parte de la descripción publicada por la página.</p><p>'Por sí solos, son muy poco perceptibles. Pero en la bahía, hay lo suficiente como para mantener el Récord Mundial Guinness para la bioluminiscencia más brillante en ser grabada. Eso es increíblemente raro', continuó el texto.</p>",
             duracion: 6,
             guia: true,
@@ -999,7 +1002,9 @@ function App() {
         {
             id: 2,
             nombre: "Bosque Tropical El Yunque",
-            img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
+            img_url: url + "caborojo_medium.jpg",
+            img2: url + "caborojo_medium.jpg",
+            img3: url + "caborojo_medium.jpg",
             descripcion: "<p>Lorem ipsum</p>",
             duracion: 7,
             guia: true,
@@ -1024,6 +1029,8 @@ function App() {
             id: 3,
             nombre: "Viejo San Juan",
             img_url: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
+            img2: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
+            img3: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
             descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo. ",
             duracion: 2,
             guia: false,
@@ -1047,6 +1054,8 @@ function App() {
             id: 4,
             nombre: "Playa Flamenco",
             img_url: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
+            img2: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
+            img3: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
             descripcion: "<p>Lorem ipsum</p>",
             duracion: 6,
             guia: true,
@@ -1070,6 +1079,8 @@ function App() {
             id: 5,
             nombre: "Toro Verde Zipline",
             img_url: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
+            img2: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
+            img3: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
             descripcion: "<p>Lorem ipsum</p>",
             duracion: 7,
             guia: true,
@@ -1093,6 +1104,8 @@ function App() {
             id: 6,
             nombre: "Cueva Ventana",
             img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
+            img2: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
+            img3: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
             descripcion: "<p>Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo.</p>",
             duracion: 2,
             guia: true,
@@ -1112,75 +1125,6 @@ function App() {
             fechas: [],
             precio: 20,
             tag: "bestseller"
-        },
-        {
-            id: 7,
-            nombre: "Bahía Bioluminiscente",
-            img_url: "https://cdn.filestackcontent.com/UjlHivVFRDqtOIqe12C9/convert?cache=true&compress=true&quality=90&w=1000&fit=max",
-            descripcion: "<p>Lorem ipsum</p>",
-            duracion: 6,
-            guia: true,
-            ratings: [
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 3
-                }
-            ],
-            ubicacion: 'Vieques, PR',
-            puntoEncuentro: "Terminal de Lanchas de Fajardo",
-            fechas: [],
-            precio: 79.99
-        },
-        {
-            id: 8,
-            nombre: "Bosque Tropical El Yunque",
-            img_url: "https://images.unsplash.com/photo-1501125351-05a99603ce58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=max&w=1974&q=80&height=200",
-            descripcion: "<p>Lorem ipsum</p>",
-            duracion: 7,
-            guia: true,
-            ratings: [
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 3
-                }
-            ],
-            ubicacion: 'Rio Grande, PR',
-            puntoEncuentro: "El Yunque National Forest - El Portal",
-            fechas: [],
-            precio: 39.99
-        },
-        {
-            id: 9,
-            nombre: "Cueva Ventana",
-            img_url: "https://images.unsplash.com/photo-1579687197117-5d4d12b468cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3131&q=80",
-            descripcion: "<p>Lorem ipsum</p>",
-            duracion: 2,
-            guia: false,
-            ratings: [
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 0
-                },
-                {
-                    puntuacion: 3
-                }
-            ],
-            ubicacion: 'Arecibo, PR',
-            puntoEncuentro: "Cueva Ventana",
-            fechas: [],
-            precio: 20
         }
     ]);
     const [navToggle, setNavToggle] = _reactDefault.default.useState(false);
@@ -1190,21 +1134,21 @@ function App() {
     return(/*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "src/index.tsx",
-            lineNumber: 155,
+            lineNumber: 126,
             columnNumber: 9
         },
         __self: this,
         children: /*#__PURE__*/ _jsxRuntime.jsx("main", {
             __source: {
                 fileName: "src/index.tsx",
-                lineNumber: 156,
+                lineNumber: 127,
                 columnNumber: 13
             },
             __self: this,
             children: /*#__PURE__*/ _jsxRuntime.jsxs(_reactDefault.default.StrictMode, {
                 __source: {
                     fileName: "src/index.tsx",
-                    lineNumber: 158,
+                    lineNumber: 129,
                     columnNumber: 17
                 },
                 __self: this,
@@ -1213,7 +1157,7 @@ function App() {
                         handleNavToggle: handleNavToggle,
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 160,
+                            lineNumber: 131,
                             columnNumber: 21
                         },
                         __self: this
@@ -1222,7 +1166,7 @@ function App() {
                         handleNavToggle: handleNavToggle,
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 161,
+                            lineNumber: 132,
                             columnNumber: 35
                         },
                         __self: this
@@ -1230,7 +1174,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsx(_topNavDefault.default, {
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 162,
+                            lineNumber: 133,
                             columnNumber: 21
                         },
                         __self: this
@@ -1238,7 +1182,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsxs(_reactRouterDom.Routes, {
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 164,
+                            lineNumber: 135,
                             columnNumber: 25
                         },
                         __self: this,
@@ -1250,7 +1194,7 @@ function App() {
                                 }),
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 136,
                                     columnNumber: 29
                                 },
                                 __self: this
@@ -1262,7 +1206,7 @@ function App() {
                                 }),
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 137,
                                     columnNumber: 29
                                 },
                                 __self: this
@@ -1273,7 +1217,7 @@ function App() {
                                 }),
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 138,
                                     columnNumber: 29
                                 },
                                 __self: this
@@ -1284,7 +1228,7 @@ function App() {
                                 }),
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 168,
+                                    lineNumber: 139,
                                     columnNumber: 29
                                 },
                                 __self: this
@@ -1296,7 +1240,7 @@ function App() {
                                 }),
                                 __source: {
                                     fileName: "src/index.tsx",
-                                    lineNumber: 169,
+                                    lineNumber: 140,
                                     columnNumber: 29
                                 },
                                 __self: this
@@ -1306,7 +1250,7 @@ function App() {
                     /*#__PURE__*/ _jsxRuntime.jsx(_footerDefault.default, {
                         __source: {
                             fileName: "src/index.tsx",
-                            lineNumber: 172,
+                            lineNumber: 143,
                             columnNumber: 21
                         },
                         __self: this
@@ -1316,13 +1260,13 @@ function App() {
         })
     }));
 }
-_s(App, "r78qh3nbyJ5Gn9Q5eA11qx4Iodc=");
+_s(App, "nPjd7rDZmYuTlM91rbhkhGnHtsY=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
     __source: {
         fileName: "src/index.tsx",
-        lineNumber: 183,
+        lineNumber: 154,
         columnNumber: 17
     },
     __self: undefined
@@ -24779,7 +24723,7 @@ const puntuacionMedia = (tour)=>{
     tour.ratings.map((rating)=>{
         if (typeof rating.puntuacion == "number") sum += rating.puntuacion;
     });
-    const length = parseInt(tour.ratings.length);
+    const length = tour.ratings.length;
     return sum / length;
 };
 function compare(a, b) {
@@ -53909,7 +53853,7 @@ $RefreshReg$(_c, "TopNav");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"16kZP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../assets/ViajaPR-logo.svg":"4QXYA"}],"4QXYA":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","react-router-dom":"16kZP","../../assets/ViajaPR-logo.svg":"4QXYA","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"4QXYA":[function(require,module,exports) {
 module.exports = require('./helpers/bundle-url').getBundleURL('k0Tzb') + "ViajaPR-logo.d6a83315.svg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"chiK4"}],"chiK4":[function(require,module,exports) {
@@ -54309,7 +54253,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../assets/ViajaPR-logo.svg":"4QXYA","react-router-dom":"16kZP"}],"fqsxW":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","../../assets/ViajaPR-logo.svg":"4QXYA","react-router-dom":"16kZP","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"fqsxW":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$58c3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54321,6 +54265,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxRuntime = require("react/jsx-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _viajaPRLogoSvg = require("../../assets/ViajaPR-logo.svg");
+var _viajaPRLogoSvgDefault = parcelHelpers.interopDefault(_viajaPRLogoSvg);
 const Presentacion = ()=>{
     return(/*#__PURE__*/ _jsxRuntime.jsxs("article", {
         className: "presentacion",
@@ -54331,24 +54277,16 @@ const Presentacion = ()=>{
         },
         __self: undefined,
         children: [
-            /*#__PURE__*/ _jsxRuntime.jsx("div", {
-                className: "presentacion-img-mask",
+            /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                className: "logo",
+                src: _viajaPRLogoSvgDefault.default,
+                alt: "logo de ViajaPR",
                 __source: {
                     fileName: "src/components/presentacion/presentacion.tsx",
-                    lineNumber: 7,
-                    columnNumber: 13
+                    lineNumber: 8,
+                    columnNumber: 9
                 },
-                __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                    src: "https://www.puertoricodaytrips.com/wp-images-post/columpio-de-ceiba-1a.jpg",
-                    alt: "columpio sobre playa",
-                    __source: {
-                        fileName: "src/components/presentacion/presentacion.tsx",
-                        lineNumber: 8,
-                        columnNumber: 17
-                    },
-                    __self: undefined
-                })
+                __self: undefined
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
@@ -54410,7 +54348,7 @@ $RefreshReg$(_c, "Presentacion");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13"}],"f4KVZ":[function(require,module,exports) {
+},{"react/jsx-runtime":"6Ds2u","react":"4mchR","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"9pz13","../../assets/ViajaPR-logo.svg":"4QXYA"}],"f4KVZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$826f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -54770,39 +54708,88 @@ const TourDetail = ({ tours  })=>{
     const tour = tours.find((t)=>t.id === parseInt(_reactRouterDom.useParams().id)
     );
     console.log(_reactRouterDom.useParams().id);
-    const backgroundDiv = {
-        backgroundImage: "url(" + tour.img_url + ")",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-    };
     return(/*#__PURE__*/ _jsxRuntime.jsxs("div", {
         className: "tour-detail",
         __source: {
             fileName: "src/components/tour-detail/tour-detail.tsx",
-            lineNumber: 21,
+            lineNumber: 16,
             columnNumber: 9
         },
         __self: undefined,
         children: [
-            /*#__PURE__*/ _jsxRuntime.jsx("div", {
+            /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                 className: "tour-header",
-                style: backgroundDiv,
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 22,
+                    lineNumber: 17,
                     columnNumber: 13
                 },
                 __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx("h1", {
-                    __source: {
-                        fileName: "src/components/tour-detail/tour-detail.tsx",
-                        lineNumber: 23,
-                        columnNumber: 17
-                    },
-                    __self: undefined,
-                    children: tour.nombre
-                })
+                children: [
+                    /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                        className: "destacada",
+                        src: tour.img_url,
+                        __source: {
+                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                            lineNumber: 18,
+                            columnNumber: 16
+                        },
+                        __self: undefined
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        className: "img2container",
+                        __source: {
+                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                            lineNumber: 20,
+                            columnNumber: 16
+                        },
+                        __self: undefined,
+                        children: [
+                            " ",
+                            /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                                className: "img2",
+                                src: tour.img2,
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 20,
+                                    columnNumber: 48
+                                },
+                                __self: undefined
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                        className: "img3container",
+                        __source: {
+                            fileName: "src/components/tour-detail/tour-detail.tsx",
+                            lineNumber: 21,
+                            columnNumber: 16
+                        },
+                        __self: undefined,
+                        children: [
+                            " ",
+                            /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                                className: "img3",
+                                src: tour.img3,
+                                __source: {
+                                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 48
+                                },
+                                __self: undefined
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ _jsxRuntime.jsx("h1", {
+                __source: {
+                    fileName: "src/components/tour-detail/tour-detail.tsx",
+                    lineNumber: 24,
+                    columnNumber: 13
+                },
+                __self: undefined,
+                children: tour.nombre
             }),
             /*#__PURE__*/ _jsxRuntime.jsxs("div", {
                 className: "body",

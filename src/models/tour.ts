@@ -2,6 +2,8 @@ export default interface Tour {
     id: number;
     nombre: string;
     img_url: string;
+    img2: string;
+    img3: string;
     descripcion: string;
     duracion: number;
     guia: boolean;

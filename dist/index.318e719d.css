@@ -22,21 +22,10 @@
     text-align: justify;
 }
 
-.presentacion-img-mask {
-    width: 30vh;
-    height: 30vh;
- 
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: blue;
-
-    display:inline-block;
-    vertical-align:middle;
-}
-
-.presentacion-img-mask img {
-    height: 100%;
-   
+.presentacion img {
+    height: 100px;
+    width: auto;
+    margin: 30px 0 0 0;
 }
 
 @media (min-width: 250px) and (max-width: 992px){ 
