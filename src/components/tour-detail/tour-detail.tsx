@@ -16,7 +16,7 @@ const TourDetail = ({ tours }) => {
         <div className="tour-detail" >
             
             <div className="tour-header" >
-               <img className="destacada" src={tour.img_url + "_large.jpg"} />
+               <img className="destacada" src={tour.img_url + "_medium.jpg"} />
                <div className="img2container"> 
                     <picture>
                         <source media="(max-width: 480px)" srcSet={tour.img2 + "_small.jpg"} />
