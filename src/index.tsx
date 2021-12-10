@@ -13,7 +13,7 @@ import ToursGrid from "./components/tours-grid/tours-grid";
 import Tour from "./models/tour";
 import TourDetail from "./components/tour-detail/tour-detail";
 
-const url = "http://localhost:1234/images/";
+const url = "https://blissful-blackwell-d8a212.netlify.app/images/";
 function App ()  {
     const [tours, setTour] = React.useState<Tour[]>([
         {
