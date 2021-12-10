@@ -1,6 +1,7 @@
 export default interface Tour {
     id: number;
     nombre: string;
+    thumbnail: string;
     img_url: string;
     img2: string;
     img3: string;
