@@ -16,21 +16,21 @@ const TourDetail = ({ tours }) => {
         <div className="tour-detail" >
             
             <div className="tour-header" >
-               <img className="destacada" src={tour.img_url + "_medium.jpg"} />
+               <img className="destacada" src={tour.img_url + "_medium.avif"} />
                <div className="img2container"> 
                     <picture>
-                        <source media="(max-width: 480px)" srcSet={tour.img2 + "_small.jpg"} />
-                        <source media="(max-width: 640px)" srcSet={tour.img2 + "_medium.jpg"}  />
-                        <source media="(max-width: 1024px)" srcSet={tour.img2 + "_medium.jpg"}  />
-                        <img src={tour.img2 + "_medium.jpg"} alt={tour.nombre} />
+                        <source media="(max-width: 480px)" srcSet={tour.img2 + "_small.avif"} />
+                        <source media="(max-width: 640px)" srcSet={tour.img2 + "_medium.avif"}  />
+                        <source media="(max-width: 1024px)" srcSet={tour.img2 + "_medium.avif"}  />
+                        <img src={tour.img2 + "_medium.avif"} alt={tour.nombre} />
                     </picture>
                </div>
                <div className="img3container"> 
                     <picture>
-                        <source media="(max-width: 480px)" srcSet={tour.img3 + "_small.jpg"} />
-                        <source media="(max-width: 640px)" srcSet={tour.img3 + "_medium.jpg"}  />
-                        <source media="(max-width: 1024px)" srcSet={tour.img3 + "_medium.jpg"}  />
-                        <img src={tour.img3 + "_medium.jpg"} alt={tour.nombre} />
+                        <source media="(max-width: 480px)" srcSet={tour.img3 + "_small.avif"} />
+                        <source media="(max-width: 640px)" srcSet={tour.img3 + "_medium.avif"}  />
+                        <source media="(max-width: 1024px)" srcSet={tour.img3 + "_medium.avif"}  />
+                        <img src={tour.img3 + "_medium.avif"} alt={tour.nombre} />
                     </picture>
                </div>
             </div>
