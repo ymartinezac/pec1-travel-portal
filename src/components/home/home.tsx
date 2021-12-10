@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
 import TourCard from "../tour-card/tour-card";
 import { NavLink } from "react-router-dom";
+import logo from '../../assets/diving-mask-snorkel.svg';
 
 const puntuacionMedia = (tour: Tour) => {
     var sum = 0;
@@ -65,7 +66,8 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section> 
             <section className="snorkel">
                 <h1>Sumérgete en nuestros <span>snorkeling tours</span></h1>
-                <img src="https://www.svgrepo.com/show/286446/diving-mask-snorkel.svg" className="snorkel-svg" alt="snorkeling mask"/>
+                <img className="snorkel-svg" src={logo} alt="logo de ViajaPR" />
+             
                 
             </section> 
             <section className="info-general">
