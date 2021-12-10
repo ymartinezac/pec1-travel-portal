@@ -16,6 +16,10 @@ footer {
     align-self: flex-end;
     justify-self: flex-end;
 
+    box-shadow: 1px -14px 11px -5px rgba(0,0,0,0.09);
+-webkit-box-shadow: 1px -14px 11px -5px rgba(0,0,0,0.09);
+-moz-box-shadow: 1px -14px 11px -5px rgba(0,0,0,0.09);
+
 }
 
 .footer-wrap {

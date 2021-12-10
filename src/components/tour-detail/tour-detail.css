@@ -4,7 +4,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50% 50%;
     grid-template-areas: 
     "dest img2"
     "dest img3";
@@ -17,26 +17,32 @@
   object-fit: cover;
 }
 .img2container{
+    display: flex;
+    align-items: center;
     margin:0;
     grid-area: img2;
+    height: 100%;
+  overflow: hidden;
 }
 .img3container{
-    margin:0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
     grid-area: img3;
 }
 .img2 {
-    width: 140%;
+    width: 100%;
   height: auto;
-  aspect-ratio: 18 / 9;
-  object-fit: cover;
+  
+
  
 }
 
 .img3 {
     width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+
 }
 
 .tour-detail h1 {
