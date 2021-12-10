@@ -19,14 +19,16 @@
 .img2container{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin:0;
     grid-area: img2;
     height: 100%;
-  overflow: hidden;
+    overflow: hidden;
 }
 .img3container{
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
     overflow: hidden;
     grid-area: img3;
@@ -34,15 +36,11 @@
 .img2 {
     width: 100%;
   height: auto;
-  
-
- 
 }
 
 .img3 {
     width: 100%;
   height: auto;
-
 }
 
 .tour-detail h1 {
@@ -129,7 +127,20 @@
     list-style: none;
     padding-left: 0;
 }
+@media (min-width: 250px) and (max-width: 1300px){ 
+    .tour-header {
+        display: flex; 
+        justify-content: center;
+    }
 
+    .destacada {
+        width: 100%;
+    
+    }
+    .img3container, .img2container{
+        display: none;
+    }
+}
 @media (min-width: 250px) and (max-width: 992px){ 
  
     
@@ -149,6 +160,7 @@
     .tour-header{
         margin-top: -15vh;
         height: 60vh;
+        
 
     }
 

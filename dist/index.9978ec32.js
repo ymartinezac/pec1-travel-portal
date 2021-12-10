@@ -977,10 +977,10 @@ function App() {
             id: 2,
             nombre: "Bosque Tropical El Yunque",
             thumbnail: url + "yunquedestacada_thumbnail.jpg",
-            img_url: url + "yunquedestacada_large.jpg",
-            img2: url + "yunque2_medium.jpg",
-            img3: url + "yunque3_medium.jpg",
-            descripcion: "<p>Lorem ipsum</p>",
+            img_url: url + "yunquedestacada",
+            img2: url + "yunque2",
+            img3: url + "yunque3",
+            descripcion: "<p>El Bosque Nacional El Yunque o simplemente El Yunque (antes llamado Bosque Nacional del Caribe1​) es un parque nacional localizado en Puerto Rico y es el único bosque lluvioso tropical en el sistema nacional de bosques de los Estados Unidos.2​ Su nombre es una adaptación al español de la palabra de origen Taíno «Yu-Ke» que significa «Tierra Blanca». Es uno de los lugares conocidos más lluviosos del mundo. Es también un lugar turístico, el cual es muy visitado, admirado y protegido por los ciudadanos de la isla. El Yunque es un bosque pluvial semitropical de temperaturas frescas, localizado en la Sierra de Luquillo al este de Puerto Rico. Comprende 113,32 km². Aunque no es el punto más alto en el archipiélago puertorriqueño se le puede observar a larga distancia, municipios tan distantes como Vieques, Culebra, San Lorenzo, Caguas, Barranquitas, Cayey, Aibonito, entre otros, pueden observar este patrimonio nacional. El Centro de Visitantes, El Portal, está localizado en la entrada del bosque, en la carretera #191, en el km. 4.3. Posee exhibiciones educativas y un teatro, además, encontrará personal del Servicio Forestal quienes le brindaran información y les guiarán en su recorrido por el bosque. </p>",
             duracion: 7,
             guia: true,
             ratings: [
@@ -1004,10 +1004,10 @@ function App() {
             id: 3,
             nombre: "Viejo San Juan",
             thumbnail: url + "vsjdestacada_thumbnail.jpg",
-            img_url: url + "vsjdestacada_large.jpg",
-            img2: url + "vsj2_medium.jpg",
-            img3: url + "vsj3_medium.jpg",
-            descripcion: "Aventura Cueva Ventana esta localizada en Arecibo, Puerto Rico (GPS: 18.374731,-66.692443). La Aventura hacia la Cueva es una expedición que dura aproximadamente 90 minutos, donde encontrará gran variedad de flora y fauna. Se deleitará al ver las estalactitas, estalagmitas, cinco especies de murciélagos e insectos característicos del ecosistema. Además, podrá observar petroglifos Taínos. Al finalizar el recorrido por la Cueva se asombrará con la Ventana hacia una vista impresionante del Valle del Río Grande de Arecibo. ",
+            img_url: url + "vsjdestacada",
+            img2: url + "vsj2",
+            img3: url + "vsj3",
+            descripcion: "<p>El Viejo San Juan es el nombre con el que se le conoce al distrito histórico de San Juan, Puerto Rico. Está localizado en la Isleta de San Juan que está conectada a la isla principal de Puerto Rico por puentes. La ciudad se caracteriza por sus calles de adoquines y edificios coloridos que se remontan al siglo XVI y XVII, cuando la isla era española. El distrito se caracteriza también por la gran cantidad de plazas públicas e iglesias, que incluyen la Catedral Metropolitana de San Juan, donde se alberga la tumba del explorador español Juan Ponce de León. </p><p>Con la abundancia de las tiendas, lugares históricos, museos, restaurantes, su belleza antigua y peculiaridad arquitectónica, el Viejo San Juan es uno de los ejes turísticos de la isla. </p><p>El Viejo San Juan es la ciudad más preservada de América desde el siglo XV, es allí donde se puede observar el verdadero estilo de vida y la arquitectura realizada por los españoles de aquellos tiempos. Es un Distrito Histórico Nacional y está incluido en el Registro Nacional de Lugares Históricos como el Distrito Histórico del Viejo San Juan. También es un sitio del patrimonio mundial de la UNESCO. </p>",
             duracion: 2,
             guia: false,
             ratings: [
@@ -1031,10 +1031,10 @@ function App() {
             id: 5,
             nombre: "Toro Verde Zipline",
             thumbnail: url + "zldestacada_thumbnail.jpg",
-            img_url: url + "zldetacada_large.jpg",
-            img2: url + "zl2_medium.jpg",
-            img3: url + "zl3_medium.jpg",
-            descripcion: "<p>Lorem ipsum</p>",
+            img_url: url + "zldetacada",
+            img2: url + "zl2",
+            img3: url + "zl3",
+            descripcion: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan leo quis tellus fringilla ornare. Duis congue tortor ipsum, a molestie nunc mollis ac. Vivamus faucibus eu risus vitae elementum. Aenean cursus nulla nisl, at vehicula nulla molestie ac. Sed vulputate lobortis faucibus. Nunc sapien mauris, sollicitudin vitae nisl nec, dictum vulputate erat. Fusce euismod quis risus at tincidunt. In at diam a felis tincidunt sollicitudin. Fusce varius nisi risus, sodales laoreet dui feugiat nec. Donec pharetra diam eu nulla tristique, id posuere libero ultricies. </p><p>Vivamus congue pharetra erat. Ut a fringilla tortor. Nunc id augue tristique, bibendum eros quis, finibus sapien. Maecenas at porttitor magna. Aliquam libero odio, blandit et dignissim ac, pharetra quis leo. Cras venenatis lorem nisl. Donec aliquam sem odio, a molestie magna lobortis sit amet. Curabitur semper mollis viverra. Nam aliquet, turpis scelerisque euismod fringilla, nisi nisl vestibulum odio, nec blandit elit tortor vitae diam. Duis tincidunt metus vitae sollicitudin mollis.</p><p>Aenean porttitor, risus non placerat finibus, augue enim mollis lacus, vitae lobortis risus nibh ut nunc. In hac habitasse platea dictumst. Nulla sollicitudin augue vel nisi scelerisque vestibulum. Donec lacinia elit id lacus volutpat, eget rhoncus risus sagittis. Pellentesque dapibus lobortis rhoncus. Pellentesque aliquet leo ac tincidunt tempor. Vestibulum sapien erat, viverra ac mauris nec, malesuada accumsan lorem. Nam egestas luctus turpis eu iaculis. Morbi tempor eu libero at tempor. Integer ornare in augue ut viverra. Duis at pretium sem. Etiam quis mauris posuere, blandit lacus nec, finibus tellus. </p>",
             duracion: 7,
             guia: true,
             ratings: [
@@ -1188,7 +1188,7 @@ function App() {
         })
     }));
 }
-_s(App, "czuN6+aN496NAgsyBM13qUmm2A0=");
+_s(App, "hM+e07N2hmyiuu31WWibXsc0KuI=");
 _c = App;
 const mount = document.getElementById("app");
 _reactDomDefault.default.render(/*#__PURE__*/ _jsxRuntime.jsx(App, {
@@ -54213,7 +54213,7 @@ const Presentacion = ()=>{
                 __source: {
                     fileName: "src/components/presentacion/presentacion.tsx",
                     lineNumber: 8,
-                    columnNumber: 9
+                    columnNumber: 13
                 },
                 __self: undefined
             }),
@@ -54358,91 +54358,7 @@ const Enlaces = ()=>{
                                 __source: {
                                     fileName: "src/components/enlaces/enlaces.tsx",
                                     lineNumber: 12,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Foto de Playa Flamenco: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Flamenco-Beach-Culebra-Puerto-Rico-3.jpg",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 12,
-                                            columnNumber: 49
-                                        },
-                                        __self: undefined,
-                                        children: "adventuresoflilnicki.com"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 13,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Foto de Toro Verde: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://i0.wp.com/zipline4less.com/wp-content/uploads/2021/04/E0FXBXrWYAYP2FI-e1619782981607.jpeg?fit=1024%2C577&ssl=1",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 13,
-                                            columnNumber: 45
-                                        },
-                                        __self: undefined,
-                                        children: "Zipline4less.com"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 14,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Foto de Viejo San Juan: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://uberblogapi.10upcdn.com/2160x1080/filters:format(webp)/blogapi.uber.com/wp-content/uploads/2019/03/Vuelve-al-pasado-en-estos-5-lugares-hist%C3%B3ricos-de-Puerto-Rico-1024x512.png",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 14,
-                                            columnNumber: 49
-                                        },
-                                        __self: undefined,
-                                        children: "Uber Blog"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 16,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Foto Bah\xeda Bioluminiscente: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 16,
-                                            columnNumber: 53
-                                        },
-                                        __self: undefined,
-                                        children: "Metro PR"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 17,
-                                    columnNumber: 21
+                                    columnNumber: 22
                                 },
                                 __self: undefined,
                                 children: [
@@ -54451,8 +54367,8 @@ const Enlaces = ()=>{
                                         href: "https://feathericons.com/",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 17,
-                                            columnNumber: 33
+                                            lineNumber: 12,
+                                            columnNumber: 34
                                         },
                                         __self: undefined,
                                         children: "Feather Icons"
@@ -54462,8 +54378,8 @@ const Enlaces = ()=>{
                                         href: "https://fontawesome.com/",
                                         __source: {
                                             fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 17,
-                                            columnNumber: 89
+                                            lineNumber: 12,
+                                            columnNumber: 90
                                         },
                                         __self: undefined,
                                         children: "Font Awesome"
@@ -54477,7 +54393,7 @@ const Enlaces = ()=>{
             /*#__PURE__*/ _jsxRuntime.jsxs("article", {
                 __source: {
                     fileName: "src/components/enlaces/enlaces.tsx",
-                    lineNumber: 20,
+                    lineNumber: 15,
                     columnNumber: 13
                 },
                 __self: undefined,
@@ -54485,63 +54401,40 @@ const Enlaces = ()=>{
                     /*#__PURE__*/ _jsxRuntime.jsx("h2", {
                         __source: {
                             fileName: "src/components/enlaces/enlaces.tsx",
-                            lineNumber: 21,
+                            lineNumber: 16,
                             columnNumber: 17
                         },
                         __self: undefined,
                         children: "Texto"
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsxs("ul", {
+                    /*#__PURE__*/ _jsxRuntime.jsx("ul", {
                         __source: {
                             fileName: "src/components/enlaces/enlaces.tsx",
-                            lineNumber: 22,
+                            lineNumber: 17,
                             columnNumber: 17
                         },
                         __self: undefined,
-                        children: [
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 23,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Descripci\xf3n Cueva Ventana: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://www.facebook.com/aventuracuevaventana/",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 23,
-                                            columnNumber: 52
-                                        },
-                                        __self: undefined,
-                                        children: "Aventura Cueva Ventana "
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ _jsxRuntime.jsxs("li", {
-                                __source: {
-                                    fileName: "src/components/enlaces/enlaces.tsx",
-                                    lineNumber: 24,
-                                    columnNumber: 21
-                                },
-                                __self: undefined,
-                                children: [
-                                    "Descripci\xf3n Bah\xeda Bioluminiscente: ",
-                                    /*#__PURE__*/ _jsxRuntime.jsx("a", {
-                                        href: "https://www.metro.pr/pr/noticias/2019/12/29/bahia-bioluminiscente-boricua-las-7-maravillas-del-mundo-2020.html",
-                                        __source: {
-                                            fileName: "src/components/enlaces/enlaces.tsx",
-                                            lineNumber: 24,
-                                            columnNumber: 60
-                                        },
-                                        __self: undefined,
-                                        children: "Metro PR"
-                                    })
-                                ]
-                            })
-                        ]
+                        children: /*#__PURE__*/ _jsxRuntime.jsxs("li", {
+                            __source: {
+                                fileName: "src/components/enlaces/enlaces.tsx",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            },
+                            __self: undefined,
+                            children: [
+                                "Descripcionesde Tours: ",
+                                /*#__PURE__*/ _jsxRuntime.jsx("a", {
+                                    href: "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+                                    __source: {
+                                        fileName: "src/components/enlaces/enlaces.tsx",
+                                        lineNumber: 18,
+                                        columnNumber: 48
+                                    },
+                                    __self: undefined,
+                                    children: "Wikipedia"
+                                })
+                            ]
+                        })
                     })
                 ]
             })
@@ -54650,22 +54543,22 @@ const TourDetail = ({ tours  })=>{
                 className: "tour-header",
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 17,
+                    lineNumber: 18,
                     columnNumber: 13
                 },
                 __self: undefined,
                 children: [
                     /*#__PURE__*/ _jsxRuntime.jsx("img", {
                         className: "destacada",
-                        src: tour.img_url,
+                        src: tour.img_url + "_large.jpg",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 18,
+                            lineNumber: 19,
                             columnNumber: 16
                         },
                         __self: undefined
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
                         className: "img2container",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
@@ -54673,48 +54566,122 @@ const TourDetail = ({ tours  })=>{
                             columnNumber: 16
                         },
                         __self: undefined,
-                        children: [
-                            " ",
-                            /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                                className: "img2",
-                                src: tour.img2,
-                                __source: {
-                                    fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 20,
-                                    columnNumber: 48
-                                },
-                                __self: undefined
-                            })
-                        ]
+                        children: /*#__PURE__*/ _jsxRuntime.jsxs("picture", {
+                            __source: {
+                                fileName: "src/components/tour-detail/tour-detail.tsx",
+                                lineNumber: 21,
+                                columnNumber: 21
+                            },
+                            __self: undefined,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 480px)",
+                                    srcSet: tour.img2 + "_small.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 22,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 640px)",
+                                    srcSet: tour.img2 + "_medium.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 23,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 1024px)",
+                                    srcSet: tour.img2 + "_medium.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 24,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                                    src: tour.img2 + "_medium.jpg",
+                                    alt: tour.nombre,
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 25,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                })
+                            ]
+                        })
                     }),
-                    /*#__PURE__*/ _jsxRuntime.jsxs("div", {
+                    /*#__PURE__*/ _jsxRuntime.jsx("div", {
                         className: "img3container",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 21,
+                            lineNumber: 28,
                             columnNumber: 16
                         },
                         __self: undefined,
-                        children: [
-                            " ",
-                            /*#__PURE__*/ _jsxRuntime.jsx("img", {
-                                className: "img3",
-                                src: tour.img3,
-                                __source: {
-                                    fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 48
-                                },
-                                __self: undefined
-                            })
-                        ]
+                        children: /*#__PURE__*/ _jsxRuntime.jsxs("picture", {
+                            __source: {
+                                fileName: "src/components/tour-detail/tour-detail.tsx",
+                                lineNumber: 29,
+                                columnNumber: 21
+                            },
+                            __self: undefined,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 480px)",
+                                    srcSet: tour.img3 + "_small.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 30,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 640px)",
+                                    srcSet: tour.img3 + "_medium.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("source", {
+                                    media: "(max-width: 1024px)",
+                                    srcSet: tour.img3 + "_medium.jpg",
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 32,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx("img", {
+                                    src: tour.img3 + "_medium.jpg",
+                                    alt: tour.nombre,
+                                    __source: {
+                                        fileName: "src/components/tour-detail/tour-detail.tsx",
+                                        lineNumber: 33,
+                                        columnNumber: 25
+                                    },
+                                    __self: undefined
+                                })
+                            ]
+                        })
                     })
                 ]
             }),
             /*#__PURE__*/ _jsxRuntime.jsx("h1", {
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 24,
+                    lineNumber: 37,
                     columnNumber: 13
                 },
                 __self: undefined,
@@ -54724,7 +54691,7 @@ const TourDetail = ({ tours  })=>{
                 className: "body",
                 __source: {
                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                    lineNumber: 25,
+                    lineNumber: 38,
                     columnNumber: 13
                 },
                 __self: undefined,
@@ -54733,7 +54700,7 @@ const TourDetail = ({ tours  })=>{
                         className: "content",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 26,
+                            lineNumber: 39,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -54741,7 +54708,7 @@ const TourDetail = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsx("h3", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 42,
                                     columnNumber: 21
                                 },
                                 __self: undefined,
@@ -54753,7 +54720,7 @@ const TourDetail = ({ tours  })=>{
                                 },
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 43,
                                     columnNumber: 21
                                 },
                                 __self: undefined
@@ -54762,7 +54729,7 @@ const TourDetail = ({ tours  })=>{
                                 className: "details-group",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 32,
+                                    lineNumber: 45,
                                     columnNumber: 21
                                 },
                                 __self: undefined,
@@ -54771,7 +54738,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 33,
+                                            lineNumber: 46,
                                             columnNumber: 25
                                         },
                                         __self: undefined,
@@ -54780,7 +54747,7 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 34,
+                                                    lineNumber: 47,
                                                     columnNumber: 29
                                                 },
                                                 __self: undefined
@@ -54788,7 +54755,7 @@ const TourDetail = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 35,
+                                                    lineNumber: 48,
                                                     columnNumber: 28
                                                 },
                                                 __self: undefined,
@@ -54804,7 +54771,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 50,
                                             columnNumber: 25
                                         },
                                         __self: undefined,
@@ -54813,7 +54780,7 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 38,
+                                                    lineNumber: 51,
                                                     columnNumber: 29
                                                 },
                                                 __self: undefined
@@ -54821,7 +54788,7 @@ const TourDetail = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsxs("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 39,
+                                                    lineNumber: 52,
                                                     columnNumber: 29
                                                 },
                                                 __self: undefined,
@@ -54836,7 +54803,7 @@ const TourDetail = ({ tours  })=>{
                                         className: "detalles",
                                         __source: {
                                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 55,
                                             columnNumber: 29
                                         },
                                         __self: undefined,
@@ -54845,7 +54812,7 @@ const TourDetail = ({ tours  })=>{
                                                 className: "icons",
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 43,
+                                                    lineNumber: 56,
                                                     columnNumber: 29
                                                 },
                                                 __self: undefined
@@ -54853,7 +54820,7 @@ const TourDetail = ({ tours  })=>{
                                             /*#__PURE__*/ _jsxRuntime.jsx("p", {
                                                 __source: {
                                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                                    lineNumber: 44,
+                                                    lineNumber: 57,
                                                     columnNumber: 29
                                                 },
                                                 __self: undefined,
@@ -54869,7 +54836,7 @@ const TourDetail = ({ tours  })=>{
                         className: "checkout",
                         __source: {
                             fileName: "src/components/tour-detail/tour-detail.tsx",
-                            lineNumber: 48,
+                            lineNumber: 61,
                             columnNumber: 17
                         },
                         __self: undefined,
@@ -54877,7 +54844,7 @@ const TourDetail = ({ tours  })=>{
                             /*#__PURE__*/ _jsxRuntime.jsxs("h2", {
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 62,
                                     columnNumber: 21
                                 },
                                 __self: undefined,
@@ -54891,7 +54858,7 @@ const TourDetail = ({ tours  })=>{
                                 className: "btn-reservar",
                                 __source: {
                                     fileName: "src/components/tour-detail/tour-detail.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 64,
                                     columnNumber: 21
                                 },
                                 __self: undefined,

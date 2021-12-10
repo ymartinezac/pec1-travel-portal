@@ -14,12 +14,25 @@ const TourDetail = ({ tours }) => {
   
     return (
         <div className="tour-detail" >
+            
             <div className="tour-header" >
-               <img className="destacada" src={tour.img_url} />
-        
-               <div className="img2container"> <img className="img2" src={tour.img2} /></div>
-               <div className="img3container"> <img className="img3" src={tour.img3} /></div>
-              
+               <img className="destacada" src={tour.img_url + "_large.jpg"} />
+               <div className="img2container"> 
+                    <picture>
+                        <source media="(max-width: 480px)" srcSet={tour.img2 + "_small.jpg"} />
+                        <source media="(max-width: 640px)" srcSet={tour.img2 + "_medium.jpg"}  />
+                        <source media="(max-width: 1024px)" srcSet={tour.img2 + "_medium.jpg"}  />
+                        <img src={tour.img2 + "_medium.jpg"} alt={tour.nombre} />
+                    </picture>
+               </div>
+               <div className="img3container"> 
+                    <picture>
+                        <source media="(max-width: 480px)" srcSet={tour.img3 + "_small.jpg"} />
+                        <source media="(max-width: 640px)" srcSet={tour.img3 + "_medium.jpg"}  />
+                        <source media="(max-width: 1024px)" srcSet={tour.img3 + "_medium.jpg"}  />
+                        <img src={tour.img3 + "_medium.jpg"} alt={tour.nombre} />
+                    </picture>
+               </div>
             </div>
             <h1>{tour.nombre}</h1>
             <div className="body">

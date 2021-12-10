@@ -10,6 +10,29 @@
 
 }
 
+.presentacion .logo{
+    -webkit-animation: rotation 12s infinite linear;
+            animation: rotation 12s infinite linear;
+  }
+
+@-webkit-keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .presentacion h1 {
     color: var(--red);
     font-size: 3rem;
