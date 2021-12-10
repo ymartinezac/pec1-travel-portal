@@ -1,6 +1,6 @@
 {
   "name": "pec1-travel-portal",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "source": "src/index.html",
   "browserslist": "> 0.3% or last 2 versions, not dead",

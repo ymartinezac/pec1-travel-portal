@@ -19,7 +19,7 @@ function App ()  {
         {
             id: 2,
             nombre: "Bosque Tropical El Yunque",
-            thumbnail: url + "yunquedestacada_thumbnail.jpg", 
+            thumbnail: url + "yunquedestacada_thumbnail.avif", 
             img_url: url + "yunquedestacada", 
             img2: url + "yunque2", 
             img3: url + "yunque3", 
@@ -36,7 +36,7 @@ function App ()  {
         {
             id: 3,
             nombre: "Viejo San Juan",
-            thumbnail: url + "vsjdestacada_thumbnail.jpg", 
+            thumbnail: url + "vsjdestacada_thumbnail.avif", 
             img_url: url + "vsjdestacada", 
             img2: url + "vsj2", 
             img3: url + "vsj3",  
@@ -54,7 +54,7 @@ function App ()  {
         {
             id: 5,
             nombre: "Toro Verde Zipline",
-            thumbnail: url + "zldestacada_thumbnail.jpg", 
+            thumbnail: url + "zldestacada_thumbnail.avif", 
             img_url: url + "zldetacada", 
             img2: url + "zl2", 
             img3: url + "zl3",  
