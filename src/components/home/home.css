@@ -1,6 +1,6 @@
 
 .main-landing {
-    background-image: url(http://localhost:1234/images/caborojo_large.jpg);
+    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_large.jpg);
     height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +44,7 @@
         height: 55vh;
         margin-top: -130px;
         width: 100vw;
-        background-image: url(http://localhost:1234/images/caborojo_medium.jpg);
+        background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_medium.jpg);
     }
     .main-landing h1{
         font-size: 8.5em;
@@ -62,7 +62,7 @@
     .main-landing {
         margin-top: 5vh;
         padding-top: 0px;
-        background-image: url(http://localhost:1234/images/caborojo_small.jpg);
+        background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_small.jpg);
     }
 }
 
@@ -172,7 +172,7 @@
     padding: 0 12vw 0 12vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost:1234/images/underwater_large.jpg);
+    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_large.jpg);
    }
 
 .snorkel h1 {
@@ -202,7 +202,7 @@
         justify-content: center;
         padding: 2vh 5vw;
         height: 50vh;
-        background-image: url(http://localhost:1234/images/underwater_medium.jpg);
+        background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_medium.jpg);
     }
     .snorkel h1 {
         text-align: center;
@@ -227,7 +227,7 @@
         justify-content: center;
         padding: 20px;
         margin-top: 3vh;
-        background-image: url(http://localhost:1234/images/underwater_small.jpg);
+        background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_small.jpg);
        
     }
     .snorkel h1 {
