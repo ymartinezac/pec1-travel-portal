@@ -43,8 +43,8 @@ h3 {
     width: 80%;
     margin: 5px;
     padding: 0.5rem;
-    background-color: var(--red);
-    color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    color: var(--red);
     
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -55,8 +55,8 @@ h3 {
 }
 
 .btn-reservar:hover  {
-    background-color: var(--main-bg-color);
-    color: var(--red);
+    background-color: var(--red);
+    color: var(--main-bg-color);
     box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);

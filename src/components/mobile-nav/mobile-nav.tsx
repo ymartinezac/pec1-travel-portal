@@ -11,7 +11,7 @@ const MobileNav = ({handleNavToggle}) => {
     return (
         
         <div className="mobile-nav">
-            <h1><NavLink to="/">🇵🇷 Viaja<span>PR</span></NavLink></h1>
+            <h1><NavLink to="/">🇵🇷</NavLink></h1>
             <NavLink to="/"  >Inicio</NavLink> 
                 <NavLink to="/buscar-tours" onClick={() => { handleNavToggle();} }>Buscar Tours</NavLink>
                 <NavLink to="/presentacion" onClick={() => { handleNavToggle(); } }>Presentación</NavLink> 

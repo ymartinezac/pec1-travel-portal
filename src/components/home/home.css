@@ -1,7 +1,7 @@
 
 .main-landing {
     background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_large.avif);
-    height: 70vh;
+    height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -26,15 +26,16 @@
     font-family: hwt-artz, sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 10rem;
+    font-size: 8rem;
     margin: 0;
+    margin-top: -25px;
 }
 
 .main-landing h2 {
     font-family: relation-one, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin: -5vh 0 0 0;
 }
 
@@ -179,13 +180,14 @@
     margin: 8% 0 8% 0;
     width: 75%;
     text-align: left;
-    font-size: 5rem;
+    font-size: 3.6rem;
 }
 
 .snorkel span {
     font-family: hwt-artz, sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 6rem;
 }
 
 .snorkel-svg {
@@ -276,6 +278,8 @@
     margin-bottom: 7%;
 }
 
+
+
 .info-general h2{
     margin: 0;
 }
@@ -286,15 +290,14 @@
 
 }
 
-.info-general img {
+
+
+.clip-svg {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 50%;
     box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
-    border-radius: 3px;
-}
-
-.clip-svg {
-    clip-path: url(#myClip);
   }
 
 @media (min-width: 250px) and (max-width: 1080px){  

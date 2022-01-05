@@ -30,9 +30,9 @@ font-style: normal
     color: #eee;
     text-decoration: none;
     font-size: clamp(3rem, 4vw, 6vw);
-    font-family: semplicitapro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: korolev, sans-serif;
+font-weight: 500;
+font-style: normal;
     transition: .2s all ease-in-out;
     margin-top: 20px;
     user-select: none; /* supported by Chrome and Opera */

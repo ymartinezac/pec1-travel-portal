@@ -17,12 +17,12 @@
 }
 
 .top-tour-card .btn-reservar a {
-    color: var(--main-bg-color);
+    color: var(--red);
     text-decoration: none;
 }
 
 .top-tour-card .btn-reservar a:hover {
-    color: var(--red);
+    color: var(--main-bg-color);
     text-decoration: none;
 }
 
@@ -37,10 +37,13 @@
     padding-bottom: 2%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+
 .top-tour-card h2 {
-    margin: 5% 3% 0 3%;
+    margin: 2% 5%;
+    width: 90%;
 }
 
 .top-tour-card p {
@@ -59,13 +62,14 @@
 
 .tour-specs {
     display: flex;
-
     align-items: baseline;
-    margin: 1% 5% 0 3%;
+    margin: 0 5%;
+    width: 90%;
 }
 
 .tour-price {
-    margin: 1% 5% 0 3%;
+    margin: 0 5%;
+    width: 90%;
 }
 
 
@@ -85,6 +89,13 @@
     -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.089);
     z-index: 1;
 
+}
+
+.nav-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 @media (min-width: 250px) and (max-width: 992px){ 
@@ -147,20 +158,20 @@
     }
 
     .top-tour-card h2 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .top-tour-card p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .top-tour-card .icons {
       
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .top-tour-card .precio {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
 

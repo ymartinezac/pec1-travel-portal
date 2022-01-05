@@ -74,7 +74,7 @@ header .titulo a{
 
 
 
-@media (min-width: 250px) and (max-width: 992px){ 
+@media (min-width: 250px) and (max-width: 1080px){ 
     nav {
         display: none;
     }

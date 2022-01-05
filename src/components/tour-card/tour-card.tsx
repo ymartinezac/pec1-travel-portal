@@ -27,7 +27,7 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
             <p><span className="precio">{'$' + tour.precio}</span> por persona</p>
         </div>
         
-        <button className="btn-reservar"><NavLink className="nav-btn" to={"/tours/" + tour.id }>Reserva ahora </NavLink></button>
+        <NavLink className="nav-btn" to={"/tours/" + tour.id }><button className="btn-reservar">Reserva ahora </button></NavLink>
     </div>
  )
 }
