@@ -1,3 +1,95 @@
+
+    .tour-header {
+        display: flex; 
+        justify-content: center;
+    }
+
+    .destacada {
+        width: 100%;
+    
+    }
+    .img3container, .img2container{
+        display: none;
+    }
+    .tour-detail h1 {
+        width: 100%;
+        padding: 13px 5vw;
+        color: var(--main-bg-color);
+        background-color: rgba(0, 0, 0, 0.623);
+        z-index: 100;
+        margin: 0;
+        font-size: 5.5rem;
+    }
+
+    .tour-detail h3 {
+        font-size: 3rem;
+    }
+    .tour-header{
+        margin-top: -15vh;
+        height: 60vh;
+        
+
+    }
+
+    .tour-detail .body {
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+        padding: 0;
+      
+    }
+
+    .tour-detail .content {
+        width: 100%;
+        margin-top: 3vh;
+        
+    }
+
+    .tour-detail .checkout {
+        width: 95%;
+        margin-bottom: 2vh;
+        border-width: 0.15vh;
+        border-top-width: 0.3vh;
+        height: 90vh;
+        padding: 2vh 0 2vh 0;
+    }
+
+
+    .detalles .icons {
+        height: 100%;
+        width: 5vw;
+        margin-right: 5px;
+    }
+
+    .content p {
+        font-size: 2rem;
+    }
+
+    .detalles p{
+        font-size: 2rem;
+        flex-wrap: no-wrap;
+        width: auto;
+    }
+
+    .details-group {
+        justify-content: space-around;
+    }
+
+    .tour-detail .btn-reservar {
+        font-size: 2.5rem;
+    }
+
+    .checkout h2 {
+        font-size: 3.5rem;
+    }
+
+
+
+  
+ 
+
+@media (min-width: 900px){ 
+
 .tour-header {
     overflow: hidden;
     height: 65vh;
@@ -127,101 +219,5 @@
     list-style: none;
     padding-left: 0;
 }
-@media (min-width: 250px) and (max-width: 900px){ 
-    .tour-header {
-        display: flex; 
-        justify-content: center;
-    }
-
-    .destacada {
-        width: 100%;
-    
-    }
-    .img3container, .img2container{
-        display: none;
-    }
 }
-@media (min-width: 250px) and (max-width: 800px){ 
- 
-    
-    .tour-detail h1 {
-        width: 100%;
-        padding: 13px 5vw;
-        color: var(--main-bg-color);
-        background-color: rgba(0, 0, 0, 0.623);
-        z-index: 100;
-        margin: 0;
-        font-size: 5.5rem;
-    }
-
-    .tour-detail h3 {
-        font-size: 3rem;
-    }
-    .tour-header{
-        margin-top: -15vh;
-        height: 60vh;
-        
-
-    }
-
-    .tour-detail .body {
-        flex-direction: column;
-        width: 90vw;
-        margin: 0 5vw 0 5vw;
-        padding: 0;
-      
-    }
-
-    .tour-detail .content {
-        width: 100%;
-        margin-top: 3vh;
-        
-    }
-
-    .tour-detail .checkout {
-        width: 95%;
-        margin-bottom: 2vh;
-        border-width: 0.15vh;
-        border-top-width: 0.3vh;
-        height: 90vh;
-        padding: 2vh 0 2vh 0;
-    }
-
-
-    .detalles .icons {
-        height: 100%;
-        width: 5vw;
-        margin-right: 5px;
-    }
-
-    .content p {
-        font-size: 2rem;
-    }
-
-    .detalles p{
-        font-size: 2rem;
-        flex-wrap: no-wrap;
-        width: auto;
-    }
-
-    .details-group {
-        justify-content: space-around;
-    }
-
-    .tour-detail .btn-reservar {
-        font-size: 2.5rem;
-    }
-
-    .checkout h2 {
-        font-size: 3.5rem;
-    }
-
-
-}
-
-
-  
- 
-
-
  
