@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
-
 import Home from "./components/home/home";
 import TopNav from "./components/top-nav/top-nav";
 import Toggle from "./components/toggle/toggle";

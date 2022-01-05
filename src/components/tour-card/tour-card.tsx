@@ -8,7 +8,7 @@ const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
  return (
     <div key={tour.id} className="top-tour-card">
         <div className="img-mask">
-            <img src={tour.thumbnail} />
+            <img src={tour.thumbnail} alt={tour.nombre}/>
         </div>
 
         { tour.tag ?

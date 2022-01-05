@@ -2,6 +2,7 @@
 .main-landing {
     background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_large.avif);
     height: 85vh;
+    min-height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -55,6 +56,16 @@
     }
     .main-landing h2 {
         margin: 0;
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+   
+    .main-landing h1{
+        font-size: 6.5em;
+    }
+    .main-landing h2 {
         font-size: 5em;
     }
 }
@@ -133,9 +144,12 @@
         font-size: 1.6rem;
     }
 
+   
+
 
 
 }
+
 
 
 @media only screen and (max-width: 550px){ 
@@ -160,6 +174,20 @@
         font-size: 3rem;
     }
     
+}
+
+@media (min-width: 1000px) and (max-width: 1200px){
+   
+        
+    .top-tours-header h1 {
+        font-size: 2rem;
+       
+    }
+
+    .ver-mas {
+        font-size: 1.5rem;
+    }
+
 }
 
 

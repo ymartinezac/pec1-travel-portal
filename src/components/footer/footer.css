@@ -8,6 +8,7 @@ footer {
     font-style: normal;
 
     height: 30vh;
+    min-height: 150px;
     margin-top: 5vh;
  
     width: 100%;
