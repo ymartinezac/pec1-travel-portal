@@ -1,0 +1,177 @@
+.img-mask {
+    width: 100%;
+    height: 177.7px;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.top-tour-card img {
+    width: 110%;
+    top: -15px;
+    position: relative;
+}
+
+.top-tour-card .btn-reservar{
+    margin-top: 3%;
+    margin-bottom: 30px;
+}
+
+.top-tour-card .btn-reservar a {
+    color: var(--red);
+    text-decoration: none;
+}
+
+.top-tour-card .btn-reservar a:hover {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.top-tour-card {
+    width: 30%;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-tour-card h2 {
+    margin: 15px 10% 0 10%;
+    width: 80%;
+}
+
+.top-tour-card p {
+    margin: 2% 3% 0 1.5%;
+}
+
+.top-tour-card .precio {
+    margin: 1% 1% 0 0;
+    font-family: hwt-artz, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tour-specs {
+    display: flex;
+    align-items: baseline;
+    margin: 0px 10% 0 10%;
+    width: 80%;
+}
+
+.tour-price {
+    margin: 0 10% 0 10%;
+    width: 80%;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: var(--red);
+    color: var(--main-bg-color);
+    width: 30%;
+    margin: -20px 3% 0 0;
+    padding: 1px 5px 1px 5px;
+    align-self: flex-end;
+    border-radius: 1px;
+    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.089);
+    -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.089);
+    -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.089);
+    z-index: 1;
+
+}
+
+.nav-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media (min-width: 250px) and (max-width: 992px){ 
+    .top-tour-card {
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    
+    .img-mask { 
+        height: 22vh;
+    }
+
+    .img-mask img {
+        top: -25px;
+       
+    }
+    .ver-mas { 
+        font-size: 2.5rem;
+
+    }
+
+    .tag {
+        display: none;
+    }
+
+    .top-tour-card .precio {
+        font-size: 3rem;
+
+    }
+
+    .icons {
+        font-size: 2.5rem;
+    }
+
+    .top-tour-card button {
+        font-size: 2.5rem;
+        padding: 3%;
+        margin-top: 6% 0;
+        border-radius: 5px;
+        background-color: var(--red);
+        color: var(--main-bg-color);
+        box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+        -webkit-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 10px 11px 0px rgba(0,0,0,0.15);
+    }
+
+    .top-tour-card button:active {
+        background-color: var(--main-bg-color);
+        color: var(--red);
+    }
+
+}
+
+@media (min-width: 250px) and (max-width: 992px){ 
+    .img-mask {
+        height: 20vh;
+    }
+    .top-tour-card{
+        width: 100%!important;
+    }
+
+    .top-tour-card h2 {
+        font-size: 3rem;
+    }
+
+    .top-tour-card p {
+        font-size: 2rem;
+    }
+
+    .top-tour-card .icons {
+      
+        font-size: 2rem;
+    }
+
+    .top-tour-card .precio {
+        font-size: 2rem;
+    }
+
+
+}
+/*# sourceMappingURL=index.eb27322d.css.map */

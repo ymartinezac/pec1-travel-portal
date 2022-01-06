@@ -1,0 +1,82 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 12% 0 12%;
+    background-color: var(--main-bg-color);
+    color: var(--dark-blue);
+    height: 7vh;
+    min-height: 60px;
+    box-shadow: -1px 3px 11px -5px rgba(0,0,0,0.06);
+-webkit-box-shadow: -1px 3px 11px -5px rgba(0,0,0,0.06);
+-moz-box-shadow: -1px 3px 11px -5px rgba(0,0,0,0.06);
+}
+header h1 {
+    width: 16%;
+    min-width: 150px;
+    height: auto;
+    font-size: 2rem;
+    
+}
+header h1 a {
+    text-decoration: none;
+    color: var(--flag-blue);
+
+}
+header span {
+    color: var(--red)
+}
+nav {
+
+    display: flex;
+    width: 84%;
+    overflow-x: clip;
+    padding: 1vh 0 1vh 0;
+    justify-content: flex-end;
+    font-size: 1.3em;
+    align-items: center;
+
+}
+nav a {
+    margin: 5px 0 0 3vw;
+    text-decoration: none;
+    text-align: center;
+    color: var(--flag-blue)v;
+  
+    font-family: korolev, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+nav a:hover {
+    color: var(--red);
+    font-weight: 700;
+}
+.logo {
+    width: 40px;
+    margin: 0 5px 5px 0;
+}
+header .titulo a{
+    display: flex;
+    align-items: flex-end;
+}
+.titulo h1 {
+    margin: 0;
+}
+@media (min-width: 250px) and (max-width: 1080px){ 
+    nav {
+        display: none;
+    }
+    header {
+        display: none;
+
+    }
+    header h1 {
+        width: 16%;
+        
+    }
+}
+
+
+
+
+/*# sourceMappingURL=index.0fc3541b.css.map */
