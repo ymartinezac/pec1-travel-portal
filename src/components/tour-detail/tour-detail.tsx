@@ -7,7 +7,7 @@ import { FiClock, FiCompass, FiUserCheck } from "react-icons/fi";
 const TourDetail = ({ tours }) => {
     const tour = tours.find(t => t.id === parseInt(useParams().id));
     console.log(useParams().id);
-   
+    window.scrollTo(0, 0);
 
     
 

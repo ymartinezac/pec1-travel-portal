@@ -4,6 +4,7 @@ import TourCard from "../tour-card/tour-card";
 
 
 const ToursGrid: React.FC<{tours: Tour[]}> = ({ tours }) => {
+    window.scrollTo(0, 0);
     const renderAllTours = () => {
         return tours.map((tour) => {
             return (

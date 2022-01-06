@@ -2,6 +2,7 @@ import React from "react";
 
 
 const Enlaces = () => {
+    window.scrollTo(0, 0);
     return (
         <article className="enlaces">
             <h1>Enlaces</h1>

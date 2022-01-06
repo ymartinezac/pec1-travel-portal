@@ -2,9 +2,10 @@ import React from "react";
 import Tour from "../../models/tour";
 import { FiClock, FiStar } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+
+
+
 const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
-
-
  return (
     <div key={tour.id} className="top-tour-card">
         <div className="img-mask">
