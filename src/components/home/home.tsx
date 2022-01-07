@@ -37,7 +37,7 @@ const compararPuntuaciones = ( tours: Array<Tour> ) => {
 
 const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
     window.scrollTo(0, 0);
-    const img_url = window.location.href + "images/caborojo_small.jpg";
+    const img_url = window.location.href + "images/caborojo_small.avif";
     const renderTopTours = () => {
         const sortedTours = compararPuntuaciones(tours);
         const top3 = sortedTours.slice(0, 3);
