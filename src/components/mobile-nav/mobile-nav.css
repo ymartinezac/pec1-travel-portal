@@ -1,13 +1,13 @@
 .mobile-nav h1 {
     color: white;
     align-self: center;
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
 font-weight: 700;
 font-style: normal
 }
 
 .mobile-nav h1 a {
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
 font-weight: 700;
 font-style: normal
 }
@@ -30,7 +30,7 @@ font-style: normal
     color: #eee;
     text-decoration: none;
     font-size: clamp(3rem, 4vw, 6vw);
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
 font-weight: 500;
 font-style: normal;
     transition: .2s all ease-in-out;

@@ -47,7 +47,7 @@ nav a {
     text-align: center;
     color: var(--flag-blue)v;
   
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;

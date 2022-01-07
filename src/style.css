@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
     font-weight: 700;
     font-style: normal;
     font-display: swap;
