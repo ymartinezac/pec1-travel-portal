@@ -69,7 +69,7 @@ footer nav {
 
 footer nav a {
     flex-direction: column;
-    font-family: korolev, sans-serif;
+    font-family: korolev, sans-serif, Arial Black;
     font-weight: 700;
     font-style: normal
 }
