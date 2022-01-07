@@ -24,7 +24,7 @@
   
 }
 .main-landing h1 {
-    font-family: hwt-artz, sans-serif;
+    font-family: hwt-artz, sans-serif, Impact;
     font-style: normal;
     font-weight: 700;
     font-size: 8rem;
@@ -33,7 +33,7 @@
 }
 
 .main-landing h2 {
-    font-family: relation-one, sans-serif;
+    font-family: relation-one, sans-serif, Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 3.5rem;
@@ -212,7 +212,7 @@
 }
 
 .snorkel span {
-    font-family: hwt-artz, sans-serif;
+    font-family: hwt-artz, sans-serif, Impact;
     font-style: normal;
     font-weight: 700;
     font-size: 6rem;
