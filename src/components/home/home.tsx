@@ -94,7 +94,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                         </div>
                     </li>
                 </ul>
-                <img src={img_url} alt="arco de piedras en la playa" className="clip-svg" />
+                <img src={img_url} alt="arco de piedras en la playa" className="clip-svg" width="486" height="350"/>
                 <svg width="486" height="350">
   <defs>
     <clipPath id="myClip">

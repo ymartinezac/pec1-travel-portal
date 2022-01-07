@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-wrap">
             <h1 className="titulo">
                 <NavLink to="/">
-                    <img className="logo" src={logo} alt="logo de ViajaPR" />
+                    <img className="logo" src={logo} alt="logo de ViajaPR" width="40" height="40"/>
                     <div>Viaja<span>PR</span></div>
                 </NavLink>
             </h1>  
