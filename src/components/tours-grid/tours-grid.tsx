@@ -13,10 +13,10 @@ const ToursGrid: React.FC<{tours: Tour[]}> = ({ tours }) => {
         })
     }
     return (
-        <section className="tour-grid">
+        <main className="tour-grid">
             <h1 className="buscar-tours-header">Buscar Tours</h1>
            {renderAllTours()} 
-        </section>
+        </main>
 
     )
   

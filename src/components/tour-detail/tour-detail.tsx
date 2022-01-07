@@ -13,7 +13,7 @@ const TourDetail = ({ tours }) => {
 
   
     return (
-        <div className="tour-detail" >
+        <main className="tour-detail" >
             
             <div className="tour-header" >
                <img className="destacada" src={tour.img_url + "_medium.avif"} />
@@ -71,7 +71,7 @@ const TourDetail = ({ tours }) => {
             
             
            
-        </div>
+        </main>
 
     )
   
