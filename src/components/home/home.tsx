@@ -5,6 +5,7 @@ import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-
 import TourCard from "../tour-card/tour-card";
 import { NavLink } from "react-router-dom";
 import logo from '../../assets/diving-mask-snorkel.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const puntuacionMedia = (tour: Tour) => {
     var sum = 0;
@@ -67,7 +68,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section> 
             <section className="snorkel">
                 <h1>Sumérgete en nuestros <span>snorkeling tours</span></h1>
-                <img className="snorkel-svg" src={logo} alt="snorkel mask" width="275" height="340" />
+                <LazyLoadImage className="snorkel-svg" src={logo} alt="snorkel mask" width="275" height="340" />
              
                 
             </section> 
@@ -94,8 +95,8 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                         </div>
                     </li>
                 </ul>
-                <img src={img_url} alt="arco de piedras en la playa" className="clip-svg" width="486" height="350"/>
-                <svg width="486" height="350">
+                <LazyLoadImage src={img_url} alt="arco de piedras en la playa" className="clip-svg" width="486" height="350"/>
+                <svg width="0" height="0">
   <defs>
     <clipPath id="myClip">
       <circle cx="180" cy="200" r="140"/>

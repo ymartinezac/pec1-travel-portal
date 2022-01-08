@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../../assets/ViajaPR-logo.svg';
 import {NavLink} from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
             <div className="footer-wrap">
             <h1 className="titulo">
                 <NavLink to="/">
-                    <img className="logo" src={logo} alt="logo de ViajaPR" width="40" height="40"/>
+                    <LazyLoadImage className="logo" src={logo} alt="logo de ViajaPR" width="40" height="40"/>
                     <div>Viaja<span>PR</span></div>
                 </NavLink>
             </h1>  
