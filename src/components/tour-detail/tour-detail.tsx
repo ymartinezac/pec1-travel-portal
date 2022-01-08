@@ -16,7 +16,12 @@ const TourDetail = ({ tours }) => {
         <main className="tour-detail" >
             
             <div className="tour-header" >
-               <img className="destacada" src={tour.img_url + "_small.avif"} />
+            
+               <picture className="destacada">
+                        <source media="(max-width: 1099px)" srcSet={tour.img_url + "_small.avif"} />
+                        <source media="(min-width: 1100px)" srcSet={tour.img_url + "_medium.avif"}  />
+                        <img src={tour.img_url + "_small.avif"}   alt={tour.nombre} />
+                    </picture>
                <div className="img2container"> 
                     <picture>
                         <source media="(max-width: 1099px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
