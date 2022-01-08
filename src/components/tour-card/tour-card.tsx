@@ -2,14 +2,14 @@ import React from "react";
 import Tour from "../../models/tour";
 import { FiClock, FiStar } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 
 const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
  return (
     <div key={tour.id} className="top-tour-card">
         <div className="img-mask">
-        <LazyLoadImage src={tour.thumbnail} alt={tour.nombre} width="330" height="200"/>
+        <img src={tour.thumbnail} alt={tour.nombre} width="330" height="200"/>
         </div>
 
         { tour.tag ?

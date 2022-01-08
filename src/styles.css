@@ -189,7 +189,7 @@ footer nav a {
 /*----------------Home-----------------*/
 
 .main-landing {
-    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_large.avif);
+    background-image: url(./public/images/caborojo_large.avif);
     height: 85vh;
     min-height: 400px;
     background-repeat: no-repeat;
@@ -284,7 +284,7 @@ footer nav a {
     padding: 0 12vw 0 12vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_large.avif);
+    background-image: url(./public/images/underwater_medium.avif);
    }
 
 .snorkel h1 {
