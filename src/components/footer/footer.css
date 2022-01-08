@@ -73,14 +73,3 @@ footer nav a {
     font-weight: 700;
     font-style: normal
 }
-
-
-
-@media (min-width: 250px) and (max-width: 992px){ 
-    footer {
-        display: none;
-    }
-
-    
-
-}

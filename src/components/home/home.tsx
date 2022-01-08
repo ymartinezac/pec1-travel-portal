@@ -58,7 +58,7 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
             </section>
             <section className="top-tour-grid">
                 <div className="top-tours-header">
-                    <h1>Tours más vendidos</h1>
+                    <h2>Tours más vendidos</h2>
                     <NavLink to="/buscar-tours" className="ver-mas">Ver más</NavLink>
                 </div>
              
