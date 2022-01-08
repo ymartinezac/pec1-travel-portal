@@ -20,7 +20,8 @@
       "sourceRoot": "/", // Specify the location where a debugger should locate TypeScript files instead of relative source locations.
   
       // Strict Checks
-   "jsx": "react",
+      "jsx": "react",
+      "module": "esnext",
 
    },
     "include": ["src/components", "src/custom.d.ts"],

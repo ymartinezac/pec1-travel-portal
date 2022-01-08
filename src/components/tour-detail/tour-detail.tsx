@@ -16,21 +16,21 @@ const TourDetail = ({ tours }) => {
         <main className="tour-detail" >
             
             <div className="tour-header" >
-               <img className="destacada" src={tour.img_url + "_medium.avif"} />
+               <img className="destacada" src={tour.img_url + "_small.avif"} />
                <div className="img2container"> 
                     <picture>
-                        <source media="(max-width: 480px)" srcSet={tour.img2 + "_small.avif"} />
-                        <source media="(max-width: 640px)" srcSet={tour.img2 + "_medium.avif"}  />
-                        <source media="(max-width: 1024px)" srcSet={tour.img2 + "_medium.avif"}  />
-                        <img src={tour.img2 + "_medium.avif"} alt={tour.nombre} />
+                        <source media="(max-width: 1099px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
+                        <source media="(min-width: 1100px)" srcSet={tour.img2 + "_medium.avif"}  />
+                        <img src={tour.img2 + "_small.avif"} alt={tour.nombre} />
                     </picture>
                </div>
                <div className="img3container"> 
                     <picture>
-                        <source media="(max-width: 480px)" srcSet={tour.img3 + "_small.avif"} />
-                        <source media="(max-width: 640px)" srcSet={tour.img3 + "_medium.avif"}  />
-                        <source media="(max-width: 1024px)" srcSet={tour.img3 + "_medium.avif"}  />
-                        <img src={tour.img3 + "_medium.avif"} alt={tour.nombre} />
+                    <picture>
+                        <source media="(max-width: 1099px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
+                        <source media="(min-width: 1100px)" srcSet={tour.img3 + "_medium.avif"}  />
+                        <img src={tour.img3 + "_small.avif"} alt={tour.nombre} />
+                    </picture>
                     </picture>
                </div>
             </div>

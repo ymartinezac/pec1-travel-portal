@@ -135,7 +135,7 @@ footer {
 
 
 .main-landing {
-    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_large.avif);
+    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/caborojo_small.avif);
     height: 85vh;
     min-height: 400px;
     background-repeat: no-repeat;
@@ -228,7 +228,7 @@ footer {
   
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_large.avif);
+    background-image: url(https://blissful-blackwell-d8a212.netlify.app/images/underwater_small.avif);
    }
 
 .snorkel h1 {

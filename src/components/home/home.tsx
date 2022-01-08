@@ -1,11 +1,13 @@
+
 import React from "react";
 import Tour from "../../models/tour";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faViruses, faGlobe, faCalendarCheck, faClock } from '@fortawesome/free-solid-svg-icons'
 import TourCard from "../tour-card/tour-card";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/diving-mask-snorkel.svg';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
+const Snorkeling = React.lazy(() => import('../snorkeling/snorkeling'));
+const InfoGeneral = React.lazy(() => import('../info-general/info-general'));
+
 
 const puntuacionMedia = (tour: Tour) => {
     var sum = 0;
@@ -38,7 +40,7 @@ const compararPuntuaciones = ( tours: Array<Tour> ) => {
 
 const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
     window.scrollTo(0, 0);
-    const img_url = window.location.href + "images/caborojo_small.avif";
+    
     const renderTopTours = () => {
         const sortedTours = compararPuntuaciones(tours);
         const top3 = sortedTours.slice(0, 3);
@@ -66,46 +68,16 @@ const Home: React.FC<{tours: Tour[]}> = ({ tours }) => {
                
                 
             </section> 
-            <section className="snorkel">
-                <h1>Sumérgete en nuestros <span>snorkeling tours</span></h1>
-                <LazyLoadImage className="snorkel-svg" src={logo} alt="snorkel mask" width="275" height="340" />
-             
-                
-            </section> 
-            <section className="info-general">
-                <h1>Información General</h1>
-                
-                <ul>
-                    <li><FontAwesomeIcon className="icons" icon={faViruses} /> 
-                        <div>
-                            <h2>Medidas Covid-19</h2>
-                            <p>Implementamos procolos de limpieza y seguridad para disminuir posibilidades de contagio.</p>
-                        </div>
-                    </li>
-                    <li><FontAwesomeIcon className="icons" icon={faGlobe} /> 
-                        <div>
-                            <h2>Guías Bilingües</h2>
-                            <p>Todos nuestros guías turísticos hablan al menos español e inglés.</p>
-                        </div>
-                    </li>
-                    <li><FontAwesomeIcon className="icons" icon={faCalendarCheck} /> 
-                        <div>
-                            <h2>Reembolsos por cancelaciones</h2>
-                            <p>Cancelaciones antes de las 24h previas al tour serán reembolsadas en su totalidad.</p>
-                        </div>
-                    </li>
-                </ul>
-                <LazyLoadImage src={img_url} alt="arco de piedras en la playa" className="clip-svg" width="486" height="350"/>
-                <svg width="0" height="0">
-  <defs>
-    <clipPath id="myClip">
-      <circle cx="180" cy="200" r="140"/>
-      <circle cx="330" cy="140" r="140"/>
-    </clipPath>
-  </defs>
-</svg>
             
-                </section>
+            <React.Suspense fallback={<p>Loading...</p>}>
+                <Snorkeling />
+            </React.Suspense>
+            <React.Suspense fallback={<p>Loading...</p>}>
+                <InfoGeneral />
+            </React.Suspense>
+
+            
+            
         </main>
 
     )

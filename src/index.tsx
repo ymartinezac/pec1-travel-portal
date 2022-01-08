@@ -5,13 +5,14 @@ import Home from "./components/home/home";
 import TopNav from "./components/top-nav/top-nav";
 import Toggle from "./components/toggle/toggle";
 import MobileNav from "./components/mobile-nav/mobile-nav";
-import Footer from "./components/footer/footer";
+
 import Presentacion from "./components/presentacion/presentacion";
 import Enlaces from "./components/enlaces/enlaces";
 import ToursGrid from "./components/tours-grid/tours-grid";
 import Tour from "./models/tour";
 import TourDetail from "./components/tour-detail/tour-detail";
 
+const Footer = React.lazy(() => import('./components/footer/footer'));
 const url = "https://blissful-blackwell-d8a212.netlify.app/images/";
 function App ()  {
     const [tours, setTour] = React.useState<Tour[]>([
@@ -97,7 +98,9 @@ function App ()  {
                             <Route path="/tours/:id" element={<TourDetail tours={tours} />}/>
                         </Routes>   
                 
-                    <Footer />
+                        <React.Suspense fallback={<p>Loading...</p>}>
+                            <Footer />
+                        </React.Suspense>
                   
                 </React.StrictMode>
                
