@@ -275,7 +275,7 @@ footer nav a {
 }
 
 /*--------------------------------------------------------------*/
-.snorkel {
+.snorkel{
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -283,6 +283,10 @@ footer nav a {
     padding: 0 12vw 0 12vw;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: none;
+}
+
+.snorkel.visible {
     background-image: url(./public/images/underwater_medium.avif);
    }
 

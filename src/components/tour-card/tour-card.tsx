@@ -8,7 +8,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const TourCard: React.FC<{tour: Tour}> = ({ tour }) => {
  return (
     <div key={tour.id} className="top-tour-card">
-        <div className="LazyLoadImage-mask">
+        <div className="img-mask">
         <LazyLoadImage src={tour.thumbnail} alt={tour.nombre} width="330" height="200"/>
         </div>
 
