@@ -275,7 +275,16 @@ footer nav a {
 }
 
 /*--------------------------------------------------------------*/
-
+.snorkel {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    color: var(--main-bg-color);
+    padding: 0 12vw 0 12vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./public/images/underwater_medium.avif);
+   }
 
 
 .snorkel h1 {

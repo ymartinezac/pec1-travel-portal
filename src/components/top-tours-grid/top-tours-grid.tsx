@@ -4,6 +4,7 @@ import Tour from "../../models/tour";
 import TourCard from "../tour-card/tour-card";
 import { NavLink } from "react-router-dom";
 
+
 const puntuacionMedia = (tour: Tour) => {
     var sum = 0;
     tour.ratings.map(rating => { 
