@@ -21,7 +21,7 @@ const TourDetail = ({ tours }) => {
                     <picture>
                         <source media="(max-width: 1099px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
                         <source media="(min-width: 1100px)" srcSet={tour.img2 + "_medium.avif"}  />
-                        <img src={tour.img2 + "_small.avif"} alt={tour.nombre} />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" alt={tour.nombre} />
                     </picture>
                </div>
                <div className="img3container"> 
@@ -29,7 +29,7 @@ const TourDetail = ({ tours }) => {
                     <picture>
                         <source media="(max-width: 1099px)" srcSet="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
                         <source media="(min-width: 1100px)" srcSet={tour.img3 + "_medium.avif"}  />
-                        <img src={tour.img3 + "_small.avif"} alt={tour.nombre} />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" alt={tour.nombre} />
                     </picture>
                     </picture>
                </div>
