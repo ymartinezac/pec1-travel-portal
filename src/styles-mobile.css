@@ -89,9 +89,10 @@ main {
 .enlaces {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     padding: 0 5vw 0 5vw;
-    height: auto;
-    margin-top: -5vh;
+    height: 100vh;
+    
     justify-content: center;
     align-items: center;
 }
@@ -144,7 +145,7 @@ footer {
     padding: 0;
     margin: 0;
     height: 55vh;
-    margin-top: -130px;
+  
    
 }
 
@@ -199,10 +200,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 4vh 0 -1.5vh 0;
+    margin-bottom: -30px;
+  
 }
 .top-tours-header h1 {
-    margin: 0  0 1% 0;
+    margin: 0;
 }
 
 .ver-mas {
@@ -374,7 +376,7 @@ footer {
         background-color: rgb(32, 32, 32);
         z-index: 10;
         margin: 0;
-        font-size: 2.5rem;
+       
     }
 
     .tour-detail .body {
@@ -484,7 +486,7 @@ footer {
     height: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 12vh;
     
 
 }
