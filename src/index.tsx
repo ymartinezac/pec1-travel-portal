@@ -14,6 +14,7 @@ import TourDetail from "./components/tour-detail/tour-detail";
 
 const Footer = React.lazy(() => import('./components/footer/footer'));
 const url = "https://blissful-blackwell-d8a212.netlify.app/images/";
+
 function App ()  {
     const [tours, setTour] = React.useState<Tour[]>([
         {

@@ -10,7 +10,7 @@ const Snorkeling = () => {
     return (
         <section ref={ref} className={inView ? "snorkel visible" : "snorkel invisible"} >
                 <h1>Sumérgete en nuestros <span>snorkeling tours</span></h1>
-                <LazyLoadImage className="snorkel-svg" src={mask} alt="snorkel mask" width="275" height="340" />
+                <LazyLoadImage treshold="0" className="snorkel-svg" src={mask} alt="snorkel mask" width="275" height="340" />
              
                 
             </section> 
