@@ -4,9 +4,7 @@ import logo from '../../assets/ViajaPR-logo.svg';
 const Presentacion = () => {
     return (
         <article className="presentacion">
-          
-            <img className="logo" src={logo} alt="logo de ViajaPR" width="140" height="140" />
-           
+        
            <h1>Presentación ViajaPR</h1>
             <p>Puerto Rico es un archipiélago en el Caribe que ofrece variedad de experiencias para todos los gustos. En este portal nos especializamos en los atractivos naturales. Los tours son guiados y bilingües.  Además, ofrecemos tours en toda la isla, incluyendo las islas Vieques y Culebra. </p> 
             <p>ViajaPR es un portal de viajes que ofrece tours bilingües.  Contamos con una política de cancelación flexible: reembolso en su totalidad si se cancela con al menos 24 horas de anticipación.  </p>
